@@ -49,7 +49,7 @@ export default function Page() {
             title="The"
             titleEm="Voices"
             description="The toasts, the blessings, and the first dances — each recorded, with the words that were said."
-            variant="waveform"
+            variant="voices"
             tone="dark"
           />
         )}
@@ -63,7 +63,7 @@ export default function Page() {
             title="In their"
             titleEm="words"
             description="Short notes from the family and friends who were there."
-            variant="quote"
+            variant="letters"
             tone="cream"
           />
         )}
@@ -77,7 +77,7 @@ export default function Page() {
             title="The"
             titleEm="archive"
             description="Every photograph from the weekend — Friday, the ceremony, the reception, the long night after — gathered in one place."
-            variant="frames"
+            variant="archive"
             tone="creamDeep"
           />
         )}

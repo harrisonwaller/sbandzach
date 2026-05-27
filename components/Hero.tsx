@@ -35,7 +35,7 @@ export function Hero() {
       />
 
       <motion.p
-        className="accent mb-9 text-[1.05rem] lowercase sm:mb-10"
+        className="accent mb-9 text-[1.2rem] lowercase sm:mb-10"
         variants={rise(0.25)}
         initial="hidden"
         animate="show"
@@ -77,7 +77,7 @@ export function Hero() {
             letterSpacing: "0.18em",
           }}
         >
-          {site.dateRoman}
+          {site.dateNumeric}
         </div>
         <div
           className="mt-3 font-serif text-[1.25rem] italic text-ink-soft"

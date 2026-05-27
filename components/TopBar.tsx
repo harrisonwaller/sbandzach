@@ -46,7 +46,7 @@ export function TopBar() {
         className="hidden font-serif text-[0.95rem] font-semibold uppercase text-ink/80 sm:block"
         style={{ letterSpacing: "0.16em" }}
       >
-        {site.dateRoman}
+        {site.dateNumeric}
       </span>
     </header>
   );

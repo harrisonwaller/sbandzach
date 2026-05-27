@@ -20,7 +20,7 @@ export function Schedule() {
 
         <div className="mt-16 space-y-16">
           {schedule.map((day) => (
-            <Reveal key={day.dateRoman} as="div">
+            <Reveal key={day.date} as="div">
               <div
                 className="mb-8 border-b pb-4 font-serif text-[1.3rem] font-semibold uppercase"
                 style={{
@@ -29,7 +29,7 @@ export function Schedule() {
                   borderColor: "rgba(245,240,230,0.25)",
                 }}
               >
-                {day.weekday} · {day.dateRoman}
+                {day.weekday} · {day.date}
               </div>
 
               <div>

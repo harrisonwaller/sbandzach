@@ -11,6 +11,10 @@
 /out/
 next-env.d.ts
 
+# iCloud conflict copies (e.g. "node_modules 2")
+node_modules [0-9]*
+.next.nosync [0-9]*
+
 # production
 /build
 

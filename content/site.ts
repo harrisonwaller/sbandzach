@@ -6,6 +6,8 @@
 export const site = {
   names: { first: "Sara Beth", second: "Zachary" },
   date: "June 6, 2026",
+  /** Readable on-page date (roman numerals were illegible at a glance). */
+  dateNumeric: "06.06.2026",
   dateRoman: "VI · VI · MMXXVI",
   dateLong: "June Sixth · Two Thousand Twenty-Six",
   location: "Lake Oconee, Georgia",

@@ -13,15 +13,15 @@ export type ScheduleEvent = {
 export type ScheduleDay = {
   /** Long label, e.g. "Friday" */
   weekday: string;
-  /** Roman-numeral date used editorially, e.g. "June V" */
-  dateRoman: string;
+  /** Readable date, e.g. "June 5" */
+  date: string;
   events: ScheduleEvent[];
 };
 
 export const schedule: ScheduleDay[] = [
   {
     weekday: "Friday",
-    dateRoman: "June V",
+    date: "June 5",
     events: [
       {
         time: "9:00 — 11:00 PM",
@@ -34,7 +34,7 @@ export const schedule: ScheduleDay[] = [
   },
   {
     weekday: "Saturday",
-    dateRoman: "June VI",
+    date: "June 6",
     events: [
       {
         time: "4:30 PM",

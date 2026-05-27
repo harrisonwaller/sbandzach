@@ -23,7 +23,7 @@ export function Footer() {
           letterSpacing: "0.18em",
         }}
       >
-        {site.dateRoman}
+        {site.dateNumeric}
       </div>
     </footer>
   );
