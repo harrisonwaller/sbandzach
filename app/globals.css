@@ -220,6 +220,52 @@
 /* ───────────────────────────────────────────────────────────────────────────
    Scroll-reveal default (used by the Reveal component as a fallback).
    ─────────────────────────────────────────────────────────────────────────── */
+/* ───────────────────────────────────────────────────────────────────────────
+   Loading screen — server-rendered so it is part of the first paint (a
+   JS-mounted overlay would appear after hydration and re-occlude the hero,
+   wrecking LCP). Fades out on the compositor; skipped under reduced motion.
+   ─────────────────────────────────────────────────────────────────────────── */
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cream);
+  pointer-events: none;
+  animation: loaderOut 0.55s var(--ease-editorial) 0.25s forwards;
+}
+.loader-mark {
+  font-family: var(--font-display), serif;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+  color: var(--ink);
+  animation: loaderMark 0.45s var(--ease-editorial) both;
+}
+@keyframes loaderOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes loaderMark {
+  from {
+    opacity: 0;
+    letter-spacing: 0.72em;
+  }
+  to {
+    opacity: 1;
+    letter-spacing: 0.5em;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .loader {
+    display: none;
+  }
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(28px);

@@ -7,7 +7,6 @@ import {
   vaultMedia,
 } from "@/content/media";
 
-import { Loader } from "@/components/Loader";
 import { TopBar } from "@/components/TopBar";
 import { Hero } from "@/components/Hero";
 import { FeaturedImage } from "@/components/FeaturedImage";
@@ -31,7 +30,6 @@ export default function Page() {
 
   return (
     <>
-      <Loader />
       <TopBar />
       <main>
         <Hero />

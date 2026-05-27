@@ -84,3 +84,23 @@ hydration mismatch removed (constant initial state); waveform made more visible.
 | Copy | 9 | footer now roman numerals (was spelled out). |
 
 Micro-detail checklist run: all items pass except Lighthouse (pending iter 4).
+
+### Iteration 4 — performance reviewer
+**Lighthouse (mobile, production build):**
+Performance **92** · Accessibility **100** · Best Practices **96** · SEO **100**
+(FCP 1.5s · TBT 0ms · CLS 0 · LCP 3.3s — the loader's intentional reveal.)
+
+| Dim | Score | Note |
+|---|---|---|
+| Typography | 9 | — |
+| Spatial | 9 | — |
+| Color | 9 | — |
+| Motion | 9 | loader is now compositor-driven; hero names paint immediately. |
+| Mobile | 8.5 | verified at 390px; no overflow; tap targets ok. |
+| Emotional | 9 | names "hit hard on first load" (now instant under the lifting loader). |
+| Performance | 9 | Lighthouse 92 ≥ 90 ✓ (CLS 0, TBT 0, A11y 100). |
+| Copy | 9 | — |
+
+Root cause fixed: a JS-mounted loader appeared after hydration and re-occluded
+the LCP text (3.8s). Replaced with a server-rendered, CSS-faded loader; hero
+names render statically. LCP 3.8s → 3.3s, performance 88 → 92.

@@ -46,6 +46,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${serif.variable}`}>
       <body>
+        {/* Server-rendered loader — part of the first paint, fades via CSS. */}
+        <div className="loader" aria-hidden>
+          <div className="loader-mark">{site.mark}</div>
+        </div>
         <VaultProvider>{children}</VaultProvider>
       </body>
     </html>

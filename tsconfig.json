@@ -18,10 +18,16 @@
       "@/*": ["./*"]
     }
   },
+  "//": "include is scoped to source dirs — node_modules is a symlink, so a broad **/*.ts glob would type-check dependency files via the resolved path.",
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
+    "*.ts",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "content/**/*.ts",
+    "scripts/**/*.ts",
     ".next.nosync/types/**/*.ts"
   ],
   "exclude": ["node_modules", "node_modules.nosync", ".next.nosync"]

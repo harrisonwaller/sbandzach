@@ -15,7 +15,7 @@ export function Hero() {
     show: {
       opacity: 1,
       y: 0,
-      transition: { duration: reduce ? 0 : 1.3, delay: reduce ? 0 : delay, ease },
+      transition: { duration: reduce ? 0 : 0.9, delay: reduce ? 0 : delay, ease },
     },
   });
 
@@ -36,13 +36,16 @@ export function Hero() {
 
       <motion.p
         className="accent mb-9 text-[1.05rem] lowercase sm:mb-10"
-        variants={rise(0.6)}
+        variants={rise(0.25)}
         initial="hidden"
         animate="show"
       >
         {site.eyebrow}
       </motion.p>
 
+      {/* The names render immediately (no opacity entrance) so they are crisp
+          the instant the loader lifts — this is the LCP element, and "their
+          names hit hard on first load" wants an immediate, confident paint. */}
       <h1
         className="font-display text-ink"
         style={{
@@ -51,36 +54,19 @@ export function Hero() {
           letterSpacing: "-0.01em",
         }}
       >
-        <motion.span
-          className="block"
-          variants={rise(1.0)}
-          initial="hidden"
-          animate="show"
-        >
-          {site.names.first}
-        </motion.span>
-        <motion.span
+        <span className="block">{site.names.first}</span>
+        <span
           className="my-1 block font-serif font-light italic text-gold"
           style={{ fontSize: "0.42em", lineHeight: 1 }}
-          variants={rise(1.3)}
-          initial="hidden"
-          animate="show"
         >
           &amp;
-        </motion.span>
-        <motion.span
-          className="block"
-          variants={rise(1.6)}
-          initial="hidden"
-          animate="show"
-        >
-          {site.names.second}
-        </motion.span>
+        </span>
+        <span className="block">{site.names.second}</span>
       </h1>
 
       <motion.div
         className="mt-12"
-        variants={rise(2.2)}
+        variants={rise(1.2)}
         initial="hidden"
         animate="show"
       >
@@ -107,7 +93,7 @@ export function Hero() {
         className="mt-12 h-[60px] w-px origin-top bg-ink/40"
         initial={{ scaleY: 0, opacity: 0 }}
         animate={{ scaleY: 1, opacity: 0.4 }}
-        transition={{ duration: reduce ? 0 : 1, delay: reduce ? 0 : 2.7, ease }}
+        transition={{ duration: reduce ? 0 : 1, delay: reduce ? 0 : 1.45, ease }}
       />
 
       <motion.div
@@ -123,7 +109,7 @@ export function Hero() {
         transition={
           reduce
             ? { duration: 0 }
-            : { delay: 3.2, duration: 3, repeat: Infinity, ease: "easeInOut" }
+            : { delay: 1.8, duration: 3, repeat: Infinity, ease: "easeInOut" }
         }
       >
         scroll
