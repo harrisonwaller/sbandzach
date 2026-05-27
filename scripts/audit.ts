@@ -66,7 +66,13 @@ async function waitForImages(page: Page) {
 
 async function positionFor(page: Page, view: View, vh: number) {
   if (view.mode === "bottom") {
-    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await page.evaluate((sel) => {
+      const el = sel ? document.querySelector(sel) : null;
+      if (el) el.scrollIntoView({ block: "end" });
+      else window.scrollTo(0, document.body.scrollHeight);
+      // settle at the true bottom
+      window.scrollTo(0, document.body.scrollHeight);
+    }, view.selector ?? null);
     return;
   }
   if (!view.selector) {

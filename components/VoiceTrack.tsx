@@ -137,12 +137,17 @@ export function VoiceTrack({
     }
   }
 
-  // Auto-scroll the active transcript line into view.
+  // Auto-scroll the active transcript line — within the transcript box only,
+  // never the whole window (scrollIntoView would bubble up and yank the page).
+  const transcriptRef = useRef<HTMLUListElement>(null);
   const lineRefs = useRef<(HTMLLIElement | null)[]>([]);
   useEffect(() => {
     if (activeLine < 0) return;
-    lineRefs.current[activeLine]?.scrollIntoView({
-      block: "center",
+    const ul = transcriptRef.current;
+    const li = lineRefs.current[activeLine];
+    if (!ul || !li) return;
+    ul.scrollTo({
+      top: li.offsetTop - ul.clientHeight / 2 + li.clientHeight / 2,
       behavior: "smooth",
     });
   }, [activeLine]);
@@ -274,7 +279,10 @@ export function VoiceTrack({
               )}
 
               {lines.length > 0 && (
-                <ul className="mx-auto mt-10 max-h-[34svh] max-w-xl space-y-3 overflow-y-auto px-2 text-center">
+                <ul
+                  ref={transcriptRef}
+                  className="mx-auto mt-10 max-h-[34svh] max-w-xl space-y-3 overflow-y-auto px-2 text-center"
+                >
                   {lines.map((line, i) => (
                     <li
                       key={i}

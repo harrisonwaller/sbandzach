@@ -125,4 +125,33 @@ printed stationery; the Voices pull-quote and gold waveform feel like a real
 keepsake; the forthcoming notes are tender, not unfinished. This would move Beth.
 
 ### Iteration 6 — convergence check
-(see below)
+Rubric scores unchanged from iter 5 (all ≥9) — the design has converged. One
+interaction bug fixed: the Voices transcript auto-scroll used `scrollIntoView`,
+which bubbled up and scrolled the whole window (a playing toast would yank the
+page); now it scrolls only within the transcript box. Audit footer positioning
+hardened. No score-moving changes remained.
+
+| Dim | Final |
+|---|---|
+| Typography | 9 |
+| Spatial composition | 9 |
+| Color | 9 |
+| Motion | 9 |
+| Mobile | 9 |
+| Emotional resonance | 9 |
+| Performance | 9 (Lighthouse 92) |
+| Copy | 9.5 |
+
+---
+
+## STOPPING CRITERIA — MET
+
+1. ✅ All 8 rubric dimensions ≥9/10
+2. ✅ Micro-detail checklist 100% (Lighthouse mobile 92 ≥90; tap targets; gold
+   waveform; transcript highlight; roman numerals; ink schedule; vault; custom
+   focus rings; palette-only colours; no CLS)
+3. ✅ 6 iterations completed (minimum 5)
+4. ✅ Converged — iteration 6 produced no rubric-score improvement (bug-fix only)
+5. ✅ Privacy review passed — zero private logistical content
+6. ✅ Mobile reviewed side-by-side with desktop — re-laid-out, no overflow, feels intentional
+7. ✅ Mom Preview pass — "this would move Beth"
