@@ -104,3 +104,25 @@ Performance **92** · Accessibility **100** · Best Practices **96** · SEO **10
 Root cause fixed: a JS-mounted loader appeared after hydration and re-occluded
 the LCP text (3.8s). Replaced with a server-rendered, CSS-faded loader; hero
 names render statically. LCP 3.8s → 3.3s, performance 88 → 92.
+
+### Iteration 5 — privacy + copy + mom preview
+**Privacy review: PASSED.** No phone numbers, no shuttle/room-block/airbnb/flight
+data, no PII. Only public Zola venue addresses appear. No /uploaded_files.
+
+| Dim | Score | Note |
+|---|---|---|
+| Typography | 9 | — |
+| Spatial | 9 | — |
+| Color | 9 | — |
+| Motion | 9 | — |
+| Mobile | 9 | verified: no horizontal scroll; tap targets enlarged (topbar link, track markers). |
+| Emotional | 9 | — |
+| Performance | 9 | Lighthouse 92. |
+| Copy | 9.5 | Letters cards now read "— in time" (was dev-y "PLACEHOLDER"); Voices reads "THE VOICES — FORTHCOMING". |
+
+**Mom Preview verdict:** the names land on first load; the program reads like
+printed stationery; the Voices pull-quote and gold waveform feel like a real
+keepsake; the forthcoming notes are tender, not unfinished. This would move Beth.
+
+### Iteration 6 — convergence check
+(see below)

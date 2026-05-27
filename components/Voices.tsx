@@ -78,12 +78,17 @@ export function Voices({ tracks }: { tracks: MediaItem[] }) {
                 key={t.id}
                 onClick={() => setI(idx)}
                 aria-label={`Track ${idx + 1}`}
-                className="h-px w-7 transition-colors duration-500"
-                style={{
-                  background:
-                    idx === i ? "var(--gold-soft)" : "rgba(245,240,230,0.22)",
-                }}
-              />
+                aria-current={idx === i}
+                className="-my-5 flex h-11 w-7 items-center py-5"
+              >
+                <span
+                  className="block h-px w-7 transition-colors duration-500"
+                  style={{
+                    background:
+                      idx === i ? "var(--gold-soft)" : "rgba(245,240,230,0.22)",
+                  }}
+                />
+              </button>
             ))}
           </div>
           <span

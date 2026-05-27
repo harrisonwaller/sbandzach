@@ -45,17 +45,23 @@ export function Letters() {
                   &ldquo;{l.quote}&rdquo;
                 </blockquote>
                 <figcaption className="mt-4">
-                  <span
-                    className="font-display text-[0.72rem] uppercase"
-                    style={{
-                      color: "var(--gold)",
-                      letterSpacing: "0.32em",
-                      textIndent: "0.32em",
-                    }}
-                  >
-                    {l.speakerRole ? `${l.speakerRole} — ` : ""}
-                    {l.speaker}
-                  </span>
+                  {l.placeholder ? (
+                    <span className="font-serif text-[0.95rem] italic text-stone">
+                      — in time
+                    </span>
+                  ) : (
+                    <span
+                      className="font-display text-[0.72rem] uppercase"
+                      style={{
+                        color: "var(--gold)",
+                        letterSpacing: "0.32em",
+                        textIndent: "0.32em",
+                      }}
+                    >
+                      {l.speakerRole ? `${l.speakerRole} — ` : ""}
+                      {l.speaker}
+                    </span>
+                  )}
                 </figcaption>
               </figure>
             ))}

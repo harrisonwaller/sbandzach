@@ -36,7 +36,8 @@ export function TopBar() {
     >
       <a
         href="#top"
-        className="font-display text-[0.95rem] uppercase text-ink"
+        aria-label="Back to top"
+        className="-my-3 inline-flex min-h-[44px] items-center py-3 font-display text-[0.95rem] uppercase text-ink"
         style={{ letterSpacing: "0.45em", textIndent: "0.45em" }}
       >
         {site.markFull}
