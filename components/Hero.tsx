@@ -8,14 +8,16 @@ const ease = [0.16, 1, 0.3, 1] as const;
 export function Hero() {
   const reduce = useReducedMotion();
 
-  // On reduced motion everything is simply present.
-  const rise = (delay: number): Variants =>
-    reduce
-      ? { hidden: { opacity: 1, y: 0 }, show: { opacity: 1, y: 0 } }
-      : {
-          hidden: { opacity: 0, y: 24 },
-          show: { opacity: 1, y: 0, transition: { duration: 1.3, delay, ease } },
-        };
+  // The hidden state is identical on server and client (so hydration never
+  // mismatches); reduced motion only collapses the timing to instant.
+  const rise = (delay: number): Variants => ({
+    hidden: { opacity: 0, y: 24 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: reduce ? 0 : 1.3, delay: reduce ? 0 : delay, ease },
+    },
+  });
 
   return (
     <section
@@ -103,16 +105,16 @@ export function Hero() {
       <motion.div
         aria-hidden
         className="mt-12 h-[60px] w-px origin-top bg-ink/40"
-        initial={reduce ? { scaleY: 1, opacity: 0.4 } : { scaleY: 0, opacity: 0 }}
+        initial={{ scaleY: 0, opacity: 0 }}
         animate={{ scaleY: 1, opacity: 0.4 }}
-        transition={{ duration: 1, delay: reduce ? 0 : 2.7, ease }}
+        transition={{ duration: reduce ? 0 : 1, delay: reduce ? 0 : 2.7, ease }}
       />
 
       <motion.div
         aria-hidden
         className="absolute bottom-10 left-1/2 font-serif text-[0.8rem] lowercase italic text-ink-soft"
         style={{ letterSpacing: "0.3em", x: "-50%" }}
-        initial={{ opacity: reduce ? 0.5 : 0 }}
+        initial={{ opacity: 0 }}
         animate={
           reduce
             ? { opacity: 0.5 }

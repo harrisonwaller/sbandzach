@@ -42,4 +42,31 @@ Once true, these must stay true through every iteration:
 
 ## Iteration log
 
-_(scores recorded per iteration below)_
+### Iteration 1 — baseline
+| Dim | Score | Note |
+|---|---|---|
+| Typography | 8 | Italiana/Cormorant pairing reads editorial; caps tracked ≥0.4em. |
+| Spatial | 7.5 | Gallery collage + Voices strong; schedule/letters rhythm can tighten. |
+| Color | 8.5 | Cream/ink/gold restraint excellent; photos do the work. |
+| Motion | 7 | Loader/hero/reveals present; waveform not yet rendering (bug). |
+| Mobile | 8 | Re-laid out, names fit, no overflow. |
+| Emotional | 8 | Names land; Voices layout lands; Vault untested. |
+| Performance | — | Not yet measured. |
+| Copy | 8.5 | Roman numerals, lowercase italic accents, no clichés. |
+
+Fixes made: reduced-motion accessibility bug (Reveal blanked sections).
+
+### Iteration 2 — engineering / motion correctness
+| Dim | Score | Note |
+|---|---|---|
+| Typography | 8.5 | — |
+| Spatial | 7.5 | unchanged; next focus. |
+| Color | 9 | gold waveform confirmed; palette airtight. |
+| Motion | 8.5 | wavesurfer renders, transcript highlights in gold, hydration mismatch fixed. |
+| Mobile | 8 | — |
+| Emotional | 8.5 | Voices fully works; **Vault confirmed** (060626 reveals it). |
+| Performance | — | pending Lighthouse. |
+| Copy | 8.5 | — |
+
+Fixes: wavesurfer init-on-expand (was initialising against a null ref); Hero
+hydration mismatch removed (constant initial state); waveform made more visible.

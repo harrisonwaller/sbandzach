@@ -35,6 +35,7 @@ export function VoiceTrack({
 }) {
   const waveRef = useRef<HTMLDivElement>(null);
   const wsRef = useRef<any>(null);
+  const pendingPlay = useRef(false);
   const [ready, setReady] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [expanded, setExpanded] = useState(false);
@@ -51,10 +52,11 @@ export function VoiceTrack({
       ? Math.min(lines.length - 1, Math.floor(progress * lines.length))
       : -1;
 
-  // Initialise wavesurfer for this track. Audio tracks only; video uses the
-  // <video> element directly as ambient texture.
+  // Initialise wavesurfer the first time the track expands — the container only
+  // exists once expanded, so initialising at mount would find a null ref.
+  // Audio tracks only; video uses the <video> element directly.
   useEffect(() => {
-    if (isVideo || !waveRef.current) return;
+    if (isVideo || !expanded || wsRef.current || !waveRef.current) return;
     let destroyed = false;
     let ws: any;
 
@@ -63,8 +65,8 @@ export function VoiceTrack({
       if (destroyed || !waveRef.current) return;
       ws = WaveSurfer.create({
         container: waveRef.current,
-        height: 56,
-        waveColor: "rgba(245, 240, 230, 0.32)",
+        height: 60,
+        waveColor: "rgba(245, 240, 230, 0.5)",
         progressColor: "#c69b6d",
         cursorColor: "transparent",
         barWidth: 2,
@@ -81,7 +83,14 @@ export function VoiceTrack({
         ws.load(track.src);
       }
 
-      ws.on("ready", () => !destroyed && setReady(true));
+      ws.on("ready", () => {
+        if (destroyed) return;
+        setReady(true);
+        if (pendingPlay.current) {
+          pendingPlay.current = false;
+          ws.play().catch(() => {});
+        }
+      });
       ws.on("play", () => setPlaying(true));
       ws.on("pause", () => setPlaying(false));
       ws.on("finish", () => {
@@ -101,11 +110,12 @@ export function VoiceTrack({
       } catch {}
       wsRef.current = null;
     };
-  }, [track.id, track.src, isPlaceholder, isVideo]);
+  }, [expanded, track.id, track.src, isPlaceholder, isVideo]);
 
   const videoElRef = useRef<HTMLVideoElement>(null);
 
   function toggle() {
+    const firstOpen = !expanded;
     setExpanded(true);
     if (isVideo) {
       const v = videoElRef.current;
@@ -119,7 +129,12 @@ export function VoiceTrack({
       }
       return;
     }
-    wsRef.current?.playPause();
+    if (wsRef.current) {
+      wsRef.current.playPause();
+    } else {
+      // wavesurfer initialises on expand; play as soon as it's ready.
+      pendingPlay.current = firstOpen ? true : !playing;
+    }
   }
 
   // Auto-scroll the active transcript line into view.
