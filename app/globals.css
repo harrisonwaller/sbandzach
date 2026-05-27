@@ -12,6 +12,8 @@
   --ink-soft: #3d342b;
   --gold: #a87841;
   --gold-soft: #c69b6d;
+  /* darker gold for small labels on cream — meets contrast where #a87841 fails */
+  --gold-deep: #7c5320;
   --stone: #8a8478;
   --rule: rgba(26, 22, 18, 0.15);
   --rule-light: rgba(245, 240, 230, 0.12);
@@ -102,34 +104,28 @@
     font-family: var(--font-serif), Georgia, serif;
   }
 
-  /* lowercase italic accent (hero eyebrow, captions) */
+  /* lowercase italic accent (hero eyebrow, captions) — kept legible */
   .accent {
     font-family: var(--font-serif), serif;
     font-style: italic;
     font-weight: 500;
-    letter-spacing: 0.28em;
-    color: var(--gold);
+    letter-spacing: 0.12em;
+    color: var(--gold-deep);
   }
 
-  /* uppercase tracked label — chapter marks, attire, etc. */
-  .label {
-    font-family: var(--font-display), serif;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-    font-size: 0.78rem;
-    color: var(--gold);
-    /* compensate the trailing space of wide tracking */
-    text-indent: 0.5em;
-  }
-
+  /* small uppercase label — chapter marks, attire, etc. Cormorant 600 with
+     restrained tracking reads cleanly where tracked-out Italiana did not. */
+  .label,
   .chapter-mark {
-    font-family: var(--font-display), serif;
+    font-family: var(--font-serif), serif;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
-    text-indent: 0.5em;
-    font-size: 0.8rem;
-    color: var(--gold);
-    margin-bottom: 1.75rem;
+    letter-spacing: 0.2em;
+    font-size: 0.9rem;
+    color: var(--gold-deep);
+  }
+  .chapter-mark {
+    margin-bottom: 1.5rem;
   }
 
   .chapter-title {

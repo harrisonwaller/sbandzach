@@ -30,14 +30,14 @@ ever need them again: `npm run media:fetch-zola`.
 
 ### Note on `node_modules` (this checkout lives in iCloud Drive)
 
-To keep iCloud from syncing tens of thousands of dependency files, `node_modules`
-is symlinked to `~/.sbandzach-build/node_modules` (outside iCloud) and the Next
-build output uses `distDir: .next.nosync` locally. If `npm install` ever
+iCloud would otherwise sync (and sometimes clobber) the tens of thousands of
+dependency files. macOS skips any path ending in `.nosync`, so the real
+dependencies live in `node_modules.nosync/` with `node_modules` as a symlink to
+it, and the build output uses `distDir: .next.nosync`. If `npm install` ever
 replaces the symlink with a real folder, restore it with:
 
 ```bash
-mv node_modules "$HOME/.sbandzach-build/node_modules"
-ln -snf "$HOME/.sbandzach-build/node_modules" node_modules
+mv node_modules node_modules.nosync && ln -snf node_modules.nosync node_modules
 ```
 
 None of this affects Vercel — there `distDir` is the standard `.next` and

@@ -22,11 +22,10 @@ export function Schedule() {
           {schedule.map((day) => (
             <Reveal key={day.dateRoman} as="div">
               <div
-                className="mb-8 border-b pb-4 font-display text-[1.2rem] uppercase"
+                className="mb-8 border-b pb-4 font-serif text-[1.3rem] font-semibold uppercase"
                 style={{
                   color: "var(--gold-soft)",
-                  letterSpacing: "0.38em",
-                  textIndent: "0.38em",
+                  letterSpacing: "0.16em",
                   borderColor: "rgba(245,240,230,0.25)",
                 }}
               >
@@ -67,11 +66,10 @@ export function Schedule() {
                       </p>
                       {ev.attire && (
                         <p
-                          className="mt-3 font-display text-[0.8rem] uppercase"
+                          className="mt-3 font-serif text-[0.85rem] font-semibold uppercase"
                           style={{
                             color: "var(--gold-soft)",
-                            letterSpacing: "0.38em",
-                            textIndent: "0.38em",
+                            letterSpacing: "0.16em",
                           }}
                         >
                           {ev.attire}

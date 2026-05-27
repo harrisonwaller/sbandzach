@@ -5,6 +5,7 @@ import {
   archivePhotos,
   vaultMedia,
 } from "@/content/media";
+import { lettersArePlaceholder } from "@/content/letters";
 
 import { TopBar } from "@/components/TopBar";
 import { Hero } from "@/components/Hero";
@@ -15,6 +16,7 @@ import { Venue } from "@/components/Venue";
 import { Voices } from "@/components/Voices";
 import { Letters } from "@/components/Letters";
 import { Archive } from "@/components/Archive";
+import { SectionPlaceholder } from "@/components/SectionPlaceholder";
 import { Vault } from "@/components/Vault";
 import { Footer } from "@/components/Footer";
 
@@ -26,8 +28,8 @@ export default function Page() {
   const archive = archivePhotos();
   const vault = vaultMedia();
 
-  // Voices, Letters and Archive render only when they have real content — until
-  // then they stay quietly absent (no "coming soon" announcements).
+  // Each future chapter shows an elegant preview until its real content exists,
+  // then the real section takes its place automatically.
   return (
     <>
       <TopBar />
@@ -37,9 +39,49 @@ export default function Page() {
         <Gallery photos={gallery} />
         <Schedule />
         <Venue />
-        <Voices tracks={tracks} />
-        <Letters />
-        <Archive photos={archive} />
+
+        {tracks.length > 0 ? (
+          <Voices tracks={tracks} />
+        ) : (
+          <SectionPlaceholder
+            id="voices"
+            mark="Chapter IV"
+            title="The"
+            titleEm="Voices"
+            description="The toasts, the blessings, and the first dances — each recorded, with the words that were said."
+            variant="waveform"
+            tone="dark"
+          />
+        )}
+
+        {!lettersArePlaceholder ? (
+          <Letters />
+        ) : (
+          <SectionPlaceholder
+            id="letters"
+            mark="Chapter V"
+            title="In their"
+            titleEm="words"
+            description="Short notes from the family and friends who were there."
+            variant="quote"
+            tone="cream"
+          />
+        )}
+
+        {archive.length > 0 ? (
+          <Archive photos={archive} />
+        ) : (
+          <SectionPlaceholder
+            id="archive"
+            mark="Chapter VI"
+            title="The"
+            titleEm="archive"
+            description="Every photograph from the weekend — Friday, the ceremony, the reception, the long night after — gathered in one place."
+            variant="frames"
+            tone="creamDeep"
+          />
+        )}
+
         <Vault media={vault} />
       </main>
       <Footer />

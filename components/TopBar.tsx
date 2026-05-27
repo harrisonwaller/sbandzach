@@ -38,15 +38,15 @@ export function TopBar() {
         href="#top"
         aria-label="Back to top"
         className="-my-3 inline-flex min-h-[44px] items-center py-3 font-serif text-[1.15rem] font-semibold uppercase text-ink"
-        style={{ letterSpacing: "0.3em", textIndent: "0.3em" }}
+        style={{ letterSpacing: "0.22em" }}
       >
         {site.markFull}
       </a>
       <span
-        className="hidden font-serif text-[1.05rem] font-medium italic text-ink sm:block"
-        style={{ letterSpacing: "0.12em" }}
+        className="hidden font-serif text-[0.95rem] font-semibold uppercase text-ink/80 sm:block"
+        style={{ letterSpacing: "0.16em" }}
       >
-        vi · vi · mmxxvi
+        {site.dateRoman}
       </span>
     </header>
   );

@@ -71,18 +71,17 @@ export function Hero() {
         animate="show"
       >
         <div
-          className="font-display uppercase text-ink"
+          className="font-serif font-semibold uppercase text-ink"
           style={{
-            fontSize: "clamp(0.95rem, 1.8vw, 1.25rem)",
-            letterSpacing: "0.4em",
-            textIndent: "0.4em",
+            fontSize: "clamp(1.05rem, 1.8vw, 1.35rem)",
+            letterSpacing: "0.18em",
           }}
         >
           {site.dateRoman}
         </div>
         <div
-          className="mt-3 font-serif italic text-ink-soft"
-          style={{ fontSize: "1.1rem", letterSpacing: "0.1em" }}
+          className="mt-3 font-serif text-[1.25rem] italic text-ink-soft"
+          style={{ letterSpacing: "0.02em" }}
         >
           {site.location}
         </div>

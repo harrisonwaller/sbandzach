@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="bg-ink px-6 pb-12 pt-20 text-center text-cream">
       <div
         className="font-serif text-[1.7rem] font-semibold text-cream"
-        style={{ letterSpacing: "0.32em", textIndent: "0.32em" }}
+        style={{ letterSpacing: "0.22em", textIndent: "0.22em" }}
       >
         {site.markFull}
       </div>
@@ -17,11 +17,10 @@ export function Footer() {
       </p>
       <hr className="hairline mx-auto my-8" style={{ background: "var(--gold-soft)" }} />
       <div
-        className="font-serif text-[0.95rem] font-medium uppercase"
+        className="font-serif text-[1rem] font-semibold uppercase"
         style={{
           color: "var(--gold-soft)",
-          letterSpacing: "0.32em",
-          textIndent: "0.32em",
+          letterSpacing: "0.18em",
         }}
       >
         {site.dateRoman}

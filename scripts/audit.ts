@@ -22,9 +22,6 @@ type View = {
   play?: boolean; // click the Voices play button to expand the track
 };
 
-// Voices, Letters and Archive render only once they have real content, so they
-// are not screenshotted in the pre-wedding state. They remain in the codebase
-// and were verified in earlier iterations (see audit/iter-*).
 const VIEWS: View[] = [
   { name: "hero", mode: "top" },
   { name: "featured", selector: "#featured" },
@@ -32,6 +29,9 @@ const VIEWS: View[] = [
   { name: "gallery", selector: "#frames", mode: "mid" },
   { name: "schedule", selector: "#weekend" },
   { name: "place", selector: "#place" },
+  { name: "voices", selector: "#voices" },
+  { name: "letters", selector: "#letters" },
+  { name: "archive", selector: "#archive" },
   { name: "footer", selector: "footer", mode: "bottom" },
 ];
 

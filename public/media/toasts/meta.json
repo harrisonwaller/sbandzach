@@ -1,0 +1,13 @@
+{
+  "placeholder-toast.wav": {
+    "id": "toasts-placeholder",
+    "title": "A Sample Track",
+    "speaker": "a sample track",
+    "speakerRole": "The Voices · Forthcoming",
+    "speakerPhoto": "/media/engagement/engagement-07.jpg",
+    "pullQuote": "Here is where a voice will live — a toast, a blessing, the long pause before the laugh.",
+    "transcript": "When the weekend comes, the toasts will be recorded and kept in this space.\nEach voice arrives with its own waveform, its own photograph easing in from the edge.\nThe words you are reading now scroll in time with the audio, the current line lifting in gold.\nThis is only a sample, holding the shape of what comes after the sixth of June.",
+    "sortOrder": 1,
+    "visibility": "public"
+  }
+}
