@@ -37,7 +37,7 @@ export function Schedule() {
                 {day.events.map((ev, i) => (
                   <div
                     key={ev.title}
-                    className="grid gap-2 py-7 sm:grid-cols-[170px_1fr] sm:gap-10"
+                    className="grid gap-2 py-8 sm:grid-cols-[200px_1fr] sm:gap-12"
                     style={{
                       borderBottom:
                         i < day.events.length - 1
@@ -46,8 +46,12 @@ export function Schedule() {
                     }}
                   >
                     <div
-                      className="font-serif text-[1.15rem] italic"
-                      style={{ color: "var(--gold-soft)", letterSpacing: "0.04em" }}
+                      className="font-serif text-[1.15rem] italic sm:border-r sm:pr-12 sm:text-right"
+                      style={{
+                        color: "var(--gold-soft)",
+                        letterSpacing: "0.04em",
+                        borderColor: "var(--rule-light)",
+                      }}
                     >
                       {ev.time}
                     </div>

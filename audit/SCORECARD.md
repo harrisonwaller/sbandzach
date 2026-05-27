@@ -70,3 +70,17 @@ Fixes made: reduced-motion accessibility bug (Reveal blanked sections).
 
 Fixes: wavesurfer init-on-expand (was initialising against a null ref); Hero
 hydration mismatch removed (constant initial state); waveform made more visible.
+
+### Iteration 3 — art director (spatial + typography)
+| Dim | Score | Note |
+|---|---|---|
+| Typography | 9 | balanced title/quote line-breaks; tracking dialled in. |
+| Spatial | 9 | schedule now reads as a printed program (right-aligned times + gutter rule); venue alternation clean. |
+| Color | 9 | — |
+| Motion | 8.5 | — |
+| Mobile | 8 | next focus. |
+| Emotional | 9 | program + columns + Voices + Vault all land. |
+| Performance | — | measuring next. |
+| Copy | 9 | footer now roman numerals (was spelled out). |
+
+Micro-detail checklist run: all items pass except Lighthouse (pending iter 4).

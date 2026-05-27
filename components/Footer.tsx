@@ -24,7 +24,7 @@ export function Footer() {
           textIndent: "0.45em",
         }}
       >
-        {site.dateLong}
+        {site.dateRoman}
       </div>
     </footer>
   );

@@ -139,6 +139,7 @@
     letter-spacing: -0.005em;
     color: var(--ink);
     max-width: 16ch;
+    text-wrap: balance;
   }
   .chapter-title em {
     font-family: var(--font-serif), serif;
@@ -154,6 +155,7 @@
     font-size: clamp(1.6rem, 4.4vw, 3.25rem);
     line-height: 1.32;
     letter-spacing: 0.005em;
+    text-wrap: balance;
   }
 
   /* hairline rule used as a divider */
