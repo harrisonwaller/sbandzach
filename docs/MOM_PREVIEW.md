@@ -13,33 +13,30 @@ share it with confidence before the photographs and voices exist.
   collage. Tap any photo for the full-screen viewer (arrows / Esc to close).
 - **Chapter II · The Weekend** — the schedule, set like a printed program on
   ink: Friday welcome drinks, the ceremony, the reception, the after-party.
-- **Chapter III · The Place** — Reynolds Lake Oconee and the Ritz-Carlton.
-- **Chapter IV · The Voices** — the centerpiece. Press the play button on the
-  sample track to see how it will work: a line floats up, a portrait eases in
-  from the edge, a gold waveform plays, and the words highlight in time. Real
-  toasts and dances slot straight into this after the wedding.
-- **Chapter V · In Their Words** — the letters wall, shown with its layout in
-  place and tender "in time" placeholders.
-- **Forthcoming** — a graceful note about what the weekend will add.
+- **Chapter III · The Place** — where the ceremony/reception are (Great Waters)
+  and where the welcome drinks and after party are (the Ritz-Carlton). Plain.
 - **A small secret.** Type `060626` anywhere and a hidden chapter opens. Don't
   tell everyone.
 
-## Honest notes (so nothing surprises her)
+## What's intentionally not here yet
 
-- The **Voices** track is a *sample* — silent, with placeholder words that say
-  so. It's there to show the experience, not to pretend a toast exists yet.
-- The **Letters** cards are placeholders marked "— in time."
-- **The Archive** (every weekend photo, with filters) and real Letters/Voices
-  appear automatically once those files are added — see `docs/MEDIA_GUIDE.md`.
+The site is a *time capsule* — it fills in after the weekend. Until then, three
+chapters stay quietly absent (no placeholders, no "coming soon"):
+
+- **The Voices** — toast and dance recordings (each plays with a waveform, an
+  edge-bleed portrait, and a transcript that highlights in time).
+- **In Their Words** — short written notes from family and friends.
+- **The Archive** — every approved photo from the weekend, with day-by-day filters.
+
+These are fully built; they appear the moment their content is added.
 
 ## What comes after the wedding
 
 1. Drop the weekend photos, toast recordings, dance clips and letters into
    `public/media/…` (guide in `MEDIA_GUIDE.md`), run `npm run media:build`.
-2. Flip `weekendHasHappened` to `true` in `content/site.ts` to retire the
-   "Forthcoming" chapter once the real content has landed.
-3. Deploy. The Archive lights up, the Voices fill with real toasts, and the
-   Letters wall fills with real notes.
+   For written notes, edit `content/letters.ts`.
+2. Deploy (`git push`). The Voices fill with toasts, the Letters wall fills with
+   notes, and the Archive lights up — automatically, no code changes.
 
 ## The test it's built to pass
 

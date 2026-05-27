@@ -1,7 +1,8 @@
 /**
- * The Place. Two venues, restrained copy, one pull-quote each. The lake does
- * the rest. Imagery is resolved at render time from the engagement set until
- * dedicated venue photography is added under /public/media.
+ * The Place. Two venues, stated plainly — where the ceremony is, where the
+ * weekend's drinks and after party are. No prose, no pull-quotes. Imagery is
+ * resolved at render time from the engagement set until dedicated venue
+ * photography is added under /public/media.
  */
 export type Venue = {
   mark: string;
@@ -9,7 +10,6 @@ export type Venue = {
   /** `em` marks the italic accent word inside the title. */
   titleEm: string;
   body: string[];
-  pullQuote: string;
   /** Optional explicit image src; falls back to a strong engagement frame. */
   image?: string;
   imageAlt: string;
@@ -18,24 +18,20 @@ export type Venue = {
 export const venues: Venue[] = [
   {
     mark: "i",
-    title: "A place by the",
-    titleEm: "water",
+    title: "Great",
+    titleEm: "Waters",
     body: [
-      "Reynolds Lake Oconee sits on nineteen thousand acres of Georgia lake country, an hour and a half east of Atlanta. The Great Waters course was carved into the shoreline by Jack Nicklaus thirty years ago, and the clubhouse looks out over water that goes still at dusk.",
-      "For one weekend in June it holds a wedding. The ceremony at the water's edge, the reception just beyond it, and the long evening that follows.",
+      "The ceremony and reception are at the Great Waters Course at Reynolds Lake Oconee, about ninety minutes east of Atlanta.",
     ],
-    pullQuote: "Everyone gathers. Everyone stays. The lake holds it all.",
     imageAlt: "The shoreline at Reynolds Lake Oconee",
   },
   {
     mark: "ii",
-    title: "And a room to",
-    titleEm: "return to",
+    title: "The",
+    titleEm: "Ritz-Carlton",
     body: [
-      "The Ritz-Carlton at Lake Oconee keeps the bookends of the weekend — Friday's welcome drinks and the after party that runs past midnight on Saturday.",
-      "Stone fireplaces, a long porch, the lake again through the trees. A place to arrive on Friday and not quite leave until Sunday.",
+      "Friday's welcome drinks and the Saturday after party are at The Ritz-Carlton, Lake Oconee, a few minutes from the course.",
     ],
-    pullQuote: "Somewhere south of where they began, and somewhere to come home to.",
     imageAlt: "The Ritz-Carlton at Lake Oconee",
   },
 ];

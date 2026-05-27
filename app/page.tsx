@@ -1,4 +1,3 @@
-import { site } from "@/content/site";
 import {
   engagementPhotos,
   featuredImage,
@@ -16,7 +15,6 @@ import { Venue } from "@/components/Venue";
 import { Voices } from "@/components/Voices";
 import { Letters } from "@/components/Letters";
 import { Archive } from "@/components/Archive";
-import { Forthcoming } from "@/components/Forthcoming";
 import { Vault } from "@/components/Vault";
 import { Footer } from "@/components/Footer";
 
@@ -28,6 +26,8 @@ export default function Page() {
   const archive = archivePhotos();
   const vault = vaultMedia();
 
+  // Voices, Letters and Archive render only when they have real content — until
+  // then they stay quietly absent (no "coming soon" announcements).
   return (
     <>
       <TopBar />
@@ -40,7 +40,6 @@ export default function Page() {
         <Voices tracks={tracks} />
         <Letters />
         <Archive photos={archive} />
-        {!site.weekendHasHappened && <Forthcoming />}
         <Vault media={vault} />
       </main>
       <Footer />

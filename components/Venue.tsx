@@ -56,15 +56,11 @@ export function Venue() {
                     <h2 className="chapter-title mb-7">
                       {v.title} <em>{v.titleEm}</em>.
                     </h2>
-                    <div className="max-w-prose space-y-5 font-serif text-[1.2rem] leading-relaxed text-ink-soft">
+                    <div className="max-w-prose space-y-5 font-serif text-[1.3rem] leading-relaxed text-ink-soft">
                       {v.body.map((p, j) => (
                         <p key={j}>{p}</p>
                       ))}
                     </div>
-                    <hr className="hairline my-8" />
-                    <p className="pull-quote max-w-[20ch] text-ink">
-                      {v.pullQuote}
-                    </p>
                   </div>
                 </div>
               </Reveal>

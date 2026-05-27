@@ -76,7 +76,6 @@
     "width": 1334,
     "height": 1334,
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAADG0lEQVR4nAEQA+/8ANGzg9a2gsCcZsejbNKvec6rd9m2hNa2idC2lL6idrqXYraUYbuaZMCeabyaZsOhbADQr3zSsX7Cn2ivjl6vlGnRrnnWsn/VtITQtpC+oni2lF+1k12ceUtTORmVd0nEn2sAzap00696xKJskmxChWNKwqJ317F90q+A0LaRvqJ5tpFcsZBbrXhWeU44b1QqwJtmAMunbM6qdMOha5lwRphcPr2bd927hdKuftG2kL6iea+LVa+OWaV9WJl5Y39mQ7uVXwDFoWnLp3LJp3CVd09fLQu0lXi+lGrTr4LStpHCpXuykFu2oYHMw7TPy8e3tKm+ongAwptiyqVwyaBqr4VahUghm2pHgk8xxJpx1r2ZwqN7vp5uvbKbyMK2xsC5vr6zvqiLALmUXsalbsOKVp9nNNKshN+/nbOTdrCDX9jCn76ieLqdcbOnkcK4qrqyqLGtnriqkQCjgU25lmGtZze8iFf868Pt2rbOuqCccVPWvZy7nnSwlm2nn4i7tKi2r6egnY20oYUAZkoeh2M3n1Um0raE+N+y6dGqx6+UnG9Q0rmSuZpwrZRtsqmSo5mFnpuMsKubqY9pAJmMe8K4qriCXL2CUfbdrOrUpcSni7KJZciofLGSZ6OBXaqYhcm8oOTcyK+rn5h6TwDi3dS2r6CDcVHKk2W4eEnWtomzj3iZfmGbgWKxmXaZcUWqk3LHuZfUzsBkVTqLbDwAcV9IXEcqd2FF8OK/vIhVxptxy7ObraCT29nU1MevlHM+tKJ60smxq6OSSjQPi2w8AG5cRHFhTXppVd7NqurMlObBhtfHrOjp4/v++8u+qoZkM6qUcNPNvJSGcU82D4NlOgBrXUlkVUV+b13g0K/pzJrbuYTUvZvm5uPw8vLDuadyVSOOeVaekn2Zk4c2JQJ3Wi4AdmhVo5uN2tbO79/A6M2d3r6I0b2a7u7r3ODhcGNOUDUGjHdTinhXaF9TGQAAYEYdANXQxvDv6PHu6O7ewOzSp9u2fs63kdHMxnRtYTclBS0YAHdlRqCRdgAAAAAAAFpBGblkv3c/LDH6AAAAAElFTkSuQmCC",
-    "caption": "the light through the columns",
     "sortOrder": 3
   },
   {
@@ -143,7 +142,6 @@
     "width": 1334,
     "height": 1334,
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC+klEQVR4nD2KW0hTcRyAf2KSZrPL9OziznRubW3TZJpmuGAuy8oLlM0k8pKWKVnSQ2T3iFIqoRepqKionop6KOhCdMEMjUItJMtMMnXubGc7c5eztbP//x8G9fG9fPCBc8bOOqfdLoZjHT73TMDjCHocPOcMc/aI3y7w7khoVgj7oiFfhJ+NBDzgddl9HoefY0IcI7A/BXY8yn5HnjHMjWGeIZEAEfj/oogfgu7pEOf47WUifkYIuKNBd5TnUMiLwn4hPDdhLGCC50QCEXj47RkXvJPYP4n9dhyYwUEG8y7Ms0QIEDJ3YYzIPzCKAmJHEDeKvWPYN479EzjwCweniOB2Tw/3P77GMWOEECQIhBCeHQ0wnwE53iPnR+QaQOwg4oZx8Bv2fiFoarjn/v4S7ZPuekLCGGFCiHPohmv4DnzofT30vmdk4O2PoXdf+58Pvro39fnN7MTHh5c6D1cWXt1jcH646ejrHn106GV39bMrLXC+89y1y90XOk43VlXUlFmq1uZdbG+e+tT35sHtfWX5R7evuXXQcqMltatOfrhS2WSVQuepY11nTnacONrcWGWzrW6sL95Vl9+yu+Dskfr2Pbttlqy9m7JON5jbbKaW8qy6khx48fRJf2/vrbvXi7cUqnMkxjxal0nRdKzFbDredmhFWny2HKo2rFhnNhYVLi8uUkFba4Ot2iZRJqeqJVKTQrZMl6YyqNKVOkN6a21jjlaWIYJKa+56s8mcT63OFIHVKt1s1e3YuHJnxcqtxfqajXnlloKKkvLa0nUHmprVVAIASOIgU52sUy1VyaQQnwqa7Hlmc8qqAkVOrtxSKN9vW9VaayvdomnaUS1NWgh/SUiAxDhY+C8B5sOiVEhbvggSIEMxPy9bYsyV1G6rMWjFchoyjEs0uTKpPkaqjwGFSp6UkpiUAvESSFkGMi1ItEAZgDaCSa9Ua4DOAko3Z7IexDoAEANQADKIVwKlAUoLYg2IM2AJDbGLgaJBJIMFchApQERDUjr8AUezh0yPAAuIAAAAAElFTkSuQmCC",
-    "caption": "golden hour, by the water",
     "sortOrder": 12
   },
   {
@@ -210,7 +208,6 @@
     "width": 1334,
     "height": 1334,
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAACaElEQVR4nG3PzUsqURjA4RdatG8jRSBUIgQhEQRhGBIJBRI07gYLFGFGPAQWY4oODdNiIiPHyg+SQYIWChG5aBOIIC76B8RdDuHGAu2OeBm9DpeOGC16luf9nS8oFovtdvsPpihKp9PpYn8xVVV7WL/f/4dBpVJRsJ+pig27Pk4HI/D5+dnBfq2Hpw5GNE2D7g/D8a+1NgLDpyuKMhgMnp+fX15eNE3rdruqqn7/QR3d2ev1oNFoyLL8+voqy/LFxcXd3d3b21sdazab7+/vHx8frVarPQL39/elUqlWq1Wr1aurq8fHR1mW6/W6LMvFYlGSJJ7nY7FYNBoVRfH09BRIkvT7/dls9uTkxGg0RiKRfD4vSVIymbTb7T6fj6Iok8m0vb29ublpsVggkUiIonh9fY0QIkmSZdnLy0ue58/Ozniez+fz5XL56OiIYRiEkMfjASM2OztrNpsXFhZ0Op3Vap2ZmSFJMhwO397ePj09LS0tTU5OTk9P6/X6rw2rq6sEQXi93rm5OQAIBAIIIafTGYlEJEkqFAoIIZvNZjAYxsfHv8bpdDoejwuCMD8/DwBbW1uCINzc3Jyfn2ez2UqlksvlHh4eDg8P9/b2gGEYjuMoTKfTAYDBYLBarW63OxQKhcPhXC5nt9sFQYjFYizLwsbGxvr6OkEQa2trY2NjADAxMTFcQQgxDJPJZDweTzQa3d3dXVxchOXlZZvN5nK53G731NQUAKysrPA8T9P0zs5OMBgURTEej1MU5XA4CIIAjuOCweD+/j5N016vl+O4VColCMLx8XEoFKJp2ocdHBywLMtx3H8gDtllnmfLIgAAAABJRU5ErkJggg==",
-    "caption": "the question",
     "sortOrder": 18
   },
   {
@@ -223,19 +220,5 @@
     "height": 305,
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAADCAYAAACasY9UAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAtUlEQVR4nGNgQABGEHHlyhW2oKCgfldX11NGRkaLBQUF5+jr62+3sLDYZ2NjEwJVywTXNXPmTNa+vj6jrKysyJCQkBQXFxdnBweHYHd391gDA4MKCQmJDBcXl2ZbW9sWc3PzoIiICNfo6OjAzMxM0ylTpvAwdHR0yHR2dkrl5eWJp6Wl2Xl5eYWZmZn55+bmWhw7dowTZMn///9ZPDw8DF1cXPwKCwvN4uPjJdLS0vjnz5/PAQBnJTe27MoyNAAAAABJRU5ErkJggg==",
     "sortOrder": 19
-  },
-  {
-    "id": "toasts-placeholder",
-    "type": "audio",
-    "src": "/media/toasts/placeholder-toast.wav",
-    "chapter": "toasts",
-    "visibility": "public",
-    "title": "A Sample Track",
-    "speaker": "Forthcoming",
-    "speakerRole": "The Voices",
-    "speakerPhoto": "/media/engagement/engagement-07.jpg",
-    "pullQuote": "Here is where a voice will live — a toast, a blessing, the long pause before the laugh.",
-    "transcript": "When the weekend comes, the toasts will be recorded and kept in this space.\nEach voice arrives with its own waveform, its own photograph easing in from the edge.\nThe words you are reading now scroll in time with the audio, the current line lifting in gold.\nThis is only a sample, holding the shape of what comes after the sixth of June.",
-    "sortOrder": 1
   }
 ]

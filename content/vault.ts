@@ -6,8 +6,7 @@
 export const vault = {
   /** Handwritten-style opening line. */
   intro: "Some things stayed quiet.",
-  subtext:
-    "The candid frames, the in-between moments, the ones that weren't for the gallery. Kept here for the two of you.",
+  subtext: "The candid ones, kept here for the two of you.",
   /** Shown while no vault media has been added yet. */
-  emptyNote: "Nothing here yet. The quiet things come after the weekend.",
+  emptyNote: "Nothing here yet.",
 } as const;

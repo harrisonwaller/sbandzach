@@ -12,22 +12,22 @@ import { Reveal } from "@/components/Reveal";
  * never uniform; very wide source frames get their own panorama band.
  */
 
-// {c: column span /12, r: row span} — each implicit row of the pattern sums to 12.
+// {c: column span /12, r: row span}. Every cell is taller-than-or-equal to its
+// width in px, so the square source photos crop on the SIDES, never top/bottom —
+// faces are always preserved. Asymmetry comes from size, not from wide crops.
 const PATTERN: { c: number; r: number; feature?: boolean }[] = [
-  { c: 7, r: 5, feature: true },
-  { c: 5, r: 5 },
-  { c: 4, r: 6 },
-  { c: 4, r: 6 },
-  { c: 4, r: 6 },
-  { c: 8, r: 5, feature: true },
+  { c: 7, r: 8, feature: true }, // big near-square
+  { c: 5, r: 8 }, //                 tall portrait (pairs to 12)
+  { c: 4, r: 5 }, //                 portrait triptych
   { c: 4, r: 5 },
-  { c: 6, r: 4 },
-  { c: 6, r: 4 },
+  { c: 4, r: 5 },
+  { c: 6, r: 7 }, // near-square pair
+  { c: 6, r: 7 },
 ];
 
 function tileFor(i: number, item: MediaItem) {
   const ar = item.width && item.height ? item.width / item.height : 1;
-  if (ar > 1.9) return { c: 12, r: 3, feature: true }; // panorama band
+  if (ar > 1.9) return { c: 12, r: 3, feature: true }; // true panorama band
   return PATTERN[i % PATTERN.length];
 }
 

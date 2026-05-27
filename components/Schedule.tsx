@@ -22,12 +22,12 @@ export function Schedule() {
           {schedule.map((day) => (
             <Reveal key={day.dateRoman} as="div">
               <div
-                className="mb-8 border-b pb-4 font-display text-[0.95rem] uppercase"
+                className="mb-8 border-b pb-4 font-display text-[1.2rem] uppercase"
                 style={{
                   color: "var(--gold-soft)",
-                  letterSpacing: "0.45em",
-                  textIndent: "0.45em",
-                  borderColor: "var(--rule-light)",
+                  letterSpacing: "0.38em",
+                  textIndent: "0.38em",
+                  borderColor: "rgba(245,240,230,0.25)",
                 }}
               >
                 {day.weekday} · {day.dateRoman}
@@ -46,32 +46,32 @@ export function Schedule() {
                     }}
                   >
                     <div
-                      className="font-serif text-[1.15rem] italic sm:border-r sm:pr-12 sm:text-right"
+                      className="font-serif text-[1.4rem] italic sm:border-r sm:pr-12 sm:text-right"
                       style={{
                         color: "var(--gold-soft)",
                         letterSpacing: "0.04em",
-                        borderColor: "var(--rule-light)",
+                        borderColor: "rgba(245,240,230,0.18)",
                       }}
                     >
                       {ev.time}
                     </div>
                     <div>
-                      <h3 className="font-display text-[1.6rem] leading-tight text-cream sm:text-[1.8rem]">
+                      <h3 className="font-display text-[2rem] leading-tight text-cream sm:text-[2.1rem]">
                         {ev.title}
                       </h3>
-                      <p className="mt-2 font-serif text-[1.05rem] text-cream/70">
+                      <p className="mt-2 font-serif text-[1.2rem] text-cream/90">
                         {ev.venue}
                       </p>
-                      <p className="font-serif text-[0.95rem] italic text-cream/45">
+                      <p className="font-serif text-[1.05rem] italic text-cream/65">
                         {ev.address}
                       </p>
                       {ev.attire && (
                         <p
-                          className="mt-3 font-display text-[0.7rem] uppercase"
+                          className="mt-3 font-display text-[0.8rem] uppercase"
                           style={{
                             color: "var(--gold-soft)",
-                            letterSpacing: "0.4em",
-                            textIndent: "0.4em",
+                            letterSpacing: "0.38em",
+                            textIndent: "0.38em",
                           }}
                         >
                           {ev.attire}

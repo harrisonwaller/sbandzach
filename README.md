@@ -60,8 +60,8 @@ See [`docs/MEDIA_GUIDE.md`](docs/MEDIA_GUIDE.md) — a non-technical guide. In
 short: drop files into the right `public/media/…` folder, optionally add a
 `meta.json` for captions/speakers/pull-quotes, then run `npm run media:build`.
 
-After the wedding, set `weekendHasHappened: true` in `content/site.ts` to retire
-the "Forthcoming" chapter once real photos, voices and letters are in.
+The Voices, Letters and Archive chapters stay quietly absent until they have
+real content — add toasts/letters/weekend photos and they appear automatically.
 
 ## Project structure
 

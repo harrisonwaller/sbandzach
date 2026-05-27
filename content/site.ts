@@ -21,12 +21,6 @@ export const site = {
 
   /** Lowercase italic accent shown above the names on the hero. */
   eyebrow: "from georgia, with love",
-
-  /**
-   * Flip to `true` after the wedding. Hides the "Forthcoming" chapter once the
-   * real photographs, voices and letters have arrived.
-   */
-  weekendHasHappened: false,
 } as const;
 
 /**

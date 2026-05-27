@@ -37,14 +37,14 @@ export function TopBar() {
       <a
         href="#top"
         aria-label="Back to top"
-        className="-my-3 inline-flex min-h-[44px] items-center py-3 font-display text-[0.95rem] uppercase text-ink"
-        style={{ letterSpacing: "0.45em", textIndent: "0.45em" }}
+        className="-my-3 inline-flex min-h-[44px] items-center py-3 font-serif text-[1.15rem] font-semibold uppercase text-ink"
+        style={{ letterSpacing: "0.3em", textIndent: "0.3em" }}
       >
         {site.markFull}
       </a>
       <span
-        className="hidden font-serif text-[0.95rem] italic text-ink-soft sm:block"
-        style={{ letterSpacing: "0.08em" }}
+        className="hidden font-serif text-[1.05rem] font-medium italic text-ink sm:block"
+        style={{ letterSpacing: "0.12em" }}
       >
         vi · vi · mmxxvi
       </span>

@@ -13,6 +13,9 @@ const SIZE: Record<NonNullable<Letter["size"]>, string> = {
 };
 
 export function Letters() {
+  // Stay quiet until real letters arrive — no placeholder wall on the live site.
+  if (lettersArePlaceholder) return null;
+
   return (
     <section id="letters" className="bg-cream">
       <div className="mx-auto max-w-chapter px-6 py-[var(--section-y)] sm:px-10">
