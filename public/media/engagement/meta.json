@@ -1,0 +1,24 @@
+{
+  "_defaults": { "visibility": "public" },
+
+  "engagement-01.jpg": { "featured": true, "caption": "spring · mmxxvi", "sortOrder": 20 },
+  "engagement-03.jpg": { "sortOrder": 1 },
+  "engagement-02.jpg": { "sortOrder": 2 },
+  "engagement-07.jpg": { "sortOrder": 3, "caption": "the light through the columns" },
+  "engagement-12.jpg": { "sortOrder": 4 },
+  "engagement-09.jpg": { "sortOrder": 5 },
+  "engagement-06.jpg": { "sortOrder": 6 },
+  "engagement-11.jpg": { "sortOrder": 7 },
+  "engagement-08.jpg": { "sortOrder": 8 },
+  "engagement-10.jpg": { "sortOrder": 9 },
+  "engagement-05.jpg": { "sortOrder": 10 },
+  "engagement-04.jpg": { "sortOrder": 11 },
+  "engagement-13.jpg": { "sortOrder": 12, "caption": "golden hour, by the water" },
+  "engagement-17.jpg": { "sortOrder": 13 },
+  "engagement-14.jpg": { "sortOrder": 14 },
+  "engagement-16.jpg": { "sortOrder": 15 },
+  "engagement-15.jpg": { "sortOrder": 16 },
+  "engagement-18.jpg": { "sortOrder": 17 },
+  "engagement-19.jpg": { "sortOrder": 18, "caption": "the question" },
+  "engagement-20.jpg": { "sortOrder": 19 }
+}

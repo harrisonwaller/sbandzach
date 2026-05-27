@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Design tokens. The palette and type system are the whole brand.
+   ─────────────────────────────────────────────────────────────────────────── */
+:root {
+  --cream: #f5f0e6;
+  --cream-deep: #ebe3d2;
+  --ink: #1a1612;
+  --ink-soft: #3d342b;
+  --gold: #a87841;
+  --gold-soft: #c69b6d;
+  --stone: #8a8478;
+  --rule: rgba(26, 22, 18, 0.15);
+  --rule-light: rgba(245, 240, 230, 0.12);
+
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --section-y: clamp(5rem, 12vh, 9rem);
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* keep anchored sections clear of the top bar */
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--font-serif), Georgia, serif;
+    font-weight: 400;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--gold);
+    color: var(--cream);
+  }
+
+  /* Custom focus ring — never the default browser blue. */
+  :focus-visible {
+    outline: 1px solid var(--gold);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Subtle paper grain over the whole page. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+    opacity: 0.028;
+    mix-blend-mode: multiply;
+  }
+
+  img {
+    display: block;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Typographic primitives — reused across chapters.
+   ─────────────────────────────────────────────────────────────────────────── */
+@layer components {
+  .font-display {
+    font-family: var(--font-display), serif;
+  }
+  .font-serif {
+    font-family: var(--font-serif), Georgia, serif;
+  }
+
+  /* lowercase italic accent (hero eyebrow, captions) */
+  .accent {
+    font-family: var(--font-serif), serif;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+  }
+
+  /* uppercase tracked label — chapter marks, attire, etc. */
+  .label {
+    font-family: var(--font-display), serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 0.78rem;
+    color: var(--gold);
+    /* compensate the trailing space of wide tracking */
+    text-indent: 0.5em;
+  }
+
+  .chapter-mark {
+    font-family: var(--font-display), serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+    font-size: 0.8rem;
+    color: var(--gold);
+    margin-bottom: 1.75rem;
+  }
+
+  .chapter-title {
+    font-family: var(--font-display), serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.04;
+    letter-spacing: -0.005em;
+    color: var(--ink);
+    max-width: 16ch;
+  }
+  .chapter-title em {
+    font-family: var(--font-serif), serif;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--gold);
+  }
+
+  .pull-quote {
+    font-family: var(--font-serif), serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(1.6rem, 4.4vw, 3.25rem);
+    line-height: 1.32;
+    letter-spacing: 0.005em;
+  }
+
+  /* hairline rule used as a divider */
+  .hairline {
+    width: 50px;
+    height: 1px;
+    background: var(--gold);
+    border: 0;
+  }
+
+  /* Standard chapter container. */
+  .chapter {
+    max-width: var(--max-w, 1200px);
+    margin: 0 auto;
+    padding: var(--section-y) clamp(1.5rem, 5vw, 2.5rem);
+    position: relative;
+  }
+}
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Gallery — a magazine collage. Square sources are cropped into varied cells
+   via a 12-column grid; mobile re-lays into 2 columns with full-width features.
+   ─────────────────────────────────────────────────────────────────────────── */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: clamp(64px, 6.6vw, 92px);
+  grid-auto-flow: row dense;
+  gap: clamp(0.6rem, 1.1vw, 1.4rem);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.gallery-cell {
+  position: relative;
+  overflow: hidden;
+  background: var(--cream-deep);
+}
+.gallery-cell img {
+  transition: transform 1.2s var(--ease-editorial);
+}
+.gallery-cell:hover img {
+  transform: scale(1.03);
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 0.75rem;
+  }
+  .gallery-cell {
+    grid-column: span 1 !important;
+    grid-row: auto !important;
+    aspect-ratio: 4 / 5;
+  }
+  .gallery-cell.g-feature {
+    grid-column: span 2 !important;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Scroll-reveal default (used by the Reveal component as a fallback).
+   ─────────────────────────────────────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 1.1s var(--ease-editorial),
+    transform 1.1s var(--ease-editorial);
+  will-change: opacity, transform;
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
