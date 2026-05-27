@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Build output stays inside the project (so module resolution works) but the
-  // `.nosync` suffix keeps it out of iCloud Drive sync. Vercel reads distDir
-  // from here, so deploys are unaffected.
-  distDir: ".next.nosync",
+  // Locally the build output stays inside the project but the `.nosync` suffix
+  // keeps it out of iCloud Drive sync. On Vercel/CI we use the standard `.next`.
+  distDir: process.env.VERCEL || process.env.CI ? ".next" : ".next.nosync",
   // Keep the dev overlay out of audit screenshots.
   devIndicators: { buildActivity: false, appIsrStatus: false },
   images: {
