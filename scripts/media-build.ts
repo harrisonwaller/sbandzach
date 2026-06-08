@@ -178,10 +178,15 @@ async function main() {
         if (await fileExists(path.join(MEDIA_DIR, poster))) {
           item.thumbnail = "/" + path.posix.join("media", poster.split(path.sep).join("/"));
           try {
-            const { base64 } = await getPlaiceholder(
-              await readFile(path.join(MEDIA_DIR, poster)),
-              { size: 16 },
-            );
+            const posterBuf = await readFile(path.join(MEDIA_DIR, poster));
+            // The poster is extracted at the video's native resolution, so its
+            // dimensions are the video's — use them for the player's aspect box.
+            const pm = await sharp(posterBuf).metadata();
+            if (pm.width && pm.height) {
+              item.width = pm.width;
+              item.height = pm.height;
+            }
+            const { base64 } = await getPlaiceholder(posterBuf, { size: 16 });
             item.blurDataURL = base64;
           } catch {}
           break;

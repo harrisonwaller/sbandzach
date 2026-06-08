@@ -586,6 +586,8 @@
     "chapter": "afterparty",
     "visibility": "public",
     "thumbnail": "/media/wedding/afterparty/party-film-1.jpg",
+    "width": 1280,
+    "height": 960,
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAIAAADkharWAAAACXBIWXMAAAsTAAALEwEAmpwYAAACV0lEQVR4nAFMArP9ACVhch1sfA5ygxJ6ixiFlhiFlRiFlhaAkxN8kBF4ixF4ixF4jAxugA9meSVgcCxZZwAlZnkbboMUfZAaip0ekqQglaoflKoaiZ0Xg5gZhpsaiZ0aiaAbiqEYhZweeY4qcIQAJml9FXiNGYeeHZCkH5SqJJ63J6LELKrRIpazGIOcE3yQFX6RGISbFX2VEXeQDW6EACdxhhV+lRmHnRyOoiKYsiuqyj3S80Xk/zvO7TvL8zO73iScuByNphiEnBR8kw1uhAAxc4ccfJIYhZsimK8pp8VI8P9Y//9B3Pk1v+RC2f9N9P9K7/87y/QvtNQloLUZh5wAKm6EFn+XJJy0MLTVQd/5UP//ROL/NcDiL7DWNLnmO8n5PtH/Pc79OMXrNMDXKJenAChmfRN5lCGWrzu1uzPAzjjG5znJ7TG41yuqyzG03DjD7zrH9TW75zK42x6Pqjg+RQA+YGlXc3R+j4GAjIU1jaE3w+UvtdE2wuEloLkfkq0nosAKaIMxtNw6ye4ASl4oAwkAY1xFkFZOmHV2glpgl0RSV32RZouWQYygaURRh0ZcM11yTjI6DG2EJ6LCNEZPJQYUACQRGcRfbqpldp0wM7Y6OpcwNI48PYtTXYdCVGEuPUQlOjo0ODQeIgAaJxMZJDMXGwAAAArWd3iEUlOWXFS0eHGzYE+WTENsSU1dPEFfSkomLTJFPDxCOzwFGiYABRgYBhgAGRMT14NmRzMuh1pQyody0nlYdEc6FCw2dllZblZSJDY5TkZFX1BNABUhAAERBAAQ0nLzV0heDoIAAAAASUVORK5CYII="
   },
   {
@@ -595,6 +597,8 @@
     "chapter": "afterparty",
     "visibility": "public",
     "thumbnail": "/media/wedding/afterparty/party-film-2.jpg",
+    "width": 1280,
+    "height": 960,
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAIAAADkharWAAAACXBIWXMAAAsTAAALEwEAmpwYAAACV0lEQVR4nAFMArP9ACFmehFvhBZ6jxmDlhuHmRyInRqDmxN1iw5rfg5rfxBvhRR2ixV4jBJziBFwhg9rggAha4AVeJEbhZwejaIfjqQik6sklbgqo8sik7IXfZUUdosUd4wWeZIWeJIRcIoNaH8AI3GKGH2XGoSbHIifII+nKKLCPdDyRd//OcbqPMr2Nr7lJ5/AHoymGYCbFnmUD22EAC9yixZ5lRqCnSGRqyedv0fp/1b//z/W9jO13j/Q/0zv/0vu/z7P/TCw2CijvRyHoAApcYwZgJwlm7QurtFB2vtP//9E3/81uuAuq9Izs+M5wvI8x/s8x/o3vuoxttErlKcAKmqEGH6aI5SwLbHBNMHROMToOcTtMrXaKaLELajVNLXlNLXkMrDeLqvTLa3NF32QADthcUlxfHCKg4CPiC6VqjfA5jfB5S2rzSaduyabvS6r0ThfejS14zfA6TCy1BRdcABSTkGHXlKabXB0W2J3VGN3ZXhpcXptcIFrXG2AUGU1TVxdMj8ikbYmm74iip9DNz8AEA0WlEJPsWiAp0JBszo6tDQ3hTs9oF1koEVcbDpKRi87Wzs8EB4rAB4uCCAuIB4oABABDrllaaRlaZpdVqp1bJ1dV4JEP4NUTV9LVllOTCo4Q1pPUS1DTgkhLgALGgAUIQAAAAqjaFuIW1WMXFiPaWCob1+oXEuxeHaUcnWUbmkhOkNoVlkdLzgACxsACRgACRkADBwjlGJbeVdOZUpEbFlPdlREMzM/NzxGVD1DhmFcGTQ8X01OGyInAAEUAAMWAAEQquLv9TFjXhQAAAAASUVORK5CYII="
   },
   {
@@ -604,6 +608,8 @@
     "chapter": "afterparty",
     "visibility": "public",
     "thumbnail": "/media/wedding/afterparty/party-film-3.jpg",
+    "width": 1280,
+    "height": 960,
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAIAAADkharWAAAACXBIWXMAAAsTAAALEwEAmpwYAAACV0lEQVR4nAFMArP9AAJohgZujgdvkB2UvUr+/1T//0v+/0Pm/zfK+Cyy4Sen1yen2Cyv5jXB+zjI/zjI/wAGb4oRgKArr+RF5/9I8v9B3v84yP8zwPIrsd4kn80hmscflsUjnNAqq+MtsekpquIADHeVH5bFKqzeKbDOKK3QLbbfKa3aKazaJqfUIZvHH5fEHJG+H5bFJaHVJqPaI5zQAA56nzeJmFJ8hRKFmByUtSOfxyeo1Cam0iSfziCawyCaxRuQvSCXxyOc0iaj2iah2QBFaXVcbXWBgXgVipsakbMgm8Akos4mptErsd0ssuAmp9IbkbsVhK0koNIkn9AzvfQAhXtqaX2Camp6IYOhG5S0QoiqIpzIGo+1IoivDHaZCXKWDnubjh48FoWvLUVfAUZkAHVtbmp+iJQ1RFlsjzdzlHVZbzXF74tmeopGVkggM0IjNlI/UqMEPF9okB82TS8AGQByX2yCVV+QFSZ9TWFRQlttCSQrs9adSl96JzN+K0NJEitNKzuTFEpxAEgoGjE0DygAeSM3rSEtbAAVixcqqiw1jSIvZicwmjw8mj09wz1ZPBM4OycvbwxGSAA/DgkcKA4cABYADp4hLb48TWIpO9Z4g7xgdTkmLcxfSqA7NKFHVSccMTQeJYtRcCYYQQMOHRgBGAAAAAChQUD/o56CXW60Z2iBVWFdNzzeaVCiT0ubYW40JjdJMDubZGYjKDIGFyUcDRsAAAAAo0lH3YFvi19otWZpynprwWlc32RNwGNdpG5vRjxIVEFLsm9uNjU2ABEkGhoinTvvSWd484wAAAAASUVORK5CYII=",
     "caption": "until the lights came up"
   },
@@ -614,6 +620,8 @@
     "chapter": "reception",
     "visibility": "public",
     "thumbnail": "/media/wedding/reception/reception-film.jpg",
+    "width": 960,
+    "height": 1280,
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAIAAACtAwlQAAAACXBIWXMAAAsTAAALEwEAmpwYAAACW0lEQVR4nAFQAq/9AIQhs40lwZQozJcq0Zss2JEnx5YpzZgq0Zgs3c5B///a//+F/wCGIrWQJsaVKc2bK9GWKcmUKc6ZK9iQKNCvNfD/zv//kP//V/8AhyO8jybDlynLlSnOlinPnS3dlCrUrTTt/1r//2H//1T/zkP/AIcouZEoxJUpz5EnzJ8u36Iw5bI3+OdM//RP/91H/8Q+/642+QCLKryQJ8eOJsSYKtSeLdujMOW2Ofu0NeWvO9WmMNypM+qjMesAiCu7hSK5iCO9kCbGlinOmCrUnT3Ft4a9mDa8lCjKni3cny/jAHojp3ogqoImsoYjuYsnvZtct6t3u5RVr48qu5Ypz6Mw4rM3+wBlIY5qKJRwJ5uDPaeYbq20jrynd7udS8iPMqN+GofGP//1UP8AXS57Ux9ecExyrZier2ikkWW2t2ehr0vFlDadoUuK8WH//FP/AEs5aXZGgPaw+6xrn7E8eZRMi/+DvbBDnqNkr/+7///E/8h60gAsFTjKhNL/zv/0hMTqgbfQXIP/rt/xdK25cKr9r//yn/+jXZsAPhpEbDhyqnO1hlF31o+xtlV7/8HN4YWmZSZRu4e7pG+iWSFeABIHLQ4AKBcDL4JddNaZqtd/p/+5vN6QoEUbRXJUfTchRGc0fAAXAywhCTEgDjR4Vmq3ipbIgqr/tL3blKElBDEQACsKACUiDD8ARiFVHgMuGwMsPB9HwZSfjUyBgTlXeTZNKQAxDwAqDgAgKiBcAEccXCoIPx0FMjUURaSAjaNpjlcaTE8ZRz8GTBsAMyAANxgELOkAIkJG4dPfAAAAAElFTkSuQmCC",
     "caption": "the first dance"
   },
