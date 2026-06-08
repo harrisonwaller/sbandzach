@@ -1,87 +1,31 @@
-import {
-  engagementPhotos,
-  featuredImage,
-  voiceTracks,
-  archivePhotos,
-  vaultMedia,
-} from "@/content/media";
-import { lettersArePlaceholder } from "@/content/letters";
+import { vaultMedia } from "@/content/media";
+import { capsule } from "@/content/capsule";
 
 import { TopBar } from "@/components/TopBar";
-import { Hero } from "@/components/Hero";
-import { FeaturedImage } from "@/components/FeaturedImage";
-import { Gallery } from "@/components/Gallery";
-import { Schedule } from "@/components/Schedule";
-import { Venue } from "@/components/Venue";
-import { Voices } from "@/components/Voices";
-import { Letters } from "@/components/Letters";
-import { Archive } from "@/components/Archive";
-import { SectionPlaceholder } from "@/components/SectionPlaceholder";
+import { CapsuleHero } from "@/components/CapsuleHero";
+import { CapsuleChapter } from "@/components/CapsuleChapter";
+import { CapsuleOutro } from "@/components/CapsuleOutro";
 import { Vault } from "@/components/Vault";
 import { Footer } from "@/components/Footer";
 
+/**
+ * The Memory Capsule. A single scroll that opens as a quiet ivory album (the
+ * morning, the vows, the details), warms through golden hour, then dims into a
+ * dark cinematic film for the reception and the party — the four clips building
+ * to the last song. The Vault easter egg stays hidden until the passphrase.
+ */
 export default function Page() {
-  const featured = featuredImage();
-  // The featured frame leads the page; keep it out of the grid below it.
-  const gallery = engagementPhotos().filter((p) => p.id !== featured?.id);
-  const tracks = voiceTracks();
-  const archive = archivePhotos();
   const vault = vaultMedia();
 
-  // Each future chapter shows an elegant preview until its real content exists,
-  // then the real section takes its place automatically.
   return (
     <>
       <TopBar />
       <main>
-        <Hero />
-        <FeaturedImage />
-        <Gallery photos={gallery} />
-        <Schedule />
-        <Venue />
-
-        {tracks.length > 0 ? (
-          <Voices tracks={tracks} />
-        ) : (
-          <SectionPlaceholder
-            id="voices"
-            mark="Chapter IV"
-            title="The"
-            titleEm="Voices"
-            description="The toasts, the blessings, and the first dances — each recorded, with the words that were said."
-            variant="voices"
-            tone="dark"
-          />
-        )}
-
-        {!lettersArePlaceholder ? (
-          <Letters />
-        ) : (
-          <SectionPlaceholder
-            id="letters"
-            mark="Chapter V"
-            title="In their"
-            titleEm="words"
-            description="Short notes from the family and friends who were there."
-            variant="letters"
-            tone="cream"
-          />
-        )}
-
-        {archive.length > 0 ? (
-          <Archive photos={archive} />
-        ) : (
-          <SectionPlaceholder
-            id="archive"
-            mark="Chapter VI"
-            title="The"
-            titleEm="archive"
-            description="Every photograph from the weekend — Friday, the ceremony, the reception, the long night after — gathered in one place."
-            variant="archive"
-            tone="creamDeep"
-          />
-        )}
-
+        <CapsuleHero />
+        {capsule.map((section) => (
+          <CapsuleChapter key={section.id} section={section} />
+        ))}
+        <CapsuleOutro />
         <Vault media={vault} />
       </main>
       <Footer />
