@@ -24,7 +24,7 @@ export function CapsuleHero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] flex-col items-center justify-end overflow-hidden px-6 pb-[11vh] text-center"
+      className="relative flex min-h-[100svh] flex-col items-center justify-between overflow-hidden px-6 pt-[13vh] pb-[15vh] text-center"
     >
       {img && (
         <Image
@@ -45,13 +45,14 @@ export function CapsuleHero() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, rgba(14,11,8,0.38) 0%, rgba(14,11,8,0.10) 30%, rgba(14,11,8,0.30) 62%, rgba(14,11,8,0.74) 100%)",
+            "linear-gradient(180deg, rgba(14,11,8,0.55) 0%, rgba(14,11,8,0.14) 30%, rgba(14,11,8,0.06) 52%, rgba(14,11,8,0.24) 74%, rgba(14,11,8,0.7) 100%)",
         }}
       />
 
+      {/* names ride high over the open sky; the kiss stays clear in the middle */}
       <div className="relative">
         <motion.p
-          className="mb-7 font-serif text-[1.05rem] italic text-cream/90"
+          className="mb-6 font-serif text-[1.05rem] italic text-cream/90"
           style={{ letterSpacing: "0.18em" }}
           {...rise(0.2)}
         >
@@ -60,26 +61,27 @@ export function CapsuleHero() {
 
         <motion.h1
           className="font-display text-cream"
-          style={{ fontSize: "clamp(3.2rem, 10vw, 8.5rem)", lineHeight: 0.94, letterSpacing: "-0.01em" }}
+          style={{ fontSize: "clamp(3rem, 9vw, 7.6rem)", lineHeight: 0.94, letterSpacing: "-0.01em" }}
           {...rise(0.35)}
         >
           <span className="block">{site.names.first}</span>
           <span className="my-1 block font-serif text-[0.4em] font-light italic text-gold-soft">&amp;</span>
           <span className="block">{site.names.second}</span>
         </motion.h1>
-
-        <motion.div className="mt-10" {...rise(0.8)}>
-          <div
-            className="font-serif text-[0.95rem] font-semibold uppercase text-cream"
-            style={{ letterSpacing: "0.22em" }}
-          >
-            {site.dateNumeric}
-          </div>
-          <div className="mt-2 font-serif text-[1.15rem] italic text-cream/80" style={{ letterSpacing: "0.04em" }}>
-            {site.location}
-          </div>
-        </motion.div>
       </div>
+
+      {/* date + place sit low over the platform */}
+      <motion.div className="relative" {...rise(0.8)}>
+        <div
+          className="font-serif text-[0.95rem] font-semibold uppercase text-cream"
+          style={{ letterSpacing: "0.22em" }}
+        >
+          {site.dateNumeric}
+        </div>
+        <div className="mt-2 font-serif text-[1.15rem] italic text-cream/80" style={{ letterSpacing: "0.04em" }}>
+          {site.location}
+        </div>
+      </motion.div>
 
       <motion.div
         aria-hidden

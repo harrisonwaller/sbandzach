@@ -2,6 +2,15 @@
 
 Append-only. Newest at top.
 
+## Cycle 2 — 2026-06-08 — Hero name placement
+**Changed:** Hero split to top/bottom (`justify-between`) — names ride high over
+the open sky, date+place sit low over the platform, so the kiss stays clear in
+the middle instead of being overlaid by the headline. Scrim re-weighted
+top+bottom heavy, middle clear. Headline clamp trimmed (8.5rem→7.6rem) so two
+names never crowd the faces.
+**Verified:** tsc clean; desktop + mobile (390px) screenshots — faces clear on
+both, names legible over sky.
+
 ## Cycle 1 — 2026-06-08 — Step 0 curation + first enhancement pass
 **Branch:** `polish/goal-run`
 
