@@ -1,5 +1,5 @@
 {
   "_defaults": { "visibility": "public" },
-  "gather-01.jpg": { "caption": "the bridal party" },
-  "gather-11.jpg": { "caption": "the cake" }
+  "cake.jpg": { "caption": "the cake", "focusY": "42%" },
+  "green-03.jpg": { "caption": "mr. & mrs. copenhaver" }
 }

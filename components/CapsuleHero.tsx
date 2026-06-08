@@ -36,7 +36,7 @@ export function CapsuleHero() {
           placeholder={img.blurDataURL ? "blur" : "empty"}
           blurDataURL={img.blurDataURL}
           className="object-cover"
-          style={{ objectPosition: "center 32%" }}
+          style={{ objectPosition: `center ${img.focusY ?? "32%"}` }}
         />
       )}
       {/* veil for legibility — darker at top and bottom, lighter in the middle */}

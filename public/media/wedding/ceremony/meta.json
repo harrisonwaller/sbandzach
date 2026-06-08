@@ -1,8 +1,9 @@
 {
   "_defaults": { "visibility": "public" },
-  "the-kiss.jpg": { "id": "hero-kiss", "featured": true, "caption": "" },
-  "morning-01.jpg": { "caption": "before the ceremony" },
-  "aisle-01.jpg": { "caption": "down the aisle" },
-  "detail-01.jpg": { "caption": "in their words" },
-  "couple-02.jpg": { "caption": "mr. & mrs. copenhaver" }
+  "the-kiss.jpg": { "id": "hero-kiss", "featured": true, "focusY": "34%", "caption": "" },
+  "ready-01.jpg": { "caption": "almost time", "focusY": "46%" },
+  "ready-04.jpg": { "caption": "" },
+  "cer-01.jpg": { "caption": "with her dad", "focusY": "50%" },
+  "cer-02.jpg": { "caption": "i do", "focusY": "42%" },
+  "cer-04.jpg": { "caption": "the dress" }
 }

@@ -81,7 +81,7 @@ function FeatureFrame({ item, onOpen }: { item: MediaItem; onOpen: () => void })
         placeholder={item.blurDataURL ? "blur" : "empty"}
         blurDataURL={item.blurDataURL}
         className="object-cover"
-        style={{ objectPosition: "center 32%" }}
+        style={{ objectPosition: `center ${item.focusY ?? "32%"}` }}
       />
       {item.caption && (
         <span
@@ -119,6 +119,7 @@ function PhotoGrid({
             placeholder={p.blurDataURL ? "blur" : "empty"}
             blurDataURL={p.blurDataURL}
             className="object-cover"
+            style={p.focusY ? { objectPosition: `center ${p.focusY}` } : undefined}
           />
         </button>
       ))}

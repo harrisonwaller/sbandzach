@@ -201,6 +201,7 @@ async function main() {
     for (const k of [
       "title", "caption", "speaker", "speakerRole", "speakerPhoto",
       "date", "featured", "pullQuote", "transcript", "sortOrder", "thumbnail",
+      "focusY",
     ] as const) {
       if (fileMeta[k] !== undefined) (item as any)[k] = fileMeta[k];
     }

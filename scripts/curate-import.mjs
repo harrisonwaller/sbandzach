@@ -1,12 +1,12 @@
 /**
- * One-shot import of the curated wedding media into public/media/wedding/*.
- * - Photos: downscaled to max 2000px, q82 (sharp).
- * - Clips: compressed (H.264, CRF 24, no audio, faststart) + poster frame.
- * Sources live in ~/dev/sbz-curate/ (orig + clips). Re-runnable.
+ * Import the curated wedding media into public/media/wedding/*.
+ * Sources: full-res originals (~/dev/sbz-curate/orig), the owner's hand-picked
+ * keepers (~/.claude/image-cache/...), and clips (~/dev/sbz-curate/clips).
+ * Photos → max 2000px q82. Clips → H.264 CRF24 + poster. Re-runnable.
  */
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
-import { mkdir } from "node:fs/promises";
+import { mkdir, rm } from "node:fs/promises";
 import path from "node:path";
 import os from "node:os";
 import sharp from "sharp";
@@ -15,94 +15,74 @@ const exec = promisify(execFile);
 const HOME = os.homedir();
 const ORIG = path.join(HOME, "dev/sbz-curate/orig");
 const CLIPS = path.join(HOME, "dev/sbz-curate/clips");
+const PICK = path.join(HOME, ".claude/image-cache/56c85647-befe-407e-af01-60ac86fbff4b");
 const DEST = path.join(process.cwd(), "public/media/wedding");
 
-// photo map: [sourceIMG, destChapter, destName]
+// [sourceAbsPath, destChapterFolder, destName]
 const PHOTOS = [
-  ["IMG_0054", "ceremony", "the-kiss"],
-  ["IMG_0001", "ceremony", "morning-01"],
-  ["IMG_0009", "ceremony", "morning-02"],
-  ["IMG_0013", "ceremony", "morning-03"],
-  ["IMG_0063", "ceremony", "morning-04"],
-  ["IMG_0044", "ceremony", "morning-05"],
-  ["IMG_0002", "ceremony", "morning-06"],
-  ["IMG_1679", "ceremony", "aisle-01"],
-  ["IMG_0055", "ceremony", "couple-01"],
-  ["IMG_0019", "ceremony", "couple-02"],
-  ["IMG_0053", "ceremony", "couple-03"],
-  ["IMG_9277", "ceremony", "couple-04"],
-  ["IMG_0026", "ceremony", "detail-01"],
-  ["IMG_0065", "ceremony", "detail-02"],
-  ["IMG_0027", "ceremony", "detail-03"],
-  ["IMG_0066", "ceremony", "detail-04"],
-  ["IMG_0050", "ceremony", "detail-05"],
-  ["IMG_1582", "cocktail", "gather-01"],
-  ["IMG_1585", "cocktail", "gather-02"],
-  ["IMG_1588", "cocktail", "gather-03"],
-  ["IMG_1685", "cocktail", "gather-04"],
-  ["IMG_1690", "cocktail", "gather-05"],
-  ["IMG_9234", "cocktail", "gather-06"],
-  ["IMG_9237", "cocktail", "gather-07"],
-  ["IMG_0043", "cocktail", "gather-08"],
-  ["IMG_0046", "cocktail", "gather-09"],
-  ["IMG_0070", "cocktail", "gather-10"],
-  ["IMG_0201", "cocktail", "gather-11"],
-  ["IMG_4374", "cocktail", "gather-12"],
-  ["IMG_0110", "reception", "recep-01"],
-  ["IMG_0176", "reception", "recep-02"],
-  ["IMG_0177", "reception", "recep-03"],
-  ["IMG_0119", "reception", "recep-04"],
-  ["IMG_0097", "afterparty", "party-01"],
-  ["IMG_0098", "afterparty", "party-02"],
-  ["IMG_0089", "afterparty", "party-03"],
-  ["IMG_0090", "afterparty", "party-04"],
-  ["IMG_0096", "afterparty", "party-05"],
-  ["IMG_0049", "afterparty", "party-06"],
+  // Getting ready (candid)
+  [path.join(ORIG, "IMG_0014.jpg"), "ceremony", "ready-01"], // bride on lakehouse steps
+  [path.join(PICK, "6.png"), "ceremony", "ready-02"],        // bathroom helping bride (funny)
+  [path.join(PICK, "8.png"), "ceremony", "ready-03"],        // mirror selfie
+  [path.join(ORIG, "IMG_0006.jpg"), "ceremony", "ready-04"], // bridesmaids laughing/toasting
+  // Ceremony
+  [path.join(PICK, "7.jpeg"), "ceremony", "cer-01"],         // walking with dad
+  [path.join(ORIG, "IMG_1683.jpg"), "ceremony", "cer-02"],   // arriving at the altar
+  [path.join(PICK, "1.png"), "ceremony", "cer-03"],          // bride + maid (owner keeper)
+  [path.join(ORIG, "IMG_1687.jpg"), "ceremony", "cer-04"],   // dress lace-back detail
+  [path.join(ORIG, "IMG_0054.jpg"), "ceremony", "the-kiss"], // hero
+  // On the green
+  [path.join(ORIG, "IMG_1586.jpg"), "cocktail", "green-01"], // bridesmaids by the lake
+  [path.join(ORIG, "IMG_1584.jpg"), "cocktail", "green-02"], // full wedding party under pine
+  [path.join(ORIG, "IMG_0111 2.jpg"), "cocktail", "green-03"], // couple clubhouse portrait
+  [path.join(ORIG, "IMG_1692.jpg"), "cocktail", "green-04"], // guests laughing selfie
+  [path.join(ORIG, "IMG_0201.jpg"), "cocktail", "cake"],     // the cake by the lake
+  // Reception (purple, couple + family)
+  [path.join(ORIG, "IMG_0024.jpg"), "reception", "dance-01"], // onto the floor with mom + groom
+  [path.join(ORIG, "IMG_0106.jpg"), "reception", "dance-02"], // couple + family laughing
+  // After party (teal, crescendo)
+  [path.join(ORIG, "IMG_0110.jpg"), "afterparty", "party-01"], // bride centered, friends dancing
+  [path.join(ORIG, "IMG_0102.jpg"), "afterparty", "party-02"], // bride hug, laughing
+  [path.join(ORIG, "IMG_0112.jpg"), "afterparty", "party-03"], // bridesmaids hug
+  [path.join(ORIG, "IMG_0115.jpg"), "afterparty", "party-04"], // bridesmaids arms-up cheer
 ];
 
-// clip map: [sourceIMG, destChapter, destName]
+// [sourceClip, destChapterFolder, destName]
 const VIDEOS = [
-  ["IMG_7967", "reception", "reception-film"],
-  ["IMG_7981", "afterparty", "party-film-1"],
-  ["IMG_7985", "afterparty", "party-film-2"],
-  ["IMG_7992", "afterparty", "party-film-3"],
+  [path.join(CLIPS, "IMG_7967.MP4"), "reception", "reception-film"], // purple, couple/family (funny)
+  [path.join(CLIPS, "IMG_7992.MP4"), "afterparty", "party-film"],    // teal peak
 ];
 
 async function main() {
+  // Clean prior import so nothing stale lingers.
   for (const ch of ["ceremony", "cocktail", "reception", "afterparty"]) {
+    await rm(path.join(DEST, ch), { recursive: true, force: true });
     await mkdir(path.join(DEST, ch), { recursive: true });
   }
 
   let p = 0;
   for (const [src, ch, name] of PHOTOS) {
-    const from = path.join(ORIG, `${src}.jpg`);
-    const to = path.join(DEST, ch, `${name}.jpg`);
-    await sharp(from)
+    await sharp(src)
       .rotate()
       .resize(2000, 2000, { fit: "inside", withoutEnlargement: true })
       .jpeg({ quality: 82, mozjpeg: true })
-      .toFile(to);
+      .toFile(path.join(DEST, ch, `${name}.jpg`));
     p++;
   }
   console.log(`✓ ${p} photos optimized`);
 
   let v = 0;
   for (const [src, ch, name] of VIDEOS) {
-    const from = path.join(CLIPS, `${src}.MP4`);
     const mp4 = path.join(DEST, ch, `${name}.mp4`);
     const poster = path.join(DEST, ch, `${name}.jpg`);
-    // compressed mp4
     await exec("ffmpeg", [
-      "-y", "-i", from,
+      "-y", "-i", src,
       "-vf", "scale='min(1280,iw)':-2",
       "-c:v", "libx264", "-crf", "24", "-preset", "slow",
-      "-an", "-movflags", "+faststart",
-      mp4,
+      "-an", "-movflags", "+faststart", mp4,
     ]);
-    // poster at ~20%
-    const dur = await videoDuration(from);
-    const t = (dur * 0.2).toFixed(2);
-    await exec("ffmpeg", ["-y", "-ss", t, "-i", from, "-frames:v", "1", "-q:v", "3", poster]);
+    const dur = await videoDuration(src);
+    await exec("ffmpeg", ["-y", "-ss", (dur * 0.2).toFixed(2), "-i", src, "-frames:v", "1", "-q:v", "3", poster]);
     v++;
   }
   console.log(`✓ ${v} clips compressed + posters extracted`);
