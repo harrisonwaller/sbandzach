@@ -2,6 +2,13 @@
 
 Append-only. Newest at top.
 
+## Cycle 3 — 2026-06-08 — Asset weight
+**Audited:** 8 source images > 800 KB (largest 1058 KB).
+**Changed:** recompressed all 8 (mozjpeg q82, ≤2000px) in place → largest image
+now 575 KB; 0 images over 800 KB. Rebuilt manifest. Videos left as-is (lazy,
+off critical path).
+**Verified:** `find ... -size +800k` returns 0; media:build clean (98 items).
+
 ## Cycle 2 — 2026-06-08 — Hero name placement
 **Changed:** Hero split to top/bottom (`justify-between`) — names ride high over
 the open sky, date+place sit low over the platform, so the kiss stays clear in
