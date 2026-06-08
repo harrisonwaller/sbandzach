@@ -1,0 +1,9 @@
+{
+  "_defaults": { "visibility": "public" },
+  "the-kiss.jpg": { "id": "hero-kiss", "featured": true, "caption": "" },
+  "morning-01.jpg": { "caption": "before the ceremony" },
+  "aisle-01.jpg": { "caption": "down the aisle" },
+  "couple-04.jpg": { "caption": "mr. & mrs. copenhaver" },
+  "detail-01.jpg": { "caption": "in their words" },
+  "detail-05.jpg": { "caption": "the cake" }
+}

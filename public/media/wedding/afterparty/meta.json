@@ -1,0 +1,6 @@
+{
+  "_defaults": { "visibility": "public" },
+  "party-film-1.mp4": { "id": "party-film-1" },
+  "party-film-2.mp4": { "id": "party-film-2" },
+  "party-film-3.mp4": { "id": "party-film-3", "caption": "until the lights came up" }
+}
