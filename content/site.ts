@@ -22,7 +22,7 @@ export const site = {
   closing: "For all the days along the way.",
 
   /** Lowercase italic accent shown above the names on the hero. */
-  eyebrow: "from georgia, with love",
+  eyebrow: "the best day",
 } as const;
 
 /**
