@@ -338,6 +338,7 @@
 .capsule-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row dense;
   gap: clamp(0.5rem, 1vw, 1rem);
   max-width: 1400px;
   margin: 0 auto;
@@ -359,6 +360,12 @@
 .capsule-grid .cell:hover img {
   transform: scale(1.03);
 }
+/* Four photos read as a balanced 2×2 instead of a 3-up row with one orphan. */
+.capsule-grid[data-count="4"] {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 920px;
+}
+
 @media (max-width: 760px) {
   .capsule-grid {
     grid-template-columns: repeat(2, 1fr);

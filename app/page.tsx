@@ -5,6 +5,7 @@ import { TopBar } from "@/components/TopBar";
 import { CapsuleHero } from "@/components/CapsuleHero";
 import { CapsuleChapter } from "@/components/CapsuleChapter";
 import { Vault } from "@/components/Vault";
+import { Finale } from "@/components/Finale";
 import { Footer } from "@/components/Footer";
 
 /**
@@ -25,6 +26,7 @@ export default function Page() {
           <CapsuleChapter key={section.id} section={section} />
         ))}
         <Vault media={vault} />
+        <Finale />
       </main>
       <Footer />
     </>

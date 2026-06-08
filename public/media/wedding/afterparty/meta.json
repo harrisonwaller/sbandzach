@@ -2,6 +2,15 @@
   "_defaults": { "visibility": "public" },
   "party-film.mp4": { "id": "party-film", "caption": "the last song" },
   "party-film-2.mp4": { "id": "party-film-2", "caption": "" },
+
+  "floor-kiss.jpg": { "caption": "", "focusY": "40%" },
+  "handsup.jpg": { "caption": "hands up", "focusY": "45%" },
+  "embrace.jpg": { "caption": "", "focusY": "45%" },
+  "mom-dance.jpg": { "caption": "", "focusY": "45%" },
+  "joy.jpg": { "caption": "", "focusY": "34%" },
+  "hats.jpg": { "caption": "from georgia, with love", "focusY": "34%" },
+  "fireworks.jpg": { "caption": "", "focusY": "50%" },
+
   "party-01.jpg": { "focusY": "40%" },
   "party-02.jpg": { "focusY": "38%" },
   "party-03.jpg": { "focusY": "38%" },

@@ -44,6 +44,18 @@ export function CapsuleChapter({ section }: { section: CapsuleSection }) {
         </Reveal>
       )}
 
+      {/* A clip inside a non-film chapter — e.g. the processional in the ceremony,
+         placed between the feature frame and the grid. */}
+      {section.layout !== "film" && films.length > 0 && (
+        <Reveal className="mt-4">
+          <div className="space-y-4">
+            {films.map((f) => (
+              <Film key={f.id} film={f} className="max-w-chapter" />
+            ))}
+          </div>
+        </Reveal>
+      )}
+
       {/* GRID / GALLERY / the photo half of FEATURE. */}
       {section.layout !== "film" && photos.length > 0 && (
         <Reveal className="mt-4">
@@ -103,11 +115,11 @@ function PhotoGrid({
   onOpen: (item: MediaItem) => void;
 }) {
   return (
-    <div className="capsule-grid">
+    <div className="capsule-grid" data-count={photos.length}>
       {photos.map((p, i) => (
         <button
           key={p.id}
-          className="cell"
+          className={`cell${p.width && p.height && p.width > p.height * 1.2 ? " wide" : ""}`}
           onClick={() => onOpen(p)}
           aria-label={`View photograph ${i + 1} of ${photos.length}`}
         >

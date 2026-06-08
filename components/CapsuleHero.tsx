@@ -24,7 +24,7 @@ export function CapsuleHero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 text-center"
+      className="relative flex min-h-[100svh] flex-col items-center justify-end overflow-hidden px-6 pb-[11vh] text-center"
     >
       {img && (
         <Image
@@ -45,7 +45,7 @@ export function CapsuleHero() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, rgba(14,11,8,0.45) 0%, rgba(14,11,8,0.22) 38%, rgba(14,11,8,0.5) 100%)",
+            "linear-gradient(180deg, rgba(14,11,8,0.38) 0%, rgba(14,11,8,0.10) 30%, rgba(14,11,8,0.30) 62%, rgba(14,11,8,0.74) 100%)",
         }}
       />
 
