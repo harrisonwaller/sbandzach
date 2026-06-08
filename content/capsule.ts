@@ -1,15 +1,14 @@
 /**
- * The Memory Capsule narrative. The page is an ordered list of sections, each
- * with a TONE on a light→dark continuum (ivory → dusk → dark → darker) — the
- * background dims as you scroll, so a quiet album turns into a film.
+ * The Memory Capsule narrative — in true chronological order:
+ *   the weekend (bridal luncheon + rehearsal) → the rehearsal dinner →
+ *   getting ready → the ceremony → on the green → the little things →
+ *   the reception → the after-party → fireworks.
  *
- * The story runs chronologically: the calm of the lake the days before, the
- * morning, the vows, the lawn, the details, the reception, and the party that
- * stayed full until the last song — then fireworks over the water.
- *
- * Reception vs. Party are deliberately separated by light: the reception is the
- * warm, structured half (family, the cake, the first dance, the band); the party
- * is pure teal-lit dance-floor energy.
+ * Photos are sorted by EVENT, read off the attire: navy blazer + the bride's
+ * halter dress = pre-wedding (luncheon / rehearsal / rehearsal dinner); the
+ * black tux + the satin ballgown = the wedding day; short dresses under teal
+ * light = the after-party. Each section dims the background a little further,
+ * so a quiet album warms into a film.
  */
 import { allMedia, type MediaItem } from "@/content/media";
 
@@ -31,11 +30,11 @@ export type CapsuleSection = {
 
 export const capsule: CapsuleSection[] = [
   {
-    id: "lake",
+    id: "weekend",
     mark: "Chapter I",
-    title: "By the",
-    titleEm: "lake",
-    blurb: "The days before — the water, the old wooden boat, the calm before it all.",
+    title: "The",
+    titleEm: "weekend",
+    blurb: "The luncheon, the rehearsal, the lake — the days that led to the day.",
     tone: "ivory",
     layout: "feature",
     featuredId: "friday-bride-lawn",
@@ -43,14 +42,30 @@ export const capsule: CapsuleSection[] = [
       "friday-walk",
       "friday-boat-aerial",
       "friday-boat",
+      "cocktail-friends",
       "ceremony-cer-01",
       "ceremony-cer-02",
-      "ceremony-cer-04",
+    ],
+  },
+  {
+    id: "rehearsal",
+    mark: "Chapter II",
+    title: "The rehearsal",
+    titleEm: "dinner",
+    blurb: "The night before — find your seat, candlelight, and everyone we love.",
+    tone: "dusk",
+    layout: "feature",
+    featuredId: "reception-family",
+    itemIds: [
+      "reception-couple-cocktail",
+      "reception-table",
+      "reception-board-party",
+      "reception-groomsmen-night",
     ],
   },
   {
     id: "ready",
-    mark: "Chapter II",
+    mark: "Chapter III",
     title: "Getting",
     titleEm: "ready",
     blurb: "The lakehouse, the robes, the last laugh with the girls before the dress.",
@@ -66,7 +81,7 @@ export const capsule: CapsuleSection[] = [
   },
   {
     id: "ceremony",
-    mark: "Chapter III",
+    mark: "Chapter IV",
     title: "The",
     titleEm: "ceremony",
     blurb: "Down the aisle with her dad, the vows by the lake, and the kiss that made it theirs.",
@@ -78,7 +93,7 @@ export const capsule: CapsuleSection[] = [
   },
   {
     id: "green",
-    mark: "Chapter IV",
+    mark: "Chapter V",
     title: "On the",
     titleEm: "green",
     blurb: "The whole wedding party, the girls, and an afternoon on the lawn by the water.",
@@ -87,7 +102,6 @@ export const capsule: CapsuleSection[] = [
     featuredId: "cocktail-party-full",
     itemIds: [
       "cocktail-lineup",
-      "cocktail-friends",
       "cocktail-champagne-bar",
       "ceremony-ready-04",
       "cocktail-portrait-03",
@@ -95,51 +109,48 @@ export const capsule: CapsuleSection[] = [
   },
   {
     id: "details",
-    mark: "Chapter V",
+    mark: "Chapter VI",
     title: "The little",
     titleEm: "things",
-    blurb: "Champagne by the lake, the signature cocktails, candlelight, and a cake worth the wait.",
+    blurb: "Champagne by the lake, the signature cocktails, and a cake worth the wait.",
     tone: "dusk",
     layout: "feature",
-    featuredId: "reception-table",
+    featuredId: "reception-tent",
     itemIds: [
       "cocktail-detail-champagne",
       "cocktail-detail-cocktails",
       "cocktail-detail-cake",
-      "reception-tent",
+      "cocktail-cake",
     ],
   },
   {
     id: "reception",
-    mark: "Chapter VI",
+    mark: "Chapter VII",
     title: "The",
     titleEm: "reception",
-    blurb: "Into the tent, the cake, the first dance, everyone we love — and a band that would not let anyone sit down.",
+    blurb: "Into the tent, the cake, the first dance, and a band that would not let anyone sit down.",
     tone: "dark",
     layout: "feature",
-    featuredId: "reception-family",
+    featuredId: "reception-cake-cut",
+    filmIds: ["reception-film"],
     itemIds: [
-      "reception-couple-cocktail",
-      "reception-cake-cut",
       "reception-firstdance-crowd",
       "reception-band",
-      "reception-groomsmen-night",
-      "reception-board-party",
       "reception-portrait-groomsmen",
       "reception-portrait-friends",
+      "reception-dance-01",
+      "reception-dance-02",
     ],
   },
   {
     id: "party",
-    mark: "Chapter VII",
+    mark: "Chapter VIII",
     title: "Until the lights",
     titleEm: "came up",
     blurb: "The lights came down, the floor filled up, and it stayed full until the very last song.",
     tone: "darker",
     layout: "film",
-    // Three clips — the purple reception, then the teal peak — each followed by
-    // a slice of the floor, so the energy keeps building toward the last song.
-    filmIds: ["reception-film", "party-film-2", "party-film"],
+    filmIds: ["party-film-2", "party-film"],
     itemIds: [
       "afterparty-handsup",
       "afterparty-joy",

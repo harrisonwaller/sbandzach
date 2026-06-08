@@ -2,6 +2,23 @@
 
 Append-only. Newest at top.
 
+## Cycle 6 — 2026-06-08 — Chronology correction (owner feedback)
+**Problem:** photos were in the wrong events. Read attire as the timeline —
+navy blazer + halter dress = pre-wedding; black tux + ballgown = wedding day.
+**Found mis-sorted:** the "find your seat" seating board, the candlelit indoor
+dinner, the navy-blazer couple cocktail, and the blazered groomsmen were the
+**rehearsal dinner** but sat in the wedding **reception**; the colorful-gown
+group was the **bridal luncheon** but sat in "on the green."
+**Changed:** re-sequenced to true order — The weekend (luncheon + rehearsal) →
+**The rehearsal dinner** (new section) → Getting ready → Ceremony → On the green
+→ The little things → Reception (wedding-only: cake, first dance, band, tux
+portraits) → After-party → fireworks. Moved the wedding-reception clip into the
+reception; details now features the white wedding tent (was the rehearsal-dinner
+table). Verified by screenshot that each section's attire is internally
+consistent (no navy blazers in the reception, no ballgown in the weekend).
+**Verified:** tsc clean; weekend/rehearsal/reception screenshots confirm correct
+event grouping.
+
 ## Cycle 5 — 2026-06-08 — CEO review + convergence
 **Reviewed:** full-page desktop scroll (25,883px) + mobile section sweep.
 **Verdict:** the story coheres — ivory lakeside opener → dusk → dark reception →
