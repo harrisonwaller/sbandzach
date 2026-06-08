@@ -1,4 +1,13 @@
 {
   "_defaults": { "visibility": "public" },
-  "party-film.mp4": { "id": "party-film", "caption": "the last song" }
+  "party-film.mp4": { "id": "party-film", "caption": "the last song" },
+  "party-film-2.mp4": { "id": "party-film-2", "caption": "" },
+  "party-01.jpg": { "focusY": "40%" },
+  "party-02.jpg": { "focusY": "38%" },
+  "party-03.jpg": { "focusY": "38%" },
+  "party-04.jpg": { "focusY": "40%" },
+  "party-05.jpg": { "focusY": "40%" },
+  "party-06.jpg": { "focusY": "40%" },
+  "party-07.jpg": { "focusY": "40%" },
+  "party-08.jpg": { "focusY": "38%" }
 }

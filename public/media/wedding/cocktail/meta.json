@@ -1,5 +1,9 @@
 {
   "_defaults": { "visibility": "public" },
-  "cake.jpg": { "caption": "the cake", "focusY": "42%" },
-  "green-03.jpg": { "caption": "mr. & mrs. copenhaver" }
+  "green-01.jpg": { "caption": "the wedding party", "focusY": "54%" },
+  "green-02.jpg": { "focusY": "40%" },
+  "green-03.jpg": { "focusY": "40%" },
+  "green-04.jpg": { "focusY": "40%" },
+  "green-05.jpg": { "focusY": "40%" },
+  "cake.jpg": { "caption": "the cake", "focusY": "44%" }
 }

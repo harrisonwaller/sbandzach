@@ -1,4 +1,11 @@
 {
   "_defaults": { "visibility": "public" },
-  "reception-film.mp4": { "id": "reception-film", "caption": "" }
+  "reception-film.mp4": { "id": "reception-film", "caption": "" },
+  "dance-01.jpg": { "focusY": "42%" },
+  "dance-02.jpg": { "focusY": "42%" },
+  "dance-03.jpg": { "focusY": "42%" },
+  "dance-04.jpg": { "focusY": "42%" },
+  "dance-05.jpg": { "focusY": "40%" },
+  "dance-06.jpg": { "focusY": "42%" },
+  "dance-07.jpg": { "focusY": "40%" }
 }

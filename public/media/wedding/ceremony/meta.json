@@ -2,8 +2,11 @@
   "_defaults": { "visibility": "public" },
   "the-kiss.jpg": { "id": "hero-kiss", "featured": true, "focusY": "34%", "caption": "" },
   "ready-01.jpg": { "caption": "almost time", "focusY": "46%" },
-  "ready-04.jpg": { "caption": "" },
-  "cer-01.jpg": { "caption": "with her dad", "focusY": "50%" },
-  "cer-02.jpg": { "caption": "i do", "focusY": "42%" },
-  "cer-04.jpg": { "caption": "the dress" }
+  "ready-02.jpg": { "focusY": "40%" },
+  "ready-03.jpg": { "focusY": "40%" },
+  "ready-04.jpg": { "caption": "", "focusY": "42%" },
+  "cer-01.jpg": { "caption": "with her dad", "focusY": "62%" },
+  "cer-02.jpg": { "caption": "the vows", "focusY": "38%" },
+  "cer-03.jpg": { "caption": "the dress", "focusY": "26%" },
+  "cer-04.jpg": { "caption": "", "focusY": "44%" }
 }
