@@ -2,6 +2,25 @@
 
 Append-only. Newest at top.
 
+## Cycle 5 — 2026-06-08 — CEO review + convergence
+**Reviewed:** full-page desktop scroll (25,883px) + mobile section sweep.
+**Verdict:** the story coheres — ivory lakeside opener → dusk → dark reception →
+teal party → fireworks; light→dark escalation intact; no blank/broken sections,
+no jarring adjacent duplicates, no horizontal overflow at 390px. Hero, chapters,
+films, finale all render.
+**Convergence:** further *safe* autonomous wins are exhausted. Remaining items
+all require the owner and are intentionally NOT done unsupervised:
+- party afterparty **videos** (owner to provide files),
+- **Lighthouse** pass (needs a production build = dev server stopped, Trap #1),
+- **merge to main / deploy** decision.
+Did NOT gold-plate or make risky taste edits without oversight, per goal rails.
+
+## Cycle 4 — 2026-06-08 — Mobile pass (390px)
+**Audited:** layout at 390px across photo-heavy chapters.
+**Result:** scrollWidth == innerWidth (no horizontal overflow); grids reflow to
+2-up; wide/landscape cells go full-width; films sized correctly. No change
+needed — verification only.
+
 ## Cycle 3 — 2026-06-08 — Asset weight
 **Audited:** 8 source images > 800 KB (largest 1058 KB).
 **Changed:** recompressed all 8 (mozjpeg q82, ≤2000px) in place → largest image
