@@ -147,10 +147,7 @@ function FilmReel({
         return (
           <div key={film.id} className="space-y-4">
             <Reveal>
-              <Film
-                film={film}
-                className="mx-auto max-h-[88svh] w-full max-w-chapter"
-              />
+              <Film film={film} className="max-w-chapter" />
             </Reveal>
             {slice.length > 0 && (
               <Reveal>

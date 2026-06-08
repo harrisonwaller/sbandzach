@@ -32,10 +32,19 @@ export function Film({ film, className }: { film: MediaItem; className?: string 
     return () => io.disconnect();
   }, [reduce]);
 
-  const ar = film.width && film.height ? `${film.width} / ${film.height}` : "16 / 9";
+  const w = film.width ?? 16;
+  const h = film.height ?? 9;
+  const ar = `${w} / ${h}`;
+  const portrait = h > w;
 
   return (
-    <figure className={`relative overflow-hidden bg-black ${className ?? ""}`}>
+    <figure
+      className={`relative mx-auto overflow-hidden bg-black ${className ?? ""}`}
+      // Width-driven sizing keeps every clip in its true shape: portrait clips
+      // stay tall and centred (capped so they never tower); landscape clips run
+      // the full chapter width. No stretching, minimal crop.
+      style={{ aspectRatio: ar, width: "100%", maxWidth: portrait ? 520 : undefined }}
+    >
       <video
         ref={ref}
         src={film.src}
@@ -47,7 +56,6 @@ export function Film({ film, className }: { film: MediaItem; className?: string 
         controls={!!reduce}
         aria-label={film.caption ?? "Wedding clip"}
         className="h-full w-full object-cover"
-        style={{ aspectRatio: ar }}
       />
       {/* gentle scrim so a caption stays legible over motion */}
       {film.caption && (

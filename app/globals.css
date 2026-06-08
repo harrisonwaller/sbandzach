@@ -297,7 +297,7 @@
   color: var(--ink);
 }
 .tone-dusk {
-  background: #e4d7c0;
+  background: linear-gradient(180deg, #e6d8bf 0%, #d8c39e 100%);
   color: var(--ink);
 }
 .tone-dark {

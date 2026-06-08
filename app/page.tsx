@@ -4,7 +4,6 @@ import { capsule } from "@/content/capsule";
 import { TopBar } from "@/components/TopBar";
 import { CapsuleHero } from "@/components/CapsuleHero";
 import { CapsuleChapter } from "@/components/CapsuleChapter";
-import { CapsuleOutro } from "@/components/CapsuleOutro";
 import { Vault } from "@/components/Vault";
 import { Footer } from "@/components/Footer";
 
@@ -25,7 +24,6 @@ export default function Page() {
         {capsule.map((section) => (
           <CapsuleChapter key={section.id} section={section} />
         ))}
-        <CapsuleOutro />
         <Vault media={vault} />
       </main>
       <Footer />

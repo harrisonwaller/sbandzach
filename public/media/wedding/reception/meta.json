@@ -1,5 +1,4 @@
 {
   "_defaults": { "visibility": "public" },
-  "recep-01.jpg": { "caption": "cutting the cake" },
   "reception-film.mp4": { "id": "reception-film", "caption": "the first dance" }
 }
