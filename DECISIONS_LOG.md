@@ -2,6 +2,18 @@
 
 Append-only. Newest at top.
 
+## Cycle 7 — 2026-06-08 — Correctness audit + video weight
+**Audited (correctness, post-restructure):** the reception "dance" stills + the
+reception clip show the bride in the short party dress + groom's white jacket
+under the band's purple light — that's the *late reception* (she changed
+mid-reception), same event, correctly placed (not the teal after-party). No
+mis-sorts found. detail-champagne has no event markers (left as a wedding detail).
+**Changed:** recompressed all 4 videos (crf 26, resolution preserved, faststart,
+backups in /tmp/vids-bak): processional 7.4→4.6 MB, reception-film 4.8→3.8,
+party-film-2 3.0→2.4, party-film 1.6→1.3. Total video ~16.8→12.1 MB; media 50→48 MB.
+**Verified:** every re-encode decodes; spot-checked a frame — clean, no
+artifacts. Images still 0 over 800 KB. tsc clean.
+
 ## Cycle 6 — 2026-06-08 — Chronology correction (owner feedback)
 **Problem:** photos were in the wrong events. Read attire as the timeline —
 navy blazer + halter dress = pre-wedding; black tux + ballgown = wedding day.
