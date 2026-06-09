@@ -155,7 +155,12 @@ export const capsule: CapsuleSection[] = [
     tone: "dark",
     layout: "feature",
     featuredId: "reception-fd-dance",
-    filmIds: ["reception-film", "party-film", "afterparty-film-3"],
+    filmIds: [
+      "reception-film",
+      "party-film",
+      "afterparty-film-3",
+      "afterparty-sendoff-film",
+    ],
     itemIds: [
       "reception-tent",
       "reception-cake-cut",
@@ -166,10 +171,11 @@ export const capsule: CapsuleSection[] = [
       "reception-mother-son",
       "afterparty-mom-dance",
       "reception-bride-cheers",
-      "afterparty-embrace",
       "reception-bw-lift",
       "reception-guests-table",
       "reception-band",
+      "afterparty-fireworks-cheer",
+      "afterparty-send-off",
     ],
   },
   {
@@ -180,13 +186,12 @@ export const capsule: CapsuleSection[] = [
     blurb: "The lights came down, the floor filled up, and it stayed full until the very last song.",
     tone: "darker",
     layout: "film",
-    filmIds: ["afterparty-opener", "afterparty-sendoff-film"],
+    filmIds: ["afterparty-opener"],
     itemIds: [
       "afterparty-joy",
       "afterparty-group",
+      "afterparty-birthday-kiss",
       "afterparty-hats",
-      "afterparty-fireworks-cheer",
-      "afterparty-send-off",
     ],
   },
 ];

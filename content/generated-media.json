@@ -12,18 +12,6 @@
     "focusY": "42%"
   },
   {
-    "id": "afterparty-embrace",
-    "type": "photo",
-    "src": "/media/wedding/afterparty/embrace.jpg",
-    "chapter": "afterparty",
-    "visibility": "public",
-    "width": 1536,
-    "height": 2048,
-    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAIAAACtAwlQAAAACXBIWXMAAAsTAAALEwEAmpwYAAACW0lEQVR4nAFQAq/9AIWt4Yat4Y+05oet4nGb1nGc2G2X1WaV0mSU0miW1HCc14St3wBun9yDreWqy/WRtupunNtvnNx6peKGr+iFr+iQtuuZu+yjyPIAg7Lrv9v/y+T/o8j0gq/qfqvoearmd6fmeqrnf63oga/olL7vALTX/9rw/9rw/73e/6PL+IS27oKy7YG07oG07Yy575K874y77QDI4f++3/+23P+23f/C5f+94v+u1v+t1P273P7K5v/W7//d8/8Au9Lsvdfzstf7ptj/rNLyf3+OvMvc6P//4PX/wNTjxNLc0uLvAJqlosHP2cTQ28jl9peYoGpBPmFTXMXU4d30/0RQVjxJRR4sMgB4emVqcmttd299kJ2MjJJ4XlwAAABSX22Wqq1mbl9KT0EABwIAUlRET1ZJbHZohZyus8HKur7ERD9HLzlIcn93T1E9U1dLMjcwAD47K0FBKlJhLl9tTcXKy+fs7p+ipxsmEDxGJz45LTI+GSQxDgBeU0NQTTUoORNxfWjU1tbR1dirrrI1RC0zOCNCMys8Riw9RiYAOD05VlZKm620wcrR1NbWw8nNsri9tsTUqrK9XV1fERgVPT8wAA0WAm9ycuXv+cfLzcrP0rvCxK20ttbg7eLu/NLa4h8mFQAIAABzd3XU2N3R1tzV2drU2Nzb4ujFy9CutrmXoJ1nbl0hKQkYHgAA3eXu197n0NXb0NTY0tneoqmsTlVMGSIQDxoABhAAEBkADxgAAL7Hzr3Ey5+kpztBOyUtIxceCQAEAAMQAAALAAMQAAANAAALAJ2FSICGwWDPAAAAAElFTkSuQmCC",
-    "caption": "",
-    "focusY": "45%"
-  },
-  {
     "id": "afterparty-film-3",
     "type": "video",
     "src": "/media/wedding/afterparty/film-3.mp4",
