@@ -1,5 +1,17 @@
 [
   {
+    "id": "afterparty-birthday-film",
+    "type": "video",
+    "src": "/media/wedding/afterparty/birthday-film.mp4",
+    "chapter": "afterparty",
+    "visibility": "public",
+    "thumbnail": "/media/wedding/afterparty/birthday-film.jpg",
+    "width": 720,
+    "height": 1280,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAIAAABLKsIUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAByUlEQVR4nGPQ0VRWV5FVlJGQFhMSE+Tn52HnZmNkZ2JkYmRkMDbQNDbQNNLV0NVU1VJVVFeUkxQVZGdiAAFLM31zEz0zIx0DHXVdTVUddRV5STF2ZrCko425vbWpnaWJuZGBsYGWrqaqnJQYBxsbSM7G3NDOysTOytTG1NjMSFdfS1NJWoaTnZ2JiYlBXVlBQ0VFV1NLS1VVWV5eRlpWUkycl4eHjY2NwVjf0FjXwMbUQkdDS01BydPRTUxMio+Pj5OTi8HewtbZzs7OytrDyak8I6EzIyYrzFlaSpKXl5fB1cElwDfI3cN/3qTG/99vXN21aEVznJaaqqCgEENebnFP35SpU2a+u33k34NT/++t3js52VhXW1BIjGHR/PmrlyxfMX/anw9P2+sqf5yetLs7Q1dVTVRMimFyY+G+lU2zOrMPbFq6aELD/wsTWrLCZGU1ZKSVGJ6c7vv/bMn/50u+355xc0/Hk61tddnx8vLqivKqDKkxAVNa8/avn/Dg9Ly2iuwEbw8fG1tVFS1FBQ0GU309SzOT8Mj40NBoG1M7U30rZ3NrbS1TZVVjBl0NTQMtbSMdAwtDCyNdc20NE1tTRwszVyMjBwCTkHvicm/OlAAAAABJRU5ErkJggg==",
+    "caption": "the birthday groom"
+  },
+  {
     "id": "afterparty-birthday-kiss",
     "type": "photo",
     "src": "/media/wedding/afterparty/birthday-kiss.jpg",
@@ -10,6 +22,17 @@
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAIAAABP3xIpAAAACXBIWXMAAAsTAAALEwEAmpwYAAABvUlEQVR4nD2RMQuqYBiFpbhcEelDFJUCBSUNxQ8lgyIbGpKGIFpqCAkqhIYGx5aCoP5ARTg0uTe21hRB0Nx/iBZxqCUuJdxnfjiH877IZDIZDocQQoZhAAAoiiZ/JBIJJMZ13Wazqes6RVEEQaAo+udHLH29TqdjWVY+n6coKs74+yM2kskkUi6XVVXVdZ0kSQAAjuPoj/8SAiHUNE2SJJIkcRzHMAz8wDAslpBqtSpJkizLNE1LkqQoCgAgbowlpFarSZIkiiIAoFgs2rZtWRbHcSzLxqlIt9vleb5UKvm+P5/PTdNsNBqqqvI8n06nCYJAPM+DEPq+H0XR+/0OgsDzvNVqZVlWJpOhaRrp9/vtdvtwOERRFIbh6/Xabren08l1XYZhvkalUrFte7fbPR6PxWJxu92Ox+N6vR6NRhRFfQ1Zlk3TrNfry+Wy1+ttNpvr9TqbzRzHiRchJElCCHO53Hg8DoLgfD4/n8/7/f75fIIgYFkWEQQhm82SJHm5XMIw3O/3vu9Pp9PBYOA4jq7r3xZd1zmOa7Va8Y8MwxBFURAEWZZ5nv9e3TAMlmU1TSsUCoqixCNTqVT84X94rIflfHAzSAAAAABJRU5ErkJggg==",
     "caption": "happy birthday, groom",
     "focusY": "42%"
+  },
+  {
+    "id": "afterparty-bride-dance",
+    "type": "photo",
+    "src": "/media/wedding/afterparty/bride-dance.jpg",
+    "chapter": "afterparty",
+    "visibility": "public",
+    "width": 1459,
+    "height": 2200,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAIAAABP3xIpAAAACXBIWXMAAAsTAAALEwEAmpwYAAACK0lEQVR4nAEgAt/9AAABAAADAgAJCwMTFAQXGQgbHgkcIgwdIwscIgcYHQUWGwAAAwEACQkEFBQJGh0OISQRJikUKi0VKi4UKS0QJCkNHSQAAAcHBBATDRweFycoHTExIzg4Jj09Jjw8JDk6HDI3FCkwAAAAAAALDw4gIRosLiQ5OitCQjNKRzVJRzNISCtCRR42OwCWo59lbWoYJygnODkxRURAUU1GWFI9UU43TU0uRUcfNz0A0dDE8PHpanVyKTs3QlFLTF1TXGxfTWBZRldRO01JHTY7ANKacPvVs3Z4cGxtVcK2k3Z9bVNkXVJjXGmIimKHjEludgCKbVCEbFZSV0rfyqP/+tzdzrZmcmVZbWNqgX5fd3NIYmMAQk1JBBkagX5j/+vC//ncu6+aVWlcf4R2gH9vjn9mLEJCAJymmkVDMeTFlP/swv/nwMqyi0FWT7KnlNGykrmZdilAQgChqJXBlV//46zuzpz/5b371qqYhWWnlnivjWyLeF0rPTsAqpp30pRQ7tCf89im9+jHppuBtJBlYF1NrJd8ZWFQX11FAJhySqRyMui9iuzYr+fevVVfTxMnJSo2MZJ5XkZFN2xiQwBjUT1AORLItoj07Mvl27V9fmMgMi46Oi1SRzUdIxxGPSYAFhEGQ0IjwrqG0cidr6Z5bGtOGiYiQDopRz0sHSMeGR8ZABkOAT45HJeQX5yUZ352TU5ONAsUDyQjFyAfFBAbGw8mKwGEwVT4T5AVAAAAAElFTkSuQmCC",
+    "alt": "the bride dancing at the after-party, drink in hand"
   },
   {
     "id": "afterparty-film-3",

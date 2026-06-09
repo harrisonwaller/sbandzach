@@ -100,13 +100,12 @@ export const capsule: CapsuleSection[] = [
     blurb: "Down the aisle with her dad, the vows by the lake, and the kiss that made it theirs.",
     tone: "ivory",
     layout: "feature",
-    featuredId: "ceremony-dipkiss-pro",
+    featuredId: "ceremony-platform-kiss",
     itemIds: [
       "ceremony-groom-altar",
       "ceremony-flower-girls",
       "ceremony-aisle-pro",
       "ceremony-aerial",
-      "ceremony-platform-kiss",
       "ceremony-kiss-wide-film",
       "ceremony-recessional-bw",
       "ceremony-bride-bouquet-film",
@@ -121,6 +120,7 @@ export const capsule: CapsuleSection[] = [
     tone: "dusk",
     layout: "feature",
     featuredId: "cocktail-party-pro",
+    // the dip kiss with the whole party closes the chapter, centred alone
     itemIds: [
       "cocktail-bridesmaids-pro",
       "ceremony-portrait-01",
@@ -128,6 +128,7 @@ export const capsule: CapsuleSection[] = [
       "cocktail-family-day-02",
       "reception-portrait-groomsmen",
       "reception-portrait-friends",
+      "ceremony-dipkiss-pro",
     ],
   },
   {
@@ -189,10 +190,12 @@ export const capsule: CapsuleSection[] = [
     blurb: "The lights came down, the floor filled up, and it stayed full until the very last song.",
     tone: "darker",
     layout: "film",
-    filmIds: ["afterparty-opener"],
+    // the opener leads the floor stills; the birthday film leads its own pair
+    filmIds: ["afterparty-opener", "afterparty-birthday-film"],
     itemIds: [
       "afterparty-joy",
       "afterparty-group",
+      "afterparty-bride-dance",
       "afterparty-birthday-kiss",
       "afterparty-hats",
     ],

@@ -382,8 +382,10 @@
 .capsule-grid .cell:hover img {
   transform: scale(1.03);
 }
-/* Four photos read as a balanced 2×2 instead of a 3-up row with one orphan. */
-.capsule-grid[data-count="4"] {
+/* Four photos read as a balanced 2×2 instead of a 3-up row with one orphan;
+   a pair reads as a balanced spread instead of two-thirds of a row. */
+.capsule-grid[data-count="4"],
+.capsule-grid[data-count="2"] {
   grid-template-columns: repeat(2, 1fr);
   max-width: 920px;
 }
