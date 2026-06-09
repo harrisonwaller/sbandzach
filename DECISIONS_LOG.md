@@ -2,6 +2,14 @@
 
 Append-only. Newest at top.
 
+## Cycle 18 — 2026-06-09 — Three rehearsal-dinner frames (owner)
+Owner sent 3 pro photos for the rehearsal dinner; attire confirms (white halter dress +
+navy blazer / cream pants). Rehearsal-dinner photos live under reception-* ids:
+- **+3 to the rehearsal grid (now 7):** couple-film (film-stamped portrait by the bar),
+  board-couples ('please find your seat' at the seating wall), girls-gowns ('the girls',
+  five in colourful gowns). Ordered so the two seating-board shots sit together.
+**Verified:** tsc clean; new ids present; 0 console errors; all three upright, good crops.
+
 ## Cycle 17 — 2026-06-09 — Three pro frames, attire-sorted (owner)
 Owner sent 3 pro photos "for the reception." Sorted by attire (owner's own rule):
 - **Reception grid +2:** the B&W couple looking back on the checkerboard floor

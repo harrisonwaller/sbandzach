@@ -1123,6 +1123,18 @@
     "focusY": "46%"
   },
   {
+    "id": "reception-board-couples",
+    "type": "photo",
+    "src": "/media/wedding/reception/board-couples.jpg",
+    "chapter": "reception",
+    "visibility": "public",
+    "width": 1467,
+    "height": 2200,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAIAAABP3xIpAAAACXBIWXMAAAsTAAALEwEAmpwYAAACK0lEQVR4nAEgAt/9AFUXAFUVAFsmCJ54Xa6Mcq2ReaeOfaKNgJaEfGtCJ5JqSwAyCgAzBQBMKRjWyrfu483r3svj2Mje08XQxbp9VDW4lnYAVhcAUwwAeVE46eLO8OXP8ubQ7eHO6t7L2s7FjF47wJt5ACwLAEMVAGNFLqObiqKbiaWejaOcjKKbjZuUiGFFK7acgABXLAonKCQlKSMqMi48R0U5REI3PDUpMSkuMSUqLB2ooIoAeUESIzAxT0hChnlwX4ucZoiVSmZtVU9JXF1NUWFSvrqjAHE/Gh4xOHBjZYd3d2poaH6Bhmp4gaGBc4p5b0RcXcbJuwBpPBwaJToqNlotN0+rl5GpnJidgWqzp55jaHwUHDHBzMoAWCsVFx46AhlCRUFX+f/8z7DDoFZi1bumUV9/BQknnpWTAFAgBgkWMgYYPy81VOX3+rKItpIAk7uGi1RecgAAI1MrGABEEAAoIS8eHDs/SGbt/v+4ksmYAopqP00VHjQjHzNmNBgAgkkIZlVRzsbDpqen5/T5sIbCpS1vQik9AAIiPC04cjMOAJRlNnJuYtvYzpOWhtLd5J9upIoJcWJVYS4xMhwdKmU/MwCUZUeUfmbEvrmEhHzK0NeVWJB5J0tbXVczMzAxKjGHbmoAlGZNrY1+tq6qgXBsz9ThmoOPfTM9RApANywyNjA0iHd1AJdwWp56aXJNP35pY6Obm5R4aZZvZ183S21WVUZASXJmaL1n4IEUDXtzAAAAAElFTkSuQmCC",
+    "caption": "please find your seat",
+    "focusY": "44%"
+  },
+  {
     "id": "reception-board-girls",
     "type": "photo",
     "src": "/media/wedding/reception/board-girls.jpg",
@@ -1205,6 +1217,18 @@
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAIAAADkharWAAAACXBIWXMAAAsTAAALEwEAmpwYAAACV0lEQVR4nAFMArP9ALmagbudg/bdwP3lw6KGb0kxJC0aDsG0oN/QuePXwrWehX5aPHlXO149I5R4aNrGtADIqZOwj3asknnTtZiBY0suFglROijYyrPs3cXs4Mu5ooaMZkKCY0NZPCOUeWbWxrIAwq+epItyjXJadVpDNhsNQiQTdltH8ePK//DV++7WwKqNkm1KiWpIXkAmkXZi1MavALGlnJuEbYFtWGhPOzoeDw8GAoFnUv/x0v/72//x1cKoipBqR4loRl0+JItxXdLCrgDx69SUfmlpVEBoTztYPywJAACCZ0rlz6/SwKP98tO9o4GHYDyKaUZgQCSEbVnQwq0Au7uxlIVye2FKa00zWz4mFwEBgXBZtJR/sIptyLmXlXhUjmI5g2M/YEAlgmlWzb+pAGZfYUc4MVtDMGhKLkorEyQIAjw4OVVZXIhzYIhaQIZoRopfMoBfPWBBJn5mUcq8pwAeHiIAAAA6MyVxVzdPPyorGA0OCQ4GCBAYGhumf2KhckiEWzB8XTxRNh9xW0jEtZ8AOjEoJx8XMCYce21Qq69wiYlcBgYKAAAATUxC68uliFQsil8xdFU1PSgTYk5AuayWAIZpTnJbQ5SFcuvSqMGygrKwlCAeHgAAAFNOQ9jAo3pTN4JWK2NIKjchDVtJO7SlkQCUbUBvXEWql4G5po+tmIallYVdPjQMAABmXE7pwKJ9TzNrSig1Ig0cDwI+KyCMfWcAmX1flHdUu6SMspuIqJJ9rZeEfGdVRzsviGlWuY97d1xFaUgoIhIEEgcBEgYBKxYHd333VVQViq0AAAAASUVORK5CYII=",
     "caption": "just us two",
     "focusY": "45%"
+  },
+  {
+    "id": "reception-couple-film",
+    "type": "photo",
+    "src": "/media/wedding/reception/couple-film.jpg",
+    "chapter": "reception",
+    "visibility": "public",
+    "width": 1459,
+    "height": 2200,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAIAAABP3xIpAAAACXBIWXMAAAsTAAALEwEAmpwYAAACK0lEQVR4nAEgAt/9ABoVBDk2I1ZWQmpsWXN1ZHyBcYeMfpGXjIGIfS8bBSYNAAA3LxpaVTt5eGKLjHmSlIWbn5OkqqCxubKXmZFNMRQ6IAIAT0Yrd3FVk5OBpaeZr7aqtrqxt7mvt7uvrKmdckwkWDYWAGJZPIyJbamqm7S0p5yRgLu7stDRys7Qyr20pJBjMH1WKwB2blGcmYPCxbnEvKybWzTBtKbOzsfW19LLvauqeUSddUcAO1I9pZ+Ks7ayj4yJrox15ODXwp18uqeU1MWxwJRdpIhfABgeAaOfiCEoNQEOJUNIVXp6et60j+LWy9TCrdCnebCaeABqXDuLinoABx8QHTMAByFjYGD25tXku5XVvJ3euY2wmngAQzggMycjAAUfDxsyAAMdoaKi////3rmWz6Fw2bOBp5BqAId8VV9dUwACJAkZMgAAFp+fmvn+/cKLZcmUYMSgcXtgPwDLz8afpaQ1Ki0FCSEAAA2ckYDuza+hZDacckbAnW1OLhAAub62r7SvuJR8a2ZkYGpvwLSm4NLEflxAi18xsoxZNyEIAKitoqmsorm9srm3pbKtm8PEvdjh4WhMN4JVK5t0QyQNAACRlIqUmYiOjn5pY1JwaVerrKK+w7xDMCNlPxl9WCwXAAAAdXhqcHRkUlBBSkc4Tko6jI6FnqSbKiEXRSYGTTEUAAAAAFFZTUlPQjQ0JkRBMDU1KHZ9cnN5bRsUDiwUACcWAAAAAGyl8rrR658+AAAAAElFTkSuQmCC",
+    "caption": "",
+    "focusY": "30%"
   },
   {
     "id": "reception-dance-01",
@@ -1378,6 +1402,18 @@
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAQCAIAAABCwWJuAAAACXBIWXMAABYlAAAWJQFJUiTwAAACi0lEQVR4nAGAAn/9AGAzPWY1QGYzQmYwQWksP2khOWAdNGsvQXE5SGo6Rmk5Rmw9SnFCTwBiMz1lMkFsNEVxMEVxKEGJNEmjS1J7MUFtKz5uNUZuOkhoOUVkOEQAYi47Zy5BcytCgCxHmTJfwkF32VeD1mGDqElihzxLcC9DbDZEaThEAGspO38uRqhIX8FNeMg9g9BBjtBBkOBIouZUotdajLFJb4UyT2snQACwUWDHW3DAQHfCO37XQ5TvTan6U7zxT7jiSa/hSa7cR6HFQou5UnIAr0Vpoi1ltjZz20WS91Cr/1/Y/3b//3H//1va6k2200OfxDyO3WaNAJInVq0ya9RBi/tSs/9s//+J//97//99//+A//9s/+5Pv8Q9k6kyeACdK128OHTuS5b/aeP/eP//eP//dP//ef//ff//fP//aP3cR6O0Nn4ApztU1Ftv5FiH/1y9/3H6/3H+/2bo/2v//33//3v//2LvzECUtkZsAEwdIXAsPYEkQr45c996sf92wMQ8g+RIkuhS5NBEtqMvcocjVWMWKwAHAQIQBQdCFBaqaFOBZ1nRhXmUPzOPPi8AAAAnBgYrCQs2CRQdBAQAFwUJViorZVVVn5GSLRgZRSUjPBkYPBYWDQIFEwYKDgEEHQkGEQcFAEcjGVMnIhIRE1o3MRIGAisYGBIMDBQCAj0qKlEoJk4nHBALChEFAgAsFRAOBgIpJCJVSkYaExEeDQYLBAQbDg1KMSpgPzuDOSJQIxYYCQYAAAAAAAAADQwMDggIGg4MRx4UGg4MGQkGGQcEgF1RoHhw2rSsQDMtAAEBAAAAAAoJCi8fG3dRQnFSS6OPjnRramZQSHU6JNS7v//3+oJoYBlT9BOYPWbJAAAAAElFTkSuQmCC",
     "caption": "our first dance",
     "focusY": "40%"
+  },
+  {
+    "id": "reception-girls-gowns",
+    "type": "photo",
+    "src": "/media/wedding/reception/girls-gowns.jpg",
+    "chapter": "reception",
+    "visibility": "public",
+    "width": 1467,
+    "height": 2200,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAIAAABP3xIpAAAACXBIWXMAAAsTAAALEwEAmpwYAAACJ0lEQVR4nCXP3U4SAAAG0G+rgMw1Z0apbVSOQi2zYBYCFa3A31CBZou0aECBklATRGlu2KgUrWFS6oZdOBfVmopuMDfBYjCYRixc5bRVqwtK6ybHpI22fIGzHdTsQmkm5Ie3O9T8vgtFHOCR8FBs1KAF1MABAF38TLv0qJxBvsrYWbkVylxSMmxJfnW0U8ABKABa8lCXgmoScoHqHVhxNv3xmJPhwXFBjnjdCHQJfXfFzuayxlziVCvXb5W10EjfhrTRG9yLABtAcwFBRSO4TbXDdQeHLzONYl5TBv5OmObUbBlQAkBbmFqfhYlWgU20nwewADmw5roXVLJkQAUAFY0goW54ruQO1OSryWigbNGREffYQtrTCqASwAMe5VL+ph5u1sy1Ez7t2YV+Xch4fvHh9Zk2kTwFAgC8dNCJeCFh/Xw5svYplEx8jvcawtKygKZEQkI5gEHhbgMz9dXNhmXPm9Uf88nv0S9sToRfMSoorgJKAcw3F3rqMyOWvtjb34n4cnJlcYFxZHoPpyetoHz98lpNd8uoH3qtsVBs9Vc04RnzIeMpivTIOQNwAcwZT87eYi/Z+qLPApP2jvfd5mls7NxLkSON/z+P8SsMr4a18NgRuD/2pE0xbzVNAfbsbCk2FwOnADgVTJfqeMTS7+0w+29Lgt2NrvRtk0TyHeo+/THyQBUNfj0/2C6YNdV+tDUuDene9TZEOuUhjWgkj+4+x/Hqef8AZO7PHkU9Y2gAAAAASUVORK5CYII=",
+    "caption": "the girls",
+    "focusY": "46%"
   },
   {
     "id": "reception-groomsmen-night",

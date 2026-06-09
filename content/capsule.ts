@@ -59,8 +59,11 @@ export const capsule: CapsuleSection[] = [
     featuredId: "reception-family",
     itemIds: [
       "reception-couple-cocktail",
-      "reception-table",
+      "reception-couple-film",
+      "reception-board-couples",
       "reception-board-party",
+      "reception-girls-gowns",
+      "reception-table",
       "reception-groomsmen-night",
     ],
   },
