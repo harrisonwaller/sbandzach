@@ -24,14 +24,23 @@ type View = {
 
 const VIEWS: View[] = [
   { name: "hero", mode: "top" },
-  { name: "featured", selector: "#featured" },
-  { name: "gallery-top", selector: "#frames" },
-  { name: "gallery", selector: "#frames", mode: "mid" },
-  { name: "schedule", selector: "#weekend" },
-  { name: "place", selector: "#place" },
-  { name: "voices", selector: "#voices" },
-  { name: "letters", selector: "#letters" },
-  { name: "archive", selector: "#archive" },
+  { name: "weekend", selector: "#weekend" },
+  { name: "weekend-grid", selector: "#weekend", mode: "mid" },
+  { name: "rehearsal", selector: "#rehearsal" },
+  { name: "rehearsal-grid", selector: "#rehearsal", mode: "mid" },
+  { name: "ready", selector: "#ready" },
+  { name: "ready-grid", selector: "#ready", mode: "mid" },
+  { name: "ceremony", selector: "#ceremony" },
+  { name: "ceremony-grid", selector: "#ceremony", mode: "mid" },
+  { name: "green", selector: "#green" },
+  { name: "green-grid", selector: "#green", mode: "mid" },
+  { name: "details", selector: "#details" },
+  { name: "details-grid", selector: "#details", mode: "mid" },
+  { name: "reception", selector: "#reception" },
+  { name: "reception-grid", selector: "#reception", mode: "mid" },
+  { name: "party", selector: "#party" },
+  { name: "party-grid", selector: "#party", mode: "mid" },
+  { name: "finale", selector: "section[aria-label='Fireworks over the lake']" },
   { name: "footer", selector: "footer", mode: "bottom" },
 ];
 
@@ -95,7 +104,11 @@ async function positionFor(page: Page, view: View, vh: number) {
 }
 
 async function run() {
-  const outDir = path.join(process.cwd(), "audit", `iter-${ITER}`);
+  const outDir = path.join(
+    process.cwd(),
+    "audit",
+    `${process.env.PHASE ?? "iter"}-${ITER}`,
+  );
   await mkdir(outDir, { recursive: true });
 
   const browser = await chromium.launch();

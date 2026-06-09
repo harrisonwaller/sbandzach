@@ -43,3 +43,4 @@ yarn-error.log*
 
 # NOTE: /audit/iter-*/ screenshots are intentionally committed — they are
 # listed deliverables documenting the design-iteration loop.
+public/media/_originals/
