@@ -1,6 +1,17 @@
 # DECISIONS LOG — autonomous polish run
 
 Append-only. Newest at top.
+
+## Cycle 13 — 2026-06-09 — More media + ceremony fix (owner)
+- Getting ready: added the bridesmaid-robes detail (IMG_0626, HEIC rotated upright).
+- Ceremony: removed the mislabeled 'kiss-alt' — it was a guest family (woman in
+  blue, girl in pink, a boy), not the kiss. Ceremony grid now 3 (aisle, aerial, portrait).
+- Until the lights came up: added TWO videos — the DJ fog-cannon **opener at the
+  TOP** + the band-dancing clip; plus an afterparty group photo. Party now opens
+  on a film.
+**Audit:** tsc clean; no dup/missing ids; kiss-alt fully removed; 6 videos; 0
+broken images. Manifest 116 items.
+
 ## Cycle 12 — 2026-06-09 — Pro details + reception film shots; rehearsal video relocated
 **Added (owner-provided pro photos):**
 - The little things: feature → **hydrangea cocktail bar**; grid → **seating

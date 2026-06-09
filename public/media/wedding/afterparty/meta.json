@@ -2,6 +2,9 @@
   "_defaults": { "visibility": "public" },
   "party-film.mp4": { "id": "party-film", "caption": "the last song" },
   "party-film-2.mp4": { "id": "party-film-2", "caption": "" },
+  "opener.mp4": { "id": "afterparty-opener", "caption": "the lights came up" },
+  "film-3.mp4": { "id": "afterparty-film-3", "caption": "" },
+  "group.jpg": { "id": "afterparty-group", "caption": "", "focusY": "44%" },
 
   "floor-kiss.jpg": { "caption": "", "focusY": "40%" },
   "handsup.jpg": { "caption": "hands up", "focusY": "45%" },

@@ -79,6 +79,7 @@ export const capsule: CapsuleSection[] = [
       "ceremony-ready-05",
       "ceremony-groom-girls",
       "ceremony-ready-mirror",
+      "ceremony-ready-details",
     ],
   },
   {
@@ -90,7 +91,7 @@ export const capsule: CapsuleSection[] = [
     tone: "ivory",
     layout: "feature",
     featuredId: "ceremony-dipkiss-pro",
-    itemIds: ["ceremony-aisle-pro", "ceremony-aerial", "ceremony-kiss-alt", "ceremony-portrait-01"],
+    itemIds: ["ceremony-aisle-pro", "ceremony-aerial", "ceremony-portrait-01"],
   },
   {
     id: "green",
@@ -151,10 +152,11 @@ export const capsule: CapsuleSection[] = [
     blurb: "The lights came down, the floor filled up, and it stayed full until the very last song.",
     tone: "darker",
     layout: "film",
-    filmIds: ["party-film-2", "party-film"],
+    filmIds: ["afterparty-opener", "afterparty-film-3", "party-film-2", "party-film"],
     itemIds: [
       "afterparty-handsup",
       "afterparty-joy",
+      "afterparty-group",
       "afterparty-floor-kiss",
       "afterparty-embrace",
       "afterparty-mom-dance",
