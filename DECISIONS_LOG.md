@@ -2,6 +2,18 @@
 
 Append-only. Newest at top.
 
+## Cycle 15 — 2026-06-09 — Pro reception photos + finale upgrade (owner)
+Added 6 professional reception/fireworks frames (downscaled 2200px, mozjpeg, all <800KB):
+- **Reception feature → father-daughter dance** (reception-fd-dance, 'with her dad').
+  Warm tent light, clean crop; bumped the chapter from a phone snap to the pro frame.
+- **Reception grid:** added pro dancing, b/w lift, guests-at-table alongside the
+  cake-cut, first-dance, cheers, band (7 items).
+- **Finale upgraded** to the photographer's fireworks frame (afterparty-fireworks-pro)
+  via finaleImage() — falls back to the phone shot if missing.
+- **Party grid:** added the fireworks-cheer frame at the tail.
+**Verified:** tsc clean; integrity (no dupes/missing); 0 console errors; reception
+feature + pro finale render with good crops in screenshots.
+
 ## Cycle 14 — 2026-06-09 — Subagent swarm review + premium-scroll enhancements
 Ran 5 specialist subagents (2 visual, motion, performance, UX). Implemented the
 high-value, no-content-needed wins:

@@ -134,14 +134,16 @@ export const capsule: CapsuleSection[] = [
     blurb: "Into the tent, the cake, the first dance, and a band that would not let anyone sit down.",
     tone: "dark",
     layout: "feature",
-    featuredId: "reception-cake-cut",
+    featuredId: "reception-fd-dance",
     filmIds: ["reception-film"],
     itemIds: [
+      "reception-cake-cut",
+      "reception-dancing",
       "reception-firstdance-crowd",
-      "reception-band",
-      "reception-dance-01",
+      "reception-bw-lift",
       "reception-bride-cheers",
-      "reception-dancefloor",
+      "reception-guests-table",
+      "reception-band",
     ],
   },
   {
@@ -165,6 +167,7 @@ export const capsule: CapsuleSection[] = [
       "afterparty-party-03",
       "afterparty-party-04",
       "afterparty-hats",
+      "afterparty-fireworks-cheer",
     ],
   },
 ];
@@ -183,7 +186,8 @@ export function heroImage(): MediaItem | undefined {
   return BY_ID.get("hero-kiss");
 }
 
-/** The closing full-bleed frame — fireworks over the lake at the end of the night. */
+/** The closing full-bleed frame — fireworks over the lake at the end of the night
+ *  (the photographer's frame; falls back to the phone shot if missing). */
 export function finaleImage(): MediaItem | undefined {
-  return BY_ID.get("afterparty-fireworks");
+  return BY_ID.get("afterparty-fireworks-pro") ?? BY_ID.get("afterparty-fireworks");
 }
