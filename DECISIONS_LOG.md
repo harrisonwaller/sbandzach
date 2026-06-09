@@ -2,6 +2,19 @@
 
 Append-only. Newest at top.
 
+## Cycle 11 — 2026-06-09 — Feature crops fixed (portrait framing)
+**Problem (owner):** portrait feature photos — esp. the bride + mom — were cut to
+a thin head-and-shoulders band by the wide full-bleed feature frame.
+**Root cause:** `FeatureFrame` forced every feature into a ~2:1 box; a 2:3
+portrait only shows ~32% of its height there, cropping single/pair subjects.
+**Changed:** `FeatureFrame` is now orientation-aware — portrait images render in
+a centred 4:5 frame (max-w 640px, max-h 82svh) so the whole subject shows;
+landscape features stay full-bleed. No content moved; pure layout fix.
+**Verified:** tsc clean; re-captured every feature — bride+mom, bride-lawn,
+dip-kiss, bridal-party all show complete, faces safe; full-chapter balance reads
+as intentional editorial (centred portrait → grid). Mobile: portrait feature
+goes full-width 4:5, no overflow.
+
 ## Cycle 10 — 2026-06-09 — Professional photos added (owner-provided)
 **Input:** 9 pro photographer shots (45MP). Cataloged by 2 subagents; downscaled
 to ≤2200px, all <800 KB, orientation clean.

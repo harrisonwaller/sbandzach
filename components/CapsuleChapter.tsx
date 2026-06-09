@@ -79,17 +79,25 @@ export function CapsuleChapter({ section }: { section: CapsuleSection }) {
 }
 
 function FeatureFrame({ item, onOpen }: { item: MediaItem; onOpen: () => void }) {
+  // Landscape features run full-bleed; portrait features sit in a centred,
+  // properly-proportioned frame so a single/pair subject is never cropped to a
+  // thin head-and-shoulders band.
+  const portrait = !!item.width && !!item.height && item.height > item.width;
   return (
     <button
       onClick={onOpen}
       aria-label={item.caption || "View photograph"}
-      className="relative block h-[64svh] max-h-[760px] w-full overflow-hidden bg-cream-deep sm:h-[78svh]"
+      className={
+        portrait
+          ? "relative mx-auto block aspect-[4/5] max-h-[82svh] w-full max-w-[640px] overflow-hidden bg-cream-deep"
+          : "relative block h-[64svh] max-h-[760px] w-full overflow-hidden bg-cream-deep sm:h-[78svh]"
+      }
     >
       <Image
         src={item.src}
         alt={item.caption ?? ""}
         fill
-        sizes="100vw"
+        sizes={portrait ? "(max-width: 700px) 100vw, 640px" : "100vw"}
         placeholder={item.blurDataURL ? "blur" : "empty"}
         blurDataURL={item.blurDataURL}
         className="object-cover"
