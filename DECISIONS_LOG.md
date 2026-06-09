@@ -2,6 +2,18 @@
 
 Append-only. Newest at top.
 
+## Cycle 19 — 2026-06-09 — Five more rehearsal-dinner frames (owner)
+Owner sent 5 more (2 HEIC + 3 JPG). HEICs came through small (768x1024) — kept native,
+no upscale. Attire/context all rehearsal dinner:
+- People: board-moms (bride + 3 at the seating wall), board-friend (bride + friend w/
+  champagne), girls-group (the whole group under the chandelier, film look).
+- Details: night-before ('the night before' welcome sign + florals), apron ('The
+  Copenhavers' catering apron + passed bites) — editorial texture.
+- **Rehearsal grid now 12** (+ feature). Re-ordered the whole grid: lead on the 'night
+  before' sign, alternate the four dark seating-wall shots across rows so they don't
+  clump, weave details (apron, candlelit table) between people, groups at the tail.
+**Verified:** tsc clean; 5 new ids present; 0 console errors; all upright, crops clean.
+
 ## Cycle 18 — 2026-06-09 — Three rehearsal-dinner frames (owner)
 Owner sent 3 pro photos for the rehearsal dinner; attire confirms (white halter dress +
 navy blazer / cream pants). Rehearsal-dinner photos live under reception-* ids:

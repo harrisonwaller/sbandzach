@@ -1111,6 +1111,18 @@
     "caption": ""
   },
   {
+    "id": "reception-apron",
+    "type": "photo",
+    "src": "/media/wedding/reception/apron.jpg",
+    "chapter": "reception",
+    "visibility": "public",
+    "width": 1255,
+    "height": 2200,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAIAAABLKsIUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABy0lEQVR4nAHAAT/+ANC5qradiLWgjOTt98rGw1FIP9j3/6ivr6CblwDNwru8p5jS1dPc7v6inZlbUErK2ueLlISKgXYAysK+uqed4vf/4P//jpGVfHV1y9XWlJV/p5uPAMjCvryxrOb//+H9/215hX59ga+2rIOBbZCPkQDU1tq7r6rf8Pu2ytosND4dIikjJShaSSp8ZkwA4unzwL691Oz8dXl+FhgeMDU+LjQ/T0M0VUEpAN7n9dDg7sff8GBQRRgXHBsdKCQmLSMnMgsNEwDa3Ofl+v+9wMBXTkcCAwQJCQ0ODhIEAgMUEhEA1q+Mo4ZqwKeM39rUlKCpEhQVBQMEAQAALCclAIBLKF40IVopEHZBGdW+p52tuQcHCAAAAE9IRwB+TzF9XUldNSRDFQ18Qxbq9vpBUF0nISOXjIoAh1EjaT4eUisTWTEZn29D6uLUmKm1Xkc9i3pqAF0sEUcdDmtDHn5TLZZnPubj3aitsksrFkw5MQBFFw1PJA+GWjWldkengV3t//+Bfn5ZQTNVSEEAcj4jRxsOdVIwwZNezrujytrqcGxweHN4cXByAH1TOiARBpBwSMSqh8vQ1YOCiHx5gIB8gm5udxo1zZGD+BadAAAAAElFTkSuQmCC",
+    "caption": "",
+    "focusY": "38%"
+  },
+  {
     "id": "reception-band",
     "type": "photo",
     "src": "/media/wedding/reception/band.jpg",
@@ -1135,6 +1147,18 @@
     "focusY": "44%"
   },
   {
+    "id": "reception-board-friend",
+    "type": "photo",
+    "src": "/media/wedding/reception/board-friend.jpg",
+    "chapter": "reception",
+    "visibility": "public",
+    "width": 768,
+    "height": 1024,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAIAAACtAwlQAAAACXBIWXMAAAsTAAALEwEAmpwYAAACW0lEQVR4nAFQAq/9AFA8Jkg4JEI2JUg7LEY7LEE4Kj00JUA1JT0yIUI1I0c5JUc3IgBQQS5MRThKSUJOU0xfY15YYWFRU0xKRz1MRzpHPzBLQzNMQzIAT01CUFVTWWtwYIGQa5mvcZ+yYH+IT11eTlVSUltWWWBaXF9WAFZZVFZcW1hnbHWAgHmIiGGFlF1+h1Fka1NfYV1rbGJwbWRrZwBTWVhVXFxMXWWKeGi5gFxIZW93cmxnWEtRX2RYY2dZY2NdYV8AVlZTS1ZbRlRadnBozJp8XV1WclpNbVJDQU9WUl9lU19iVl5fAFZLQTtJT1FOSc+fev/+8qeXh31LJF89JFZRS0JPV0lSVUtSUwBVPColN0FyVEKrlIDq//+MkY9MMh1ZOB9mVUY1QEk+Rkk9QEIAVjYfIS04TjwzqX1k7e3seYOIAAMKQjIlTEE5LjM4Nzk8NDQ0AGpAFRYcJ0hISsGpn9zT0ImRmQAFCUw0IWBCLxcYGyYjJCckIwCibRskJyprbFfCys3f9f+Ij5cAAAInHhhOQCRQTCVJQSw4LyIAonM8YmRXlJZupqCX6vX/o6KZAAAASEApoJdhmJdfwbV8UUgrALeEXImGV5utgsrLx+Ln+4ODfQAAAGJaP5mdVMHCj7q4h4drQQDEk3GegmKUjnW2trPo7f1kYmEAAAA8NCN8a0KWiGSoj2q3gU4Au45wvpR8sop1rZmS297pa2lrAAACVUAvvY5nxpVwzptw0pppALWMcryUesGbgrCKc7KUhXlkXAkKDnBVPciVaMmUas6ZbtafcpA25FBLbAkcAAAAAElFTkSuQmCC",
+    "caption": "",
+    "focusY": "26%"
+  },
+  {
     "id": "reception-board-girls",
     "type": "photo",
     "src": "/media/wedding/reception/board-girls.jpg",
@@ -1145,6 +1169,18 @@
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAIAAACtAwlQAAAACXBIWXMAAAsTAAALEwEAmpwYAAACW0lEQVR4nAFQAq/9AGcnAXQsAnZAEf/alv/wo//sof/poP/nnv/jnP/bmruKV6djIQAmDgBDHgBOLxOghVm4mma9nWfLqnHSr3PXsnbXsnyabkGPVRoAbD4QNC0hNjAiMCwhMjAlLi4lLCcdKiQYKSMWMiYZNykZOSoWAItVHjc4MUtRTlhsbG+GhnCKjFRgXUZJQEFANUVDNUE/M1NLOACKViU/RUVLVlZYcndqjJVpkJlWb3JETEg/SkdJVVBLUk98d2QAilYpNUBDn3tahHReT1VUVVdSXFtUj29TXFZLbV5POUFAiIh6AINGGDY8Or6PY4trS009LmBLPYh5aq+Ten1WQplzWCUtLZSalABfJgIxLiZ3ZEc8NSlpSChpQyba0cP8//eiiXnRxLt5g4N9dW0AWyMAJyMiIiAkAggRGRgXHRgUzcjC2evyxbuz8Pr5hpefUjEVAHEwAkg1LkA3OAAIFAcKDwUIDc7DvfXt5rCxrdLo7HKEi1wyDQDpliMwKyADER8PFx0EDAwECgrOxL3y7umsvsS+xcxSR0RlNQYA/75UTUY5CRQiFxsgGhkUAggHycXE1dbbqLK5xMHBW1JIhFQzAN+nd3dmVgwUIQ8UHgADBhgcGtDPztHJxq2xtMPGxZ6Neap+XQDJpYh/al8ABRcABhYBBQsHCgq7trnTx8Soq67Kx8TPspu9j20A2KqPoYBuKicvbl9cQTo2IyAelXlosqCWoKWrwMTJzsO4vJJxAOWti+avjNyniu+5lceXesKUddWZa9KjfrOWgszR1+LXytKifetJ9ew/Ykl8AAAAAElFTkSuQmCC",
     "caption": "",
     "focusY": "30%"
+  },
+  {
+    "id": "reception-board-moms",
+    "type": "photo",
+    "src": "/media/wedding/reception/board-moms.jpg",
+    "chapter": "reception",
+    "visibility": "public",
+    "width": 768,
+    "height": 1024,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAIAAACtAwlQAAAACXBIWXMAAAsTAAALEwEAmpwYAAACW0lEQVR4nAFQAq/9AGUkAHIpAHQ+EP/hnv/zp//uo//so//on//inf/dnbuLWKFfHwAlCgBBHgBMLhCghVm0l2S6mmbHpW7NqnHQrXPUsnqbb0GJUBcAZj0OMiweNS0hLiogMTAmMTAmMiwhMSsdMiobOC4eOSwaOCsXAItWHjc6MkpQTVlsbG+IiHCKi1FdW0FFPT08MEA+Mj49ME1HNACHVSY9Q0VIU1NWcXVmjJNojZZWbG5FTUg9SEdJVFBNVU9ycV8AiFUoOEJFm3hWgnJdUlhWVllWXlxTh2pQX1hMa19OOUJCiIp7AH5HGTU7OMKRZYpnSEw9LV5IOY9+bayRfH9aRJZwViUsLJeclwBcJwAtKiJ3ZUk8NClnRSdrSCnY0cL6+/OhiXvUx8F1fX16c2kAWCIAJSEgIR8iAAYQGBcWHRoXzcnC2uvxxLuw9v//gZObUC8TAHArAEg3Lz83OQAEEQMGCwYIC9HHwvPs5K+yrtTs8HODh1cuCQDvmyMqJR4ADhwOFBsBCAYGCArRx8Lv7eivvse5wstYSkNlNAQA/8BWRj0zCRQgEhgfGRgRBAgEzcrI0tTYqrW9wL6+VU1Fh1Y0AN+nd3RjVQ4WIAsTHAAAAB0fHdDOzdDHxq+ytsLDwp2Leq6BYADJpIl6Z10ABhYABBUAAAYKDA7AubvQxMKlq67HxMLUtp69kW0A16qOn39tMS4zb2JdQjo2KCIhlHhmtKOZn6OqxMXI0MK2u5JwAOOtjOWvjtilie+4lsSVesKUc9SYatSmf7OWg87U2N/WyNKif2ZI9NdwaiZVAAAAAElFTkSuQmCC",
+    "caption": "",
+    "focusY": "36%"
   },
   {
     "id": "reception-board-party",
@@ -1416,6 +1452,18 @@
     "focusY": "46%"
   },
   {
+    "id": "reception-girls-group",
+    "type": "photo",
+    "src": "/media/wedding/reception/girls-group.jpg",
+    "chapter": "reception",
+    "visibility": "public",
+    "width": 2200,
+    "height": 1459,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAACXBIWXMAAAsTAAALEwEAmpwYAAACJklEQVR4nAEbAuT9AAoNBxUTBw4NABAHAGNJHf/Tc//ypvbLdmRLHDknCysdByEcDTExIygpHAIDAAADAAApKRoVFgsWFgogGAVEPieOfkuqkFJ+ckldWkVkX0ZaVD9YVkI0MiEUFQwIBgAIBAAATEszWlo+QD8oKigYJyMSJSEQQDQfXE40SjYYSS8QVkMmTT4mIhoKEREEODIaEQwAACgoGmNdPl1aPElEKFBMM0o7H25eQINtTod3Uox/Vox8W4F4WmdfRTEnEzYxGRgOAAA7OiZhVjVAQCgrLyBsaEmAc0yCd1k9MyFFOiU+NB0xJRI6NCJ5dFUkHAchFwUiEAAAQ0MsXFQ2R0QrODYiKi4YTUgsaVpBIBwIKSANOTAZOi8RNSwZenhbIhUCHQwAJBYAAD47KGFaOx8fD4BfO4VrRV1SLJRvSZV6WpV1T4NqR41vSYtoRHlpRicdCCAQACcZAgA7OiYqKBglHg7AjVfAmWWwjWX40qX/7s7ewY/MmGnWso+Lakh5UikdEgAeDwAjFgAAIiIQAAAAd1gs4Kto4cCc7LR9/+Om/9Ku67CE/9envZBnj21KnnZBcU4kBgEAFwwAAAMFAAkPA6WWVsGfacWmfePcru3HdeKUZt6Bfv/72pxuTaNxUP/zm5l/OQYBAAgGAAAABAAOFQiTjEytrZGflGanp23NqUm1ZT+YSlXSy6ySdV1WIxKqlkGyo0oYDgAAAwD1CaQzbKXbiQAAAABJRU5ErkJggg==",
+    "caption": "",
+    "focusY": "52%"
+  },
+  {
     "id": "reception-groomsmen-night",
     "type": "photo",
     "src": "/media/wedding/reception/groomsmen-night.jpg",
@@ -1450,6 +1498,18 @@
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAIAAABP3xIpAAAACXBIWXMAAAsTAAALEwEAmpwYAAACK0lEQVR4nAEgAt/9AL3FzM3Z3dDZ3cbP1LrCx6ivr6Okn4mLhW1xaVteU0NCNgDDy8/Cy8+8xcqsub2krbKgo6CbnJZ6fXdmaWBZWEtOTT0Atr6/sry/qK+vqpWKeHJmhIuDg4iFcHJsZGRZW1tOS0pAAKWtqqOtrpmcm//25qWWgmtyZ4eNiHl7dnR2bWhpX2hrWQCcp6GXo5uOlI6TkZZlZ2xkaWV/hXaSnIOGj3ZWXEtublgApZuLqambW2FsSlBiTFJgODxJgoV0nJZ9o5+XRTgwMCglAMOVhMqvpldfbl1hb1peaz9GUlVVXU5GRzYyMDczMA8QDwCDfoaGbGdtcoFZXmtUVmU0OUQfISoJCwsDBAQqLCwXFxcAs7W/VlFfTU5YcnJ3TVRiPEBLICIoEBAPDQ8NIyQcEBINAK+1uypGbyM3V05UYFldak1SXxsdIU1PRmxtYUhJPxQUEABwgmU4S1ElPGgzQFZQUl01OkYvMzlJSUaEgXx6eHFyb2QAP1QYanldN0pwLj5cPkFMJSctFRggXFpVtbGpraeenJeLAJaclMTFyEFTbiQ4WTY8SCkqKhQWGikoKDo5MyQkIUhFPgC9u76TmJ4KHDweLklFSVIXFxoSEhMDAwUAAAAcHBqGg3gA1dTKkJKWAQIRAgMTFRghEhIUEhMTAAABEhISlpKJp6CUAE5QTqOkoXh3eEFAPyUmJgwMDQ4PDgEBATExMKCdlpqVjvaay9/tJXy6AAAAAElFTkSuQmCC",
     "caption": "with his mom",
     "focusY": "34%"
+  },
+  {
+    "id": "reception-night-before",
+    "type": "photo",
+    "src": "/media/wedding/reception/night-before.jpg",
+    "chapter": "reception",
+    "visibility": "public",
+    "width": 1536,
+    "height": 2048,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAIAAACtAwlQAAAACXBIWXMAAAsTAAALEwEAmpwYAAACW0lEQVR4nAFQAq/9AICZs9Lc5d/j5+jr7nF1kV1MX49/hZRqY41WS4hUSEkpMywZKACFnrfS3ubl7O7u9fV5eZRjTl+Yg4eebWCZWkWUVUJPJyw5GCQAlKe8xdbd5/Dw5u3ugXyRcU9booeEom5doFs+m1U4WiYjQxcdAJuptNLX3v////3+/pKDlHpPU5+Ef4tgUnhGNGtAM00jHj8VFwCFmIyuu6rw8+P///+ZhItwT1iLe3+OcGmzfma4gGFFHhg8Dg0AfZSEhZqArseGy9qnj3tscFVdyqKU4aKC8Kd9uHlYOxQNNgwGAHmQgYmej5Ozh6rOkpJ/b3lVVdGkjtGYeOujfJtmSSECBiYFBQBye3h9e3yBhH2SmIVwXFWBXlXZp4zJkXPtp3l9TjUOAAAbAAMAPzs8Y2hbWltFaVNFUi4olXdo1qKGzZV145txlmtFIw0HEgAAAHd5aIaVbGZ3VFVgOnFeO6N9aNCbgcmbfbyIX4hjPycVCwUAAABbXVVcYkZUTTQ7OSMsKA65eU3NkWmpkGluZz1zWDhMOh8XEgAAYmpZVVE9UzweJiMPTzgmdk0yw5NrjHdIZmA7iG07gmAqNzkAAFRmSFZdM2JVJWFIN0orJCMSCmJfQIl3PriNSktBIVQ4AXlUAABwdUp4ck9WTSVfRzomEBAMAABxaVByaTpmTSFcRyNTOhNUQxkAWFxAaVhCcVU/c1JJOyMcJAcAqoRinoVbVzwFpm4xp2ktx4AlAGxjVohmUYZlWnFMRUUnHEgfA2c7Fn5UJDQoAL1yCpRbGqloGgQ78B8+OdD4AAAAAElFTkSuQmCC",
+    "caption": "the night before",
+    "focusY": "46%"
   },
   {
     "id": "reception-portrait-friends",
