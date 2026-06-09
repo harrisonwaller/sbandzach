@@ -151,11 +151,13 @@ function PhotoGrid({
       whileInView="show"
       viewport={{ once: true, margin: "0px 0px -10% 0px" }}
     >
-      {photos.map((p, i) => (
+      {photos.map((p, i) => {
+        const wide = !!p.width && !!p.height && p.width > p.height * 1.2;
+        return (
         <motion.button
           key={p.id}
           variants={child}
-          className={`cell${p.width && p.height && p.width > p.height * 1.2 ? " wide" : ""}`}
+          className={`cell${wide ? " wide" : ""}`}
           onClick={() => onOpen(p)}
           aria-label={`View photograph ${i + 1} of ${photos.length}`}
         >
@@ -163,14 +165,20 @@ function PhotoGrid({
             src={p.src}
             alt={altFor(p, label)}
             fill
-            sizes="(max-width: 760px) 50vw, 33vw"
+            // the grid caps at 1400px, so cells top out near 470px (930px wide)
+            sizes={
+              wide
+                ? "(max-width: 760px) 100vw, (max-width: 1400px) 66vw, 930px"
+                : "(max-width: 760px) 50vw, (max-width: 1400px) 33vw, 470px"
+            }
             placeholder={p.blurDataURL ? "blur" : "empty"}
             blurDataURL={p.blurDataURL}
             className="object-cover"
             style={p.focusY ? { objectPosition: `center ${p.focusY}` } : undefined}
           />
         </motion.button>
-      ))}
+        );
+      })}
     </motion.div>
   );
 }

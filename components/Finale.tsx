@@ -27,7 +27,8 @@ export function Finale() {
           src={img.src}
           alt=""
           fill
-          sizes="100vw"
+          // blurred to mush behind the sharp frame — a small variant is plenty
+          sizes="384px"
           className="scale-110 object-cover blur-2xl"
           style={{ objectPosition: `center ${img.focusY ?? "50%"}` }}
         />
@@ -51,7 +52,8 @@ export function Finale() {
             placeholder={img.blurDataURL ? "blur" : "empty"}
             blurDataURL={img.blurDataURL}
             className="object-cover"
-            sizes="(max-width: 768px) 100vw, 1000px"
+            // 2:3 frame capped at 1000px tall — width never exceeds ~700px
+            sizes="(max-width: 768px) 100vw, 700px"
             style={{ objectPosition: `center ${img.focusY ?? "50%"}` }}
           />
         </div>
