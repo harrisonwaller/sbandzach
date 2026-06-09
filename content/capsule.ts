@@ -59,8 +59,8 @@ export const capsule: CapsuleSection[] = [
     featuredId: "reception-family",
     itemIds: [
       "reception-night-before",
-      "reception-couple-film",
       "reception-halter-detail",
+      "reception-couple-film",
       "reception-board-couples",
       "reception-couple-cocktail",
       "reception-board-friend",
@@ -161,16 +161,19 @@ export const capsule: CapsuleSection[] = [
       "afterparty-film-3",
       "afterparty-sendoff-film",
     ],
+    // Ordered as the night unfolded: the room, the first dance, the cake row,
+    // the family dances, the floor filling up, then the band, the sky and the
+    // exit — with the send-off standing alone as the chapter's closing frame.
     itemIds: [
       "reception-tent",
-      "reception-cake-cut",
-      "reception-cake-film",
       "reception-firstdance-crowd",
       "reception-dance-bw",
-      "afterparty-party-01",
+      "reception-cake-cut",
+      "reception-cake-film",
       "reception-mother-son",
-      "afterparty-mom-dance",
       "reception-bride-cheers",
+      "afterparty-mom-dance",
+      "afterparty-party-01",
       "reception-bw-lift",
       "reception-guests-table",
       "reception-band",

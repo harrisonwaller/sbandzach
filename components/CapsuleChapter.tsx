@@ -149,6 +149,16 @@ function PhotoGrid({
     ? { hidden: { opacity: 1 }, show: { opacity: 1 } }
     : { hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.85, ease } } };
 
+  // When the cell count leaves a lone last cell (wide cells span 2 columns),
+  // mark it a "closer" so the CSS can centre it as a deliberate closing frame
+  // instead of an abandoned corner. Computed per breakpoint: 3 columns ≥760px,
+  // 2 below.
+  const isWide = (p: MediaItem) => !!p.width && !!p.height && p.width > p.height * 1.2;
+  const units = photos.reduce((n, p) => n + (isWide(p) ? 2 : 1), 0);
+  const last = photos[photos.length - 1];
+  const orphanDesktop = photos.length > 3 && !!last && !isWide(last) && units % 3 === 1;
+  const orphanMobile = photos.length > 2 && !!last && !isWide(last) && units % 2 === 1;
+
   return (
     <motion.div
       className={`capsule-grid${className ? ` ${className}` : ""}`}
@@ -159,12 +169,15 @@ function PhotoGrid({
       viewport={{ once: true, margin: "0px 0px -10% 0px" }}
     >
       {photos.map((p, i) => {
-        const wide = !!p.width && !!p.height && p.width > p.height * 1.2;
+        const wide = isWide(p);
+        const closer =
+          i === photos.length - 1 &&
+          ((orphanDesktop ? " closer-d" : "") + (orphanMobile ? " closer-m" : ""));
         return (
         <motion.button
           key={p.id}
           variants={child}
-          className={`cell${wide ? " wide" : ""}`}
+          className={`cell${wide ? " wide" : ""}${closer || ""}`}
           onClick={() => onOpen(p)}
           aria-label={`View photograph ${i + 1} of ${photos.length}`}
         >

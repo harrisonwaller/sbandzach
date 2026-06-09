@@ -366,11 +366,23 @@
   max-width: 920px;
 }
 
+/* A lone last cell reads as abandoned in a corner; centred, it reads as the
+   chapter's closing frame. The component marks it per breakpoint. */
+@media (min-width: 761px) {
+  .capsule-grid .cell.closer-d {
+    grid-column: 2;
+  }
+}
+
 @media (max-width: 760px) {
   .capsule-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .capsule-grid .cell.wide {
     grid-column: span 2;
+  }
+  .capsule-grid .cell.closer-m {
+    grid-column: span 2;
+    aspect-ratio: 1 / 1;
   }
 }
