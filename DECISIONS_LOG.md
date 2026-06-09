@@ -2,6 +2,24 @@
 
 Append-only. Newest at top.
 
+## Cycle 23 — 2026-06-09 — After-party cleanup + reception consolidation (owner)
+Owner flagged mismatches/redundancy in the after-party. Mapped every referenced photo to
+its file (rendered-cell → filename) before acting. Asked one clarifying Q on the grand-exit
+placement; owner chose to KEEP send-off/fireworks at the end (not reception).
+- **Deleted from after-party** (benched on disk): handsup, party-02, party-03 (near-identical
+  bridesmaid-gown dance wides) + the B&W birthday-kiss (redundant with the main/hero kiss).
+- **Moved to reception** (the tented band party): embrace (bridesmaids celebrating), mom-dance,
+  party-01 (bridesmaid line-dance). Referenced by their afterparty-* ids in the reception
+  chapter; files stay put.
+- **Kept at the end:** send-off photo + fireworks-cheer + the send-off video → after-party close.
+- **Fill audit/enhance:** swapped reception's generic guest 'dancing' shot for the moved band
+  frames → reception 13 cells + 2 wide (cake-cut, party-01) = 15 units, clean 5 rows. Dropped
+  the wide party-04 (redundant w/ embrace) from after-party so its FilmReel groups fill: opener
+  + [joy, group, hats] (clean 3), sendoff-film + [fireworks-cheer, send-off] (closing pair on
+  the exit).
+**Verified:** tsc clean; 0 console errors; kiss gone everywhere; reception fill mod3=0;
+after-party ends on the send-off.
+
 ## Cycle 22 — 2026-06-09 — Getting-ready film + A–Z premium polish pass (owner)
 New: **getting-ready VIDEO** (IMG_9577.mov → muted/faststart) — bride + girls in matching
 blue pj's on the lakehouse steps, morning-of. Placed as the film in the 'Getting ready'
