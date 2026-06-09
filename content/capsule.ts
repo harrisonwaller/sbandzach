@@ -99,7 +99,16 @@ export const capsule: CapsuleSection[] = [
     tone: "ivory",
     layout: "feature",
     featuredId: "ceremony-dipkiss-pro",
-    itemIds: ["ceremony-aisle-pro", "ceremony-aerial", "ceremony-portrait-01"],
+    itemIds: [
+      "ceremony-groom-altar",
+      "ceremony-flower-girls",
+      "ceremony-aisle-pro",
+      "ceremony-aerial",
+      "ceremony-platform-kiss",
+      "ceremony-kiss-wide-film",
+      "ceremony-recessional-bw",
+      "ceremony-bride-bouquet-film",
+    ],
   },
   {
     id: "green",
@@ -112,6 +121,7 @@ export const capsule: CapsuleSection[] = [
     featuredId: "cocktail-party-pro",
     itemIds: [
       "cocktail-bridesmaids-pro",
+      "ceremony-portrait-01",
       "cocktail-family-day-01",
       "cocktail-family-day-02",
       "reception-portrait-groomsmen",

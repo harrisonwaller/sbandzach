@@ -2,6 +2,20 @@
 
 Append-only. Newest at top.
 
+## Cycle 20 — 2026-06-09 — Six ceremony frames + grid polish (owner)
+Owner sent 7 (one was a dupe send) → 6 unique ceremony frames, all wedding-day attire:
+- groom-altar (waiting, lakeside), flower-girls (down the aisle), platform-kiss (the kiss,
+  bouquet up), kiss-wide-film (wide film frame of the kiss w/ the whole party + lake,
+  date-stamped), recessional-bw (B&W walking back married), bride-bouquet-film (recessional).
+- Ceremony grid ordered chronologically: groom waits → flower girls → aisle → aerial →
+  kiss → kiss (wide film) → recessional → bouquet film. 8 frames = exactly 3 rows (the
+  wide film frame spans 2), no trailing gap.
+- **UI polish:** moved the old ceremony-portrait-01 (bride + a bridesmaid at the clubhouse)
+  to the 'On the green' chapter where the wedding-party portraits live — better placement
+  AND it makes the ceremony grid fill cleanly.
+**Verified:** tsc clean; 6 new ids present; all six upright; ceremony grid screenshot =
+clean 3 rows, good crops; all 7 ids confirmed in served HTML.
+
 ## Cycle 19 — 2026-06-09 — Five more rehearsal-dinner frames (owner)
 Owner sent 5 more (2 HEIC + 3 JPG). HEICs came through small (768x1024) — kept native,
 no upscale. Attire/context all rehearsal dinner:
