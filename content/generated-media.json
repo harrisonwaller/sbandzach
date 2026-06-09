@@ -256,6 +256,18 @@
     "focusY": "40%"
   },
   {
+    "id": "afterparty-sendoff-film",
+    "type": "video",
+    "src": "/media/wedding/afterparty/sendoff-film.mp4",
+    "chapter": "afterparty",
+    "visibility": "public",
+    "thumbnail": "/media/wedding/afterparty/sendoff-film.jpg",
+    "width": 720,
+    "height": 1280,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAIAAABLKsIUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABu0lEQVR4nGNgZGRkYGDg5eWVk5NjYGBgZmRiYmCEAAYGBgZhQaH0tGQzU2O4HBMDIxMjE4jDy80jJiIiJiIqIS7OyMDAwszMxAiSZpCRkmYA89lY2aQlpTjZOZgZmViZWZgZmRi42Dm5WFl5OTgEePk0VFT5uXm42TnYWVjZWVgZuFmZ+Lm5hPi4hfn5BLh5FGRkzYwNhfkFBHn5GCSF+UX5+AR4ucVEhNVUVJXkFFVlZRVk5EQEhBhSvbxKE6ICPOy97e2Lo0JDXV3KkhLcTU0lRSQYzsyZsmta47SaosS4uAPrV66ZM2X+vLl+3lExXm4MKxoKVrUWzC5Nz0iM+//v05qVy4yNHRxdIrztrRkCnKy2rZ11aOnEmoL8C2cPbV6z0M/Vy8HaXkdTgyExLvjc0Q0Pjq6dUp43Y+qE/Nw0XS0dMyNTXTUVhvKC5EPbFt06sGZiXaGetqa+rr6Lg5W2urq9mRFDc1X2rL6axS2lXYUpnm42Ho62JnqaRupKQd4ODBWFybUZ4RXhbiUpYeZG2nqaqiZ6mqHeDlV5cQzZqRGteXEVcX6hPg46SjJ+7rY25oaFaVFVhQkAQGVqxWgIrKAAAAAASUVORK5CYII=",
+    "caption": "off into the night"
+  },
+  {
     "id": "ceremony-aerial",
     "type": "photo",
     "src": "/media/wedding/ceremony/aerial.jpg",
@@ -1315,6 +1327,18 @@
     "focusY": "45%"
   },
   {
+    "id": "reception-cake-film",
+    "type": "photo",
+    "src": "/media/wedding/reception/cake-film.jpg",
+    "chapter": "reception",
+    "visibility": "public",
+    "width": 1459,
+    "height": 2200,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAIAAABP3xIpAAAACXBIWXMAAAsTAAALEwEAmpwYAAACK0lEQVR4nAEgAt/9ADpHPVhnYHeFgIWTj4aUkoeZlIaVkoaUkX6LiGlzbUlRSQBIVElodW6FlI6UoJuWop+WpKCXpKGUoJ6NmpdxfXZRWFAAVF1UdoF5kZ2Wm6efoqynpa6opK6nn6qjlaCad4N6XmZZAFRcUX6HfpmimqOqoqSspKevp6WtpJ+nnp2lnZWdlIiQhgBDSjlpcWOIkIKUm42Um4yaoJKqr6K4vLDN0MjKzMa9wr8AMDQiVl1HcHNgcHNeiI15kZaHgId57/Du/f3+9vf57/L1AB4lCjY8JD1DLo2Qe46Qf3l4bGBmUuLk3/v7+PL18vv7+AAACwAQFAAQFgCgpJZCPy1HNyKBYzozOyQqNCUwNyw/SEIABQsAKzEKS0of3t7XJioVPSweqo5bNT8OISoBFyAABxUAACA0AEJRG15fPLKvnnNwXpCOh9bbz2Z4O1tuLkJTGTFDEQAdLgCRnJLDyMjFx8Le3t7n5+Tz8fKIm2JFZQBDXw5GXRMAM0cVi5SFtb+n2NrN2NnR5OXk6+vr1djRUGIjeHhB1LmUAC1CFImTd32SXIacWa20n6GnjqiumqyrlNvLtv/46///8wAnMx1UXFRZZlksTgApQgAkNgAjNQAvMwDg1MXx7OCelX8AAAAAAA0AFR8AFyMAGSUAHCsAHy8AEhsATE860c7HAAkAAAAQAAANAA8bABEfABgiABknABgnABUeACkzH9bY1hkfA57n7YsU9gojAAAAAElFTkSuQmCC",
+    "caption": "",
+    "focusY": "46%"
+  },
+  {
     "id": "reception-couple-cocktail",
     "type": "photo",
     "src": "/media/wedding/reception/couple-cocktail.jpg",
@@ -1558,6 +1582,18 @@
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAIAAACtAwlQAAAACXBIWXMAAAsTAAALEwEAmpwYAAACW0lEQVR4nAFQAq/9AIuNgIuNgIyNfYyMfn9/c4GCd4uNgIyNgY6Sg5KQgZCPfouMfwCOkIOOkoOPkIGNjYF/gHWJi3+TlIaQlIWQlIWQkoSQkIGPj4AAj5CHjpCDkZOFjI2Bf39zkpSHmZuNlZeMkZOIkJOHk5OHk5OGAJCTjJGRiZOUh42NgoiIf5ydkJ6flZuclJuck5aZjpubkaGgkwCUmZSNkoqUlIqWl4qZm5Cbn5ebn5meoJqho5uqq6Gtr6O0tKoAv8bCuLqxvr+wvsKywMO7vcDAvb7BwsXGxcfHyMfC0tPH2djLALS2u87MzsvQtra5rcDCvezv7uDi6Onq8O3u7dvi09TKt87HuQC5vsSViYl4YFKJc3KAeXimnIuNf4GLhIu4rrLd2K38/73z9sUAcHJxKScvZFFLkXx2m46CrKKSbGZWRT86bWZmm35ylIxxpKOXAC0qIwAAADYqKT4xMaieoMi9t7asmcC0mJiMfYN2bUxAMHVvYwAiHA8HAwFBNjg2MjZ0dIPl4O/NwcK/r6i8qJ2TinhoYkxaUkQAEQoAFA4DFxgVgYGB6+bmw8DNxcjh3NfnvayirZ6Xn5iPoZOCABYMABoSAxkTBjAvK62tr7GusM7FvcrK2NDL0rakm7Shlq+djwAXDAAeFgIeFwYSDAJMS0rTybjf0bjNwrbFxNK7r6+2nIiynI0AGhEAJRkGHBQDIBgJIh8ZjouE3M62vrSlm5untLTAtKKXr5yNABsSABgPABMLAB4TBQIAAEJBQGJdV0dFRoGEkKipsa2jmKybjPtEMxB0GdwcAAAAAElFTkSuQmCC",
     "caption": "",
     "focusY": "48%"
+  },
+  {
+    "id": "reception-halter-detail",
+    "type": "photo",
+    "src": "/media/wedding/reception/halter-detail.jpg",
+    "chapter": "reception",
+    "visibility": "public",
+    "width": 1459,
+    "height": 2200,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAIAAABP3xIpAAAACXBIWXMAAAsTAAALEwEAmpwYAAACK0lEQVR4nAEgAt/9ABkhGCc0JjdGOUJTRDQ4J1c0EmlLIH1TKGJCLCUiEjswGQAkLSI2OSpJPyhgVjx2YUJ8RhmGVieBakpRUD83LRc9LBIAJjAlUTEUjloooXVEwr+tspBuuKCCvbObjloqfVUnVzcTACclGW5AFKNvNsq2luPq5N/m3d/p39zUwsiRWL6NVpdlMwAgFwV+QgWqjmzp8Ozs7ebp6uDq6+Pt8/Dk0bbDhkGbZSoALxsFkFAPtaGD8/fz8vLs8PDr7+/p8PLr5+jfr39JjFASAFMrDI9QFY+AaPv++PX18vT07/X28vj49dnc0n9XMYRGCwByOQtiNhAmJh3U0cTy8uvs7OTt7N/u7+Wvp5BYNhGDSBUAYDAKfkcXCwoBm5iG7+/l5+fb5eXY19jIgG1IVDQQiUwbABgXD5FUHn1TJZmbiubk1t/g1drbzt3fz5iMcZRXH4VKGgAPGBULCgOJTBi+l2nY283X18XY2svR2MvFmm2ZVB0qGQcAChILCRcSb2xWmVghuItasK2VtLGVu5JpmVomOCMLCwsEAAcPCxofD3F+aVhHKJZWIItyR5NoPIhHE1FCKxUTCgcIBwAKExERFwoABggxLSBhQSVzSCZqOhtgSDQuMi4EBQkACRAABg8RBxEPAAQLICIbUVNEQT01RUg9PEI7Cg8TAgkSAwsTAAAGDAAGDAAIDAgOCz1DNj1JPTI5MRofGgAFCwAIDwIJD9Jo1wcaMeH1AAAAAElFTkSuQmCC",
+    "caption": "",
+    "focusY": "40%"
   },
   {
     "id": "reception-mother-son",

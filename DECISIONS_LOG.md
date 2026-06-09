@@ -2,6 +2,21 @@
 
 Append-only. Newest at top.
 
+## Cycle 21 — 2026-06-09 — Send-off film + cake/detail frames + full grid audit (owner)
+New content:
+- **Send-off VIDEO** (IMG_6292.mov → muted/faststart mp4) = the petal grand exit (short
+  dress + white jacket). Placed as the CLOSING film of the after-party (next to the
+  send-off photo, into the fireworks) — NOT reception, to keep the attire/chronology sort.
+- **cake-film** → reception grid (film frame by the tiered cake, black-tie).
+- **halter-detail** → rehearsal grid (beaded bodice + champagne, film date-stamp).
+Full-section AUDIT (computed grid fill = (cells + wide) mod 3, 0 = clean; ceremony/details
+special-cased): every chapter filled cleanly EXCEPT reception (11 units → 1 trailing gap).
+Fixed by adding **reception-tent ('the room')** — a draped-tent/chandelier establishing
+shot — opening the grid: 11 cells + 1 wide (cake-cut) = 12 units = 4 clean rows. Bonus:
+adds scene-setting variety. (Skipped 'firstdance/our song' — it's after-party attire.)
+**Verified:** tsc clean; 4 new ids present; reception fill mod3=0; 0 console errors;
+crops clean across all 8 sections.
+
 ## Cycle 20 — 2026-06-09 — Six ceremony frames + grid polish (owner)
 Owner sent 7 (one was a dupe send) → 6 unique ceremony frames, all wedding-day attire:
 - groom-altar (waiting, lakeside), flower-girls (down the aisle), platform-kiss (the kiss,

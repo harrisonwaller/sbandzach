@@ -60,6 +60,7 @@ export const capsule: CapsuleSection[] = [
     itemIds: [
       "reception-night-before",
       "reception-couple-film",
+      "reception-halter-detail",
       "reception-board-couples",
       "reception-couple-cocktail",
       "reception-board-friend",
@@ -155,7 +156,9 @@ export const capsule: CapsuleSection[] = [
     featuredId: "reception-fd-dance",
     filmIds: ["reception-film", "party-film", "afterparty-film-3"],
     itemIds: [
+      "reception-tent",
       "reception-cake-cut",
+      "reception-cake-film",
       "reception-firstdance-crowd",
       "reception-dance-bw",
       "reception-dancing",
@@ -174,7 +177,7 @@ export const capsule: CapsuleSection[] = [
     blurb: "The lights came down, the floor filled up, and it stayed full until the very last song.",
     tone: "darker",
     layout: "film",
-    filmIds: ["afterparty-opener"],
+    filmIds: ["afterparty-opener", "afterparty-sendoff-film"],
     itemIds: [
       "afterparty-handsup",
       "afterparty-joy",
