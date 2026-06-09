@@ -1,5 +1,17 @@
 [
   {
+    "id": "afterparty-birthday-kiss",
+    "type": "photo",
+    "src": "/media/wedding/afterparty/birthday-kiss.jpg",
+    "chapter": "afterparty",
+    "visibility": "public",
+    "width": 1467,
+    "height": 2200,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAIAAABP3xIpAAAACXBIWXMAAAsTAAALEwEAmpwYAAABvUlEQVR4nD2RMQuqYBiFpbhcEelDFJUCBSUNxQ8lgyIbGpKGIFpqCAkqhIYGx5aCoP5ARTg0uTe21hRB0Nx/iBZxqCUuJdxnfjiH877IZDIZDocQQoZhAAAoiiZ/JBIJJMZ13Wazqes6RVEEQaAo+udHLH29TqdjWVY+n6coKs74+yM2kskkUi6XVVXVdZ0kSQAAjuPoj/8SAiHUNE2SJJIkcRzHMAz8wDAslpBqtSpJkizLNE1LkqQoCgAgbowlpFarSZIkiiIAoFgs2rZtWRbHcSzLxqlIt9vleb5UKvm+P5/PTdNsNBqqqvI8n06nCYJAPM+DEPq+H0XR+/0OgsDzvNVqZVlWJpOhaRrp9/vtdvtwOERRFIbh6/Xabren08l1XYZhvkalUrFte7fbPR6PxWJxu92Ox+N6vR6NRhRFfQ1Zlk3TrNfry+Wy1+ttNpvr9TqbzRzHiRchJElCCHO53Hg8DoLgfD4/n8/7/f75fIIgYFkWEQQhm82SJHm5XMIw3O/3vu9Pp9PBYOA4jq7r3xZd1zmOa7Va8Y8MwxBFURAEWZZ5nv9e3TAMlmU1TSsUCoqixCNTqVT84X94rIflfHAzSAAAAABJRU5ErkJggg==",
+    "caption": "happy birthday, groom",
+    "focusY": "42%"
+  },
+  {
     "id": "afterparty-embrace",
     "type": "photo",
     "src": "/media/wedding/afterparty/embrace.jpg",
@@ -1072,7 +1084,7 @@
     "width": 1280,
     "height": 960,
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAIAAADkharWAAAACXBIWXMAAAsTAAALEwEAmpwYAAACV0lEQVR4nAFMArP9AAJohgZujgdvkB2UvUr+/1T//0v+/0Pm/zfK+Cyy4Sen1yen2Cyv5jXB+zjI/zjI/wAGb4oRgKArr+RF5/9I8v9B3v84yP8zwPIrsd4kn80hmscflsUjnNAqq+MtsekpquIADHeVH5bFKqzeKbDOKK3QLbbfKa3aKazaJqfUIZvHH5fEHJG+H5bFJaHVJqPaI5zQAA56nzeJmFJ8hRKFmByUtSOfxyeo1Cam0iSfziCawyCaxRuQvSCXxyOc0iaj2iah2QBFaXVcbXWBgXgVipsakbMgm8Akos4mptErsd0ssuAmp9IbkbsVhK0koNIkn9AzvfQAhXtqaX2Camp6IYOhG5S0QoiqIpzIGo+1IoivDHaZCXKWDnubjh48FoWvLUVfAUZkAHVtbmp+iJQ1RFlsjzdzlHVZbzXF74tmeopGVkggM0IjNlI/UqMEPF9okB82TS8AGQByX2yCVV+QFSZ9TWFRQlttCSQrs9adSl96JzN+K0NJEitNKzuTFEpxAEgoGjE0DygAeSM3rSEtbAAVixcqqiw1jSIvZicwmjw8mj09wz1ZPBM4OycvbwxGSAA/DgkcKA4cABYADp4hLb48TWIpO9Z4g7xgdTkmLcxfSqA7NKFHVSccMTQeJYtRcCYYQQMOHRgBGAAAAAChQUD/o56CXW60Z2iBVWFdNzzeaVCiT0ubYW40JjdJMDubZGYjKDIGFyUcDRsAAAAAo0lH3YFvi19otWZpynprwWlc32RNwGNdpG5vRjxIVEFLsm9uNjU2ABEkGhoinTvvSWd484wAAAAASUVORK5CYII=",
-    "caption": "the last song"
+    "caption": "all the girls"
   },
   {
     "id": "party-film-2",

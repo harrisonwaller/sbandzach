@@ -1,6 +1,6 @@
 {
   "_defaults": { "visibility": "public" },
-  "party-film.mp4": { "id": "party-film", "caption": "the last song" },
+  "party-film.mp4": { "id": "party-film", "caption": "all the girls" },
   "party-film-2.mp4": { "id": "party-film-2", "caption": "" },
   "opener.mp4": { "id": "afterparty-opener", "caption": "the lights came up" },
   "film-3.mp4": { "id": "afterparty-film-3", "caption": "" },
@@ -9,6 +9,7 @@
   "floor-kiss.jpg": { "caption": "", "focusY": "40%" },
   "handsup.jpg": { "caption": "hands up", "focusY": "45%" },
   "embrace.jpg": { "caption": "", "focusY": "45%" },
+  "birthday-kiss.jpg": { "caption": "happy birthday, groom", "focusY": "42%" },
   "mom-dance.jpg": { "caption": "", "focusY": "45%" },
   "joy.jpg": { "caption": "", "focusY": "34%" },
   "hats.jpg": { "caption": "from georgia, with love", "focusY": "34%" },

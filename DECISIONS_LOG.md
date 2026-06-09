@@ -2,6 +2,22 @@
 
 Append-only. Newest at top.
 
+## Cycle 16 — 2026-06-09 — After-party / reception re-sort + B&W kiss (owner)
+Owner caught reception-attire footage sitting in the after-party and a redundant kiss:
+- **Added** the B&W 'BIRTHDAY GROOM' sparkler-cake kiss to the after-party grid
+  (birthday-kiss.jpg, portrait, 'happy birthday, groom'), in floor-kiss's old slot.
+- **Removed** afterparty floor-kiss entirely — it echoed the hero (the lakeside kiss).
+- **Moved to reception:** 'the last song' bridesmaids-dance clip (party-film, recaptioned
+  'all the girls') + the 'rolling on the river' band clip (afterparty-film-3). Reception
+  films now [reception-film, party-film, film-3] — the two band clips separated by the
+  girls' clip so the near-duplicates don't sit back-to-back.
+- **Dropped** party-film-2 (a near-duplicate of party-film). File kept on disk.
+- After-party film is now just the DJ fog-cannon opener ('the lights came up') + the grid.
+**Verified:** tsc clean; integrity (no missing refs); 0 console errors; birthday kiss
+renders upright with good crop; floor-kiss gone; reception clips separated.
+**Note for owner:** reception now carries 3 clips; reception-film and the rolling-on-the-
+river clip are similar angles of the same song — say the word and I'll drop one.
+
 ## Cycle 15 — 2026-06-09 — Pro reception photos + finale upgrade (owner)
 Added 6 professional reception/fireworks frames (downscaled 2200px, mozjpeg, all <800KB):
 - **Reception feature → father-daughter dance** (reception-fd-dance, 'with her dad').
