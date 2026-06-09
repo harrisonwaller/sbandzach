@@ -1,11 +1,11 @@
 /**
  * The Memory Capsule narrative — in true chronological order:
- *   the weekend (bridal luncheon + rehearsal) → the rehearsal dinner →
+ *   the weekend (the lake + rehearsal) → the rehearsal dinner →
  *   getting ready → the ceremony → on the green → the little things →
  *   the reception → the after-party → fireworks.
  *
  * Photos are sorted by EVENT, read off the attire: navy blazer + the bride's
- * halter dress = pre-wedding (luncheon / rehearsal / rehearsal dinner); the
+ * halter dress = pre-wedding (rehearsal / rehearsal dinner); the
  * black tux + the satin ballgown = the wedding day; short dresses under teal
  * light = the after-party. Each section dims the background a little further,
  * so a quiet album warms into a film.
@@ -34,7 +34,7 @@ export const capsule: CapsuleSection[] = [
     mark: "Chapter I",
     title: "The",
     titleEm: "weekend",
-    blurb: "The luncheon, the rehearsal, the lake — the days that led to the day.",
+    blurb: "The boat, the rehearsal, the lake — the days that led to the day.",
     tone: "ivory",
     layout: "feature",
     featuredId: "friday-bride-lawn",
