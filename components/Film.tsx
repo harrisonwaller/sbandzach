@@ -73,11 +73,13 @@ export function Film({ film, className }: { film: MediaItem; className?: string 
           </figcaption>
         </>
       )}
-      {/* a hairline "play" affordance until it starts (covered by controls under reduced motion) */}
-      {!started && !reduce && (
+      {/* a hairline "play" affordance until it starts. Rendered unconditionally
+          (a `!reduce &&` conditional hydration-mismatched for reduced-motion
+          visitors) and hidden via CSS where native controls show instead. */}
+      {!started && (
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 flex items-center justify-center"
+          className="pointer-events-none absolute inset-0 flex items-center justify-center motion-reduce:hidden"
         >
           <span
             className="flex h-16 w-16 items-center justify-center rounded-full"

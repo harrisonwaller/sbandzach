@@ -100,15 +100,15 @@ export function CapsuleHero() {
         transition={{ delay: reduce ? 0 : 1.6, duration: reduce ? 0 : 1.4, ease }}
       >
         their day, kept
-        {!reduce && (
-          <motion.span
-            aria-hidden
-            className="block h-7 w-px origin-top bg-cream/40"
-            initial={{ scaleY: 0 }}
-            animate={{ scaleY: 1 }}
-            transition={{ delay: 2.1, duration: 1, ease }}
-          />
-        )}
+        {/* always in the SSR tree (a `!reduce &&` conditional hydration-mismatched
+            for reduced-motion visitors); CSS hides it for them instead */}
+        <motion.span
+          aria-hidden
+          className="block h-7 w-px origin-top bg-cream/40 motion-reduce:hidden"
+          initial={{ scaleY: 0 }}
+          animate={{ scaleY: 1 }}
+          transition={{ delay: 2.1, duration: 1, ease }}
+        />
       </motion.div>
     </section>
   );

@@ -97,7 +97,14 @@ function FeatureFrame({ item, label, onOpen }: { item: MediaItem; label: string;
       className={
         portrait
           ? "relative mx-auto block aspect-[4/5] max-h-[84svh] w-full max-w-[780px] overflow-hidden bg-cream-deep"
-          : "relative block h-[64svh] max-h-[760px] w-full overflow-hidden bg-cream-deep sm:h-[78svh]"
+          : "relative block w-full overflow-hidden bg-cream-deep sm:h-[78svh] sm:max-h-[760px]"
+      }
+      // On phones a landscape frame keeps its natural shape so a wide group
+      // is never cropped to its centre; ≥sm the fixed editorial height wins.
+      style={
+        !portrait && item.width && item.height
+          ? { aspectRatio: `${item.width} / ${item.height}` }
+          : undefined
       }
     >
       <Image
