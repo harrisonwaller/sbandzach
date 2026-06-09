@@ -1,6 +1,19 @@
 # DECISIONS LOG — autonomous polish run
 
 Append-only. Newest at top.
+## Cycle 12 — 2026-06-09 — Pro details + reception film shots; rehearsal video relocated
+**Added (owner-provided pro photos):**
+- The little things: feature → **hydrangea cocktail bar**; grid → **seating
+  chart**, **dusk bar over the lake**, cocktails sign, cake. (benched the white
+  tent + phone champagne shot.)
+- Reception: added two **film-grain** shots — the bride's cheers + the packed
+  dance floor (landscape, wide cell). Dropped a redundant dance still.
+**Fixed (owner catch):** the processional clip shows EMPTY SEATS → it's the
+rehearsal, not the ceremony. Moved it out of the ceremony into **The weekend**
+(layout already supports inline film) and relabeled it "the rehearsal".
+**Audit:** tsc clean; no dup/missing ids; 0 broken images; 4 videos; no
+horizontal overflow. Manifest 112 items.
+
 
 ## Cycle 11 — 2026-06-09 — Feature crops fixed (portrait framing)
 **Problem (owner):** portrait feature photos — esp. the bride + mom — were cut to

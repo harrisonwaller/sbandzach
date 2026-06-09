@@ -38,6 +38,7 @@ export const capsule: CapsuleSection[] = [
     tone: "ivory",
     layout: "feature",
     featuredId: "friday-bride-lawn",
+    filmIds: ["ceremony-processional"],
     itemIds: [
       "friday-walk",
       "friday-boat-aerial",
@@ -89,7 +90,6 @@ export const capsule: CapsuleSection[] = [
     tone: "ivory",
     layout: "feature",
     featuredId: "ceremony-dipkiss-pro",
-    filmIds: ["ceremony-processional"],
     itemIds: ["ceremony-aisle-pro", "ceremony-aerial", "ceremony-kiss-alt", "ceremony-portrait-01"],
   },
   {
@@ -117,9 +117,10 @@ export const capsule: CapsuleSection[] = [
     blurb: "Champagne by the lake, the signature cocktails, and a cake worth the wait.",
     tone: "dusk",
     layout: "feature",
-    featuredId: "reception-tent",
+    featuredId: "cocktail-bar-hydrangea",
     itemIds: [
-      "cocktail-detail-champagne",
+      "cocktail-seating-chart",
+      "cocktail-bar-dusk",
       "cocktail-detail-cocktails",
       "cocktail-detail-cake",
     ],
@@ -138,7 +139,8 @@ export const capsule: CapsuleSection[] = [
       "reception-firstdance-crowd",
       "reception-band",
       "reception-dance-01",
-      "reception-dance-02",
+      "reception-bride-cheers",
+      "reception-dancefloor",
     ],
   },
   {

@@ -2,7 +2,7 @@
   "_defaults": { "visibility": "public" },
   "the-kiss.jpg": { "id": "hero-kiss", "featured": true, "focusY": "34%", "caption": "" },
 
-  "processional.mp4": { "id": "ceremony-processional", "caption": "here she comes" },
+  "processional.mp4": { "id": "ceremony-processional", "caption": "the rehearsal" },
   "groom-girls.jpg": { "caption": "", "focusY": "40%" },
   "aisle.jpg": { "caption": "down the aisle", "focusY": "42%" },
   "kiss-alt.jpg": { "caption": "", "focusY": "40%" },
