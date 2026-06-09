@@ -102,9 +102,10 @@ export const capsule: CapsuleSection[] = [
     featuredId: "cocktail-party-full",
     itemIds: [
       "cocktail-lineup",
-      "cocktail-champagne-bar",
       "ceremony-ready-04",
       "cocktail-portrait-03",
+      "reception-portrait-groomsmen",
+      "reception-portrait-friends",
     ],
   },
   {
@@ -120,7 +121,6 @@ export const capsule: CapsuleSection[] = [
       "cocktail-detail-champagne",
       "cocktail-detail-cocktails",
       "cocktail-detail-cake",
-      "cocktail-cake",
     ],
   },
   {
@@ -136,8 +136,6 @@ export const capsule: CapsuleSection[] = [
     itemIds: [
       "reception-firstdance-crowd",
       "reception-band",
-      "reception-portrait-groomsmen",
-      "reception-portrait-friends",
       "reception-dance-01",
       "reception-dance-02",
     ],

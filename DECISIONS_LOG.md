@@ -2,6 +2,20 @@
 
 Append-only. Newest at top.
 
+## Cycle 9 — 2026-06-09 — Image/video QA audit
+**Audited:** every section at 1440px + a DOM check for broken/unloaded images.
+**Result:** 0 broken, 0 sideways, all visible and reasonably cropped. Two real
+issues found and fixed:
+1. `portrait-groomsmen` + `portrait-friends` (bright daytime cocktail portraits)
+   sat in the dark evening **reception** — tonally jarring and chronologically
+   early. Moved to **On the green** (daytime portraits); benched the busy
+   `champagne-bar` to keep that grid orphan-free (lineup is a wide cell).
+   Reception is now tonally coherent (cake → purple dance floor).
+2. `cocktail-cake` was a back-of-bride shot redundant with the front-on
+   `cake-cut`; removed from **The little things** → clean row of three details.
+**Verified:** tsc clean; green grid lays out 6 cells (no orphan), reception 2×2,
+details single row; re-screenshotted all three.
+
 ## Cycle 8 — 2026-06-09 — Share preview + favicon
 **Audited:** metadata had Open Graph title/description but **no image** → texting
 the link showed a blank/text-only card; no favicon either.
