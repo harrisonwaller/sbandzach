@@ -155,3 +155,32 @@ hardened. No score-moving changes remained.
 5. ✅ Privacy review passed — zero private logistical content
 6. ✅ Mobile reviewed side-by-side with desktop — re-laid-out, no overflow, feels intentional
 7. ✅ Mom Preview pass — "this would move Beth"
+
+---
+
+## Polish pass — 2026-06-09 (`polish/chefs-kiss`, screenshots in `polish-0/` baseline, `polish-1/` final)
+
+Scored against the original 8 dimensions plus the two polish-phase rows
+(Weight, Crop integrity) from `docs/CLAUDE-CODE-GOAL-POLISH.md`.
+
+| Dimension | Before | After | Notes |
+|---|---|---|---|
+| Typography | 9 | 9 | untouched (locked) |
+| Spatial composition | 8.5 | 9.5 | orphan cells now centred closing frames; reception re-paced to the night's chronology |
+| Color | 9 | 9.5 | dusk→dark seam: the lights go down instead of cutting out |
+| Motion | 9 | 9 | hero entrance identical, now CSS-driven (faster first paint, same feel) |
+| Mobile | 8 | 9.5 | landscape features keep natural aspect (7-person frame no longer cropped to ~52%); rehearsal orphan becomes full-width closer |
+| Emotional resonance | 9 | 9.5 | reception now ends band → fireworks → send-off standing alone |
+| Performance | 7 | 9.5 | Lighthouse mobile (devtools throttling): perf 98 / a11y 100 / bp 100; LCP 1.7s; CLS 0; TBT 0ms. Videos 28→19.6 MB; photo median 276 KB |
+| Copy | 9 | 9 | untouched; 33 descriptive alts added (alt → caption → fallback) |
+| Weight (new) | 5 | 8.5 | video budget (≤12 MB) intentionally exceeded: film-3 (5.7 MB) keeps 19.5s of dark confetti footage banding-free — quality rule wins |
+| Crop integrity (new) | 8 | 10 | every feature/cell verified whole-faced at 1440px and 390px |
+
+Also fixed during the pass (found, not sought): hydration failure for
+prefers-reduced-motion visitors (hero scroll cue + film play affordance were
+conditionally rendered); stale video dimensions in the manifest after
+re-encode; footer monogram below AA contrast.
+
+Convergence: final read-through (hero → vault → finale, both viewports)
+produced an empty breaks-the-spell list. Remaining owner decisions live in
+`audit/CURATION_NOTES.md`.

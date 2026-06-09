@@ -320,6 +320,12 @@
   background: #141019;
   color: var(--cream);
 }
+/* dusk falls into night: when the dark chapter follows a dusk one, its top
+   edge carries a short fade from the dusk tone so the lights go down rather
+   than cut out */
+.tone-dusk + .tone-dark {
+  background: linear-gradient(180deg, #d8c39e 0, #141019 340px);
+}
 .tone-darker {
   background: #0a0712;
   color: var(--cream);
