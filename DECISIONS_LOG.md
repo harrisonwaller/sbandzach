@@ -2,6 +2,22 @@
 
 Append-only. Newest at top.
 
+## Cycle 10 — 2026-06-09 — Professional photos added (owner-provided)
+**Input:** 9 pro photographer shots (45MP). Cataloged by 2 subagents; downscaled
+to ≤2200px, all <800 KB, orientation clean.
+**Changed — pro now LEADS every wedding-day chapter (phone versions benched):**
+- ceremony: feature → **pro dip-kiss**; grid → **pro aisle (bride + dad)**,
+  **aerial drone** of the lakeside ceremony, the kiss, a portrait.
+- getting ready: feature → **bride + mom** (intimate); grid → **the dress on the
+  hanger**, the steps, robes, flower girls, mirror.
+- on the green: feature → **pro bridal party** (full lineup at Waterview Pub);
+  grid → pro bridesmaids w/ train, **two wedding-day family portraits**,
+  couple + groomsmen, couple + friends.
+**Benched (phone, replaced):** ceremony-dipkiss/aisle/portrait-02,
+cocktail-party-full/lineup/portrait-03, ceremony-ready-04/02.
+**Verified:** tsc clean; image cache cleared; screenshots of all three chapters —
+pro shots render, crops good, faces in frame. Manifest 107 items.
+
 ## Cycle 9 — 2026-06-09 — Image/video QA audit
 **Audited:** every section at 1440px + a DOM check for broken/unloaded images.
 **Result:** 0 broken, 0 sideways, all visible and reasonably cropped. Two real
