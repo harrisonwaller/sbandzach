@@ -7,7 +7,8 @@ export function Footer() {
   return (
     <footer className="bg-ink px-6 pb-14 pt-24 text-center text-cream">
       <div
-        className="font-serif text-[0.78rem] uppercase text-cream/45"
+        // cream/45 measured 4.1:1 on ink — /55 clears the 4.5:1 AA bar
+        className="font-serif text-[0.78rem] uppercase text-cream/55"
         style={{ letterSpacing: "0.34em", textIndent: "0.34em" }}
       >
         {site.markFull}

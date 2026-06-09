@@ -1,7 +1,23 @@
 {
-  "_defaults": { "visibility": "public" },
-  "bride-lawn.jpg": { "caption": "", "focusY": "24%" },
-  "boat-aerial.jpg": { "caption": "out on the lake", "focusY": "60%" },
-  "boat.jpg": { "caption": "", "focusY": "18%" },
-  "walk.jpg": { "caption": "just us two", "focusY": "16%" }
+  "_defaults": {
+    "visibility": "public"
+  },
+  "bride-lawn.jpg": {
+    "caption": "",
+    "focusY": "24%",
+    "alt": "the bride-to-be with her bouquet on the lawn"
+  },
+  "boat-aerial.jpg": {
+    "caption": "out on the lake",
+    "focusY": "60%"
+  },
+  "boat.jpg": {
+    "caption": "",
+    "focusY": "18%",
+    "alt": "the bride on the bow of a wooden boat on Lake Oconee"
+  },
+  "walk.jpg": {
+    "caption": "just us two",
+    "focusY": "16%"
+  }
 }

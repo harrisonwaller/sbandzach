@@ -1,46 +1,172 @@
 {
-  "_defaults": { "visibility": "public" },
-  "reception-film.mp4": { "id": "reception-film", "caption": "" },
-
-  "board-girls.jpg": { "caption": "", "focusY": "30%" },
-  "board-toast.jpg": { "caption": "a toast", "focusY": "30%" },
-  "board-party.jpg": { "caption": "", "focusY": "30%" },
-  "board-couples.jpg": { "caption": "please find your seat", "focusY": "44%" },
-  "couple-film.jpg": { "caption": "", "focusY": "30%" },
-  "girls-gowns.jpg": { "caption": "the girls", "focusY": "46%" },
-  "board-moms.jpg": { "caption": "", "focusY": "36%" },
-  "board-friend.jpg": { "caption": "", "focusY": "26%" },
-  "girls-group.jpg": { "caption": "", "focusY": "52%" },
-  "night-before.jpg": { "caption": "the night before", "focusY": "46%" },
-  "apron.jpg": { "caption": "", "focusY": "38%" },
-  "firstdance-crowd.jpg": { "caption": "our first dance", "focusY": "40%" },
-  "bride-cheers.jpg": { "caption": "cheers", "focusY": "26%" },
-  "fd-dance.jpg": { "caption": "with her dad", "focusY": "24%" },
-  "cake-film.jpg": { "caption": "", "focusY": "46%" },
-  "halter-detail.jpg": { "caption": "", "focusY": "40%" },
-  "dance-bw.jpg": { "caption": "", "focusY": "30%" },
-  "mother-son.jpg": { "caption": "with his mom", "focusY": "34%" },
-  "dancing.jpg": { "caption": "", "focusY": "30%" },
-  "bw-lift.jpg": { "caption": "", "focusY": "34%" },
-  "guests-table.jpg": { "caption": "", "focusY": "48%" },
-  "dancefloor.jpg": { "caption": "", "focusY": "55%" },
-  "portrait-groomsmen.jpg": { "caption": "", "focusY": "28%" },
-  "portrait-friends.jpg": { "caption": "", "focusY": "30%" },
-
-  "family.jpg": { "caption": "everyone we love", "focusY": "42%" },
-  "couple-cocktail.jpg": { "caption": "just us two", "focusY": "45%" },
-  "cake-cut.jpg": { "caption": "the first slice", "focusY": "45%" },
-  "table.jpg": { "caption": "candlelight", "focusY": "58%" },
-  "groomsmen-night.jpg": { "caption": "", "focusY": "45%" },
-  "tent.jpg": { "caption": "the room", "focusY": "36%" },
-  "band.jpg": { "caption": "the band played on", "focusY": "46%" },
-  "firstdance.jpg": { "caption": "our song", "focusY": "40%" },
-
-  "dance-01.jpg": { "focusY": "42%" },
-  "dance-02.jpg": { "focusY": "42%" },
-  "dance-03.jpg": { "focusY": "42%" },
-  "dance-04.jpg": { "focusY": "42%" },
-  "dance-05.jpg": { "focusY": "40%" },
-  "dance-06.jpg": { "focusY": "42%" },
-  "dance-07.jpg": { "focusY": "40%" }
+  "_defaults": {
+    "visibility": "public"
+  },
+  "reception-film.mp4": {
+    "id": "reception-film",
+    "caption": ""
+  },
+  "board-girls.jpg": {
+    "caption": "",
+    "focusY": "30%"
+  },
+  "board-toast.jpg": {
+    "caption": "a toast",
+    "focusY": "30%"
+  },
+  "board-party.jpg": {
+    "caption": "",
+    "focusY": "30%",
+    "alt": "the wedding party gathered at the seating board"
+  },
+  "board-couples.jpg": {
+    "caption": "please find your seat",
+    "focusY": "44%"
+  },
+  "couple-film.jpg": {
+    "caption": "",
+    "focusY": "30%",
+    "alt": "the couple at the rehearsal dinner"
+  },
+  "girls-gowns.jpg": {
+    "caption": "the girls",
+    "focusY": "46%"
+  },
+  "board-moms.jpg": {
+    "caption": "",
+    "focusY": "36%",
+    "alt": "the moms in front of the seating board"
+  },
+  "board-friend.jpg": {
+    "caption": "",
+    "focusY": "26%",
+    "alt": "friends in front of the seating board"
+  },
+  "girls-group.jpg": {
+    "caption": "",
+    "focusY": "52%",
+    "alt": "the girls in their gowns at the rehearsal dinner"
+  },
+  "night-before.jpg": {
+    "caption": "the night before",
+    "focusY": "46%"
+  },
+  "apron.jpg": {
+    "caption": "",
+    "focusY": "38%",
+    "alt": "the kitchen apron, embroidered with the new family name"
+  },
+  "firstdance-crowd.jpg": {
+    "caption": "our first dance",
+    "focusY": "40%"
+  },
+  "bride-cheers.jpg": {
+    "caption": "cheers",
+    "focusY": "26%"
+  },
+  "fd-dance.jpg": {
+    "caption": "with her dad",
+    "focusY": "24%"
+  },
+  "cake-film.jpg": {
+    "caption": "",
+    "focusY": "46%",
+    "alt": "the wedding cake under the tent"
+  },
+  "halter-detail.jpg": {
+    "caption": "",
+    "focusY": "40%",
+    "alt": "the halter dress, up close"
+  },
+  "dance-bw.jpg": {
+    "caption": "",
+    "focusY": "30%",
+    "alt": "dancing under the tent, in black and white"
+  },
+  "mother-son.jpg": {
+    "caption": "with his mom",
+    "focusY": "34%"
+  },
+  "dancing.jpg": {
+    "caption": "",
+    "focusY": "30%"
+  },
+  "bw-lift.jpg": {
+    "caption": "",
+    "focusY": "34%",
+    "alt": "swept up on the dance floor, in black and white"
+  },
+  "guests-table.jpg": {
+    "caption": "",
+    "focusY": "48%",
+    "alt": "guests at the candlelit tables under the tent"
+  },
+  "dancefloor.jpg": {
+    "caption": "",
+    "focusY": "55%"
+  },
+  "portrait-groomsmen.jpg": {
+    "caption": "",
+    "focusY": "28%",
+    "alt": "the groomsmen on the green"
+  },
+  "portrait-friends.jpg": {
+    "caption": "",
+    "focusY": "30%",
+    "alt": "with their friends on the green"
+  },
+  "family.jpg": {
+    "caption": "everyone we love",
+    "focusY": "42%"
+  },
+  "couple-cocktail.jpg": {
+    "caption": "just us two",
+    "focusY": "45%"
+  },
+  "cake-cut.jpg": {
+    "caption": "the first slice",
+    "focusY": "45%"
+  },
+  "table.jpg": {
+    "caption": "candlelight",
+    "focusY": "58%"
+  },
+  "groomsmen-night.jpg": {
+    "caption": "",
+    "focusY": "45%",
+    "alt": "the groomsmen at the rehearsal dinner"
+  },
+  "tent.jpg": {
+    "caption": "the room",
+    "focusY": "36%"
+  },
+  "band.jpg": {
+    "caption": "the band played on",
+    "focusY": "46%"
+  },
+  "firstdance.jpg": {
+    "caption": "our song",
+    "focusY": "40%"
+  },
+  "dance-01.jpg": {
+    "focusY": "42%"
+  },
+  "dance-02.jpg": {
+    "focusY": "42%"
+  },
+  "dance-03.jpg": {
+    "focusY": "42%"
+  },
+  "dance-04.jpg": {
+    "focusY": "42%"
+  },
+  "dance-05.jpg": {
+    "focusY": "40%"
+  },
+  "dance-06.jpg": {
+    "focusY": "42%"
+  },
+  "dance-07.jpg": {
+    "focusY": "40%"
+  }
 }

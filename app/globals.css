@@ -264,6 +264,22 @@
   }
 }
 
+/* Hero entrance — server-rendered CSS so the names (the page's largest paint)
+   appear on first paint instead of waiting for hydration. */
+.hero-rise {
+  animation: heroRise 0.9s var(--ease-editorial) both;
+}
+@keyframes heroRise {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(28px);

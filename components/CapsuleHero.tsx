@@ -15,12 +15,6 @@ export function CapsuleHero() {
   const reduce = useReducedMotion();
   const img = heroImage();
 
-  const rise = (delay: number) => ({
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: reduce ? 0 : 0.9, delay: reduce ? 0 : delay, ease },
-  });
-
   return (
     <section
       id="top"
@@ -57,29 +51,34 @@ export function CapsuleHero() {
         }}
       />
 
-      {/* names ride high over the open sky; the kiss stays clear in the middle */}
+      {/* names ride high over the open sky; the kiss stays clear in the middle.
+          CSS-animated (not framer) so the page's largest paint — the names —
+          appears on first paint instead of waiting out hydration. */}
       <div className="relative">
-        <motion.p
-          className="mb-6 font-serif text-[1.05rem] italic text-cream/90"
-          style={{ letterSpacing: "0.18em" }}
-          {...rise(0.2)}
+        <p
+          className="hero-rise mb-6 font-serif text-[1.05rem] italic text-cream/90"
+          style={{ letterSpacing: "0.18em", animationDelay: "0.2s" }}
         >
           {site.eyebrow}
-        </motion.p>
+        </p>
 
-        <motion.h1
-          className="font-display text-cream"
-          style={{ fontSize: "clamp(3rem, 9vw, 7.6rem)", lineHeight: 0.94, letterSpacing: "-0.01em" }}
-          {...rise(0.35)}
+        <h1
+          className="hero-rise font-display text-cream"
+          style={{
+            fontSize: "clamp(3rem, 9vw, 7.6rem)",
+            lineHeight: 0.94,
+            letterSpacing: "-0.01em",
+            animationDelay: "0.35s",
+          }}
         >
           <span className="block">{site.names.first}</span>
           <span className="my-1 block font-serif text-[0.4em] font-light italic text-gold-soft">&amp;</span>
           <span className="block">{site.names.second}</span>
-        </motion.h1>
+        </h1>
       </div>
 
       {/* date + place sit low over the platform */}
-      <motion.div className="relative" {...rise(0.8)}>
+      <div className="hero-rise relative" style={{ animationDelay: "0.8s" }}>
         <div
           className="font-serif text-[0.95rem] font-semibold uppercase text-cream"
           style={{ letterSpacing: "0.22em" }}
@@ -89,7 +88,7 @@ export function CapsuleHero() {
         <div className="mt-2 font-serif text-[1.15rem] italic text-cream/80" style={{ letterSpacing: "0.04em" }}>
           {site.location}
         </div>
-      </motion.div>
+      </div>
 
       <motion.div
         aria-hidden

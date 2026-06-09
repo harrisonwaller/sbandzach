@@ -36,7 +36,7 @@ export function TopBar() {
     >
       <a
         href="#top"
-        aria-label="Back to top"
+        aria-label={`${site.markFull} — back to top`}
         className="-my-3 inline-flex min-h-[44px] items-center py-3 font-serif text-[1.15rem] font-semibold uppercase text-ink"
         style={{ letterSpacing: "0.22em" }}
       >

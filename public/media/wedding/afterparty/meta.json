@@ -1,30 +1,105 @@
 {
-  "_defaults": { "visibility": "public" },
-  "party-film.mp4": { "id": "party-film", "caption": "all the girls" },
-  "party-film-2.mp4": { "id": "party-film-2", "caption": "" },
-  "opener.mp4": { "id": "afterparty-opener", "caption": "the lights came up" },
-  "sendoff-film.mp4": { "id": "afterparty-sendoff-film", "caption": "off into the night" },
-  "film-3.mp4": { "id": "afterparty-film-3", "caption": "" },
-  "group.jpg": { "id": "afterparty-group", "caption": "", "focusY": "44%" },
-
-  "floor-kiss.jpg": { "caption": "", "focusY": "40%" },
-  "handsup.jpg": { "caption": "hands up", "focusY": "45%" },
-  "embrace.jpg": { "caption": "", "focusY": "45%" },
-  "birthday-kiss.jpg": { "caption": "happy birthday, groom", "focusY": "42%" },
-  "send-off.jpg": { "caption": "the send-off", "focusY": "40%" },
-  "mom-dance.jpg": { "caption": "", "focusY": "45%" },
-  "joy.jpg": { "caption": "", "focusY": "34%" },
-  "hats.jpg": { "caption": "from georgia, with love", "focusY": "34%" },
-  "fireworks.jpg": { "caption": "", "focusY": "50%" },
-  "fireworks-pro.jpg": { "caption": "", "focusY": "55%" },
-  "fireworks-cheer.jpg": { "caption": "", "focusY": "55%" },
-
-  "party-01.jpg": { "focusY": "40%" },
-  "party-02.jpg": { "focusY": "38%" },
-  "party-03.jpg": { "focusY": "38%" },
-  "party-04.jpg": { "focusY": "40%" },
-  "party-05.jpg": { "focusY": "40%" },
-  "party-06.jpg": { "focusY": "40%" },
-  "party-07.jpg": { "focusY": "40%" },
-  "party-08.jpg": { "focusY": "38%" }
+  "_defaults": {
+    "visibility": "public"
+  },
+  "party-film.mp4": {
+    "id": "party-film",
+    "caption": "all the girls"
+  },
+  "party-film-2.mp4": {
+    "id": "party-film-2",
+    "caption": ""
+  },
+  "opener.mp4": {
+    "id": "afterparty-opener",
+    "caption": "the lights came up"
+  },
+  "sendoff-film.mp4": {
+    "id": "afterparty-sendoff-film",
+    "caption": "off into the night"
+  },
+  "film-3.mp4": {
+    "id": "afterparty-film-3",
+    "caption": ""
+  },
+  "group.jpg": {
+    "id": "afterparty-group",
+    "caption": "",
+    "focusY": "44%",
+    "alt": "friends crowded together at the after-party"
+  },
+  "floor-kiss.jpg": {
+    "caption": "",
+    "focusY": "40%"
+  },
+  "handsup.jpg": {
+    "caption": "hands up",
+    "focusY": "45%"
+  },
+  "embrace.jpg": {
+    "caption": "",
+    "focusY": "45%"
+  },
+  "birthday-kiss.jpg": {
+    "caption": "happy birthday, groom",
+    "focusY": "42%"
+  },
+  "send-off.jpg": {
+    "caption": "the send-off",
+    "focusY": "40%"
+  },
+  "mom-dance.jpg": {
+    "caption": "",
+    "focusY": "45%",
+    "alt": "dancing with mom under the party lights"
+  },
+  "joy.jpg": {
+    "caption": "",
+    "focusY": "34%",
+    "alt": "laughing on the dance floor at the after-party"
+  },
+  "hats.jpg": {
+    "caption": "from georgia, with love",
+    "focusY": "34%"
+  },
+  "fireworks.jpg": {
+    "caption": "",
+    "focusY": "50%",
+    "alt": "fireworks over the lake at the end of the night"
+  },
+  "fireworks-pro.jpg": {
+    "caption": "",
+    "focusY": "55%",
+    "alt": "fireworks over Lake Oconee at the end of the night"
+  },
+  "fireworks-cheer.jpg": {
+    "caption": "",
+    "focusY": "55%",
+    "alt": "the couple cheering under gold fireworks on the dock"
+  },
+  "party-01.jpg": {
+    "focusY": "40%",
+    "alt": "the dance floor glowing at the after-party"
+  },
+  "party-02.jpg": {
+    "focusY": "38%"
+  },
+  "party-03.jpg": {
+    "focusY": "38%"
+  },
+  "party-04.jpg": {
+    "focusY": "40%"
+  },
+  "party-05.jpg": {
+    "focusY": "40%"
+  },
+  "party-06.jpg": {
+    "focusY": "40%"
+  },
+  "party-07.jpg": {
+    "focusY": "40%"
+  },
+  "party-08.jpg": {
+    "focusY": "38%"
+  }
 }

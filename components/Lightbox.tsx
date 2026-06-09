@@ -108,7 +108,7 @@ export function Lightbox({
             >
               <Image
                 src={current.src}
-                alt={current.caption ?? current.title ?? ""}
+                alt={current.alt ?? current.caption ?? current.title ?? ""}
                 fill
                 sizes="92vw"
                 placeholder={current.blurDataURL ? "blur" : "empty"}
@@ -131,6 +131,20 @@ export function Lightbox({
               {index! + 1} / {items.length}
             </div>
           </motion.figure>
+
+          {/* warm the two adjacent frames so arrow-stepping never shows a
+              blank: same component + sizes, so the same optimized variant is
+              fetched from cache when it becomes current */}
+          <div aria-hidden className="pointer-events-none absolute h-px w-px overflow-hidden opacity-0">
+            {[1, -1].map((d) => {
+              const n = items[(index! + d + items.length) % items.length];
+              return n && n.id !== current.id ? (
+                <div key={n.id} className="relative h-px w-px">
+                  <Image src={n.src} alt="" fill sizes="92vw" className="object-contain" />
+                </div>
+              ) : null;
+            })}
+          </div>
         </motion.div>
       )}
     </AnimatePresence>

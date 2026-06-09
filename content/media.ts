@@ -36,6 +36,7 @@ export type MediaItem = {
   focusY?: string; // vertical crop focus for cover images, e.g. "50%" (default ~32%)
   title?: string;
   caption?: string;
+  alt?: string; // descriptive alt text; falls back to caption, then a generic label
   speaker?: string; // for audio/quote/letter
   speakerRole?: string; // "Best Man", "Father of the Bride"
   speakerPhoto?: string;

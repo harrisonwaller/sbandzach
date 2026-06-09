@@ -13,7 +13,7 @@ const ease = [0.16, 1, 0.3, 1] as const;
 
 /** A descriptive alt/archival label for a frame that has no caption. */
 function altFor(item: MediaItem, label: string): string {
-  return item.caption || `Sara Beth & Zachary — ${label}`;
+  return item.alt || item.caption || `Sara Beth & Zachary — ${label}`;
 }
 
 /**
@@ -93,7 +93,7 @@ function FeatureFrame({ item, label, onOpen }: { item: MediaItem; label: string;
   return (
     <button
       onClick={onOpen}
-      aria-label={item.caption || "View photograph"}
+      aria-label={altFor(item, label)}
       className={
         portrait
           ? "relative mx-auto block aspect-[4/5] max-h-[84svh] w-full max-w-[780px] overflow-hidden bg-cream-deep"
@@ -109,7 +109,9 @@ function FeatureFrame({ item, label, onOpen }: { item: MediaItem; label: string;
     >
       <Image
         src={item.src}
-        alt={altFor(item, label)}
+        // the wrapping button carries the accessible name; a matching alt
+        // reads twice to screen readers
+        alt=""
         fill
         sizes={portrait ? "(max-width: 800px) 100vw, 780px" : "100vw"}
         placeholder={item.blurDataURL ? "blur" : "empty"}

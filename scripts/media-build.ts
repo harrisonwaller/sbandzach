@@ -45,6 +45,7 @@ type MediaItem = {
   height?: number;
   title?: string;
   caption?: string;
+  alt?: string;
   speaker?: string;
   speakerRole?: string;
   speakerPhoto?: string;
@@ -199,7 +200,7 @@ async function main() {
 
     // Carry through the optional editorial fields.
     for (const k of [
-      "title", "caption", "speaker", "speakerRole", "speakerPhoto",
+      "title", "caption", "alt", "speaker", "speakerRole", "speakerPhoto",
       "date", "featured", "pullQuote", "transcript", "sortOrder", "thumbnail",
       "focusY",
     ] as const) {
