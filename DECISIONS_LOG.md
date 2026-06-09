@@ -2,6 +2,20 @@
 
 Append-only. Newest at top.
 
+## Cycle 8 — 2026-06-09 — Share preview + favicon
+**Audited:** metadata had Open Graph title/description but **no image** → texting
+the link showed a blank/text-only card; no favicon either.
+**Changed:**
+- Composed a 1200×630 share card `public/og.jpg` — the kiss (smart-cropped to the
+  couple) with "the best day / Sara Beth & Zachary / 06.06.2026 · Lake Oconee".
+- Wired `openGraph.images` + `twitter: summary_large_image` in `app/layout.tsx`.
+- Added `app/icon.png` (512) + `app/apple-icon.png` (180) — an "S·Z" serif
+  monogram on cream (Next auto-wires favicon + touch icon).
+**Verified:** tsc clean; dev HTML emits og:image/twitter:image; `/og.jpg` 200;
+favicon + OG card visually checked.
+**Why it matters:** this site exists to be *shared* — the link now previews as a
+premium card instead of a blank rectangle.
+
 ## Cycle 7 — 2026-06-08 — Correctness audit + video weight
 **Audited (correctness, post-restructure):** the reception "dance" stills + the
 reception clip show the bride in the short party dress + groom's white jacket
