@@ -2,11 +2,19 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { motion, useReducedMotion } from "framer-motion";
 import type { MediaItem } from "@/content/media";
 import { type CapsuleSection, resolve } from "@/content/capsule";
 import { Reveal } from "@/components/Reveal";
 import { Lightbox } from "@/components/Lightbox";
 import { Film } from "@/components/Film";
+
+const ease = [0.16, 1, 0.3, 1] as const;
+
+/** A descriptive alt/archival label for a frame that has no caption. */
+function altFor(item: MediaItem, label: string): string {
+  return item.caption || `Sara Beth & Zachary — ${label}`;
+}
 
 /**
  * Renders one chapter of the capsule: a tone-coloured section (the escalation),
@@ -22,6 +30,7 @@ export function CapsuleChapter({ section }: { section: CapsuleSection }) {
   const lightboxItems: MediaItem[] = [...(featured ? [featured] : []), ...photos];
   const [index, setIndex] = useState<number | null>(null);
   const openAt = (item: MediaItem) => setIndex(lightboxItems.findIndex((m) => m.id === item.id));
+  const chapterLabel = `${section.title} ${section.titleEm}`.trim();
 
   return (
     <section id={section.id} className={`tone-section tone-${section.tone}`}>
@@ -40,7 +49,7 @@ export function CapsuleChapter({ section }: { section: CapsuleSection }) {
       {/* FEATURE — one large frame, then a grid of the rest. */}
       {section.layout === "feature" && featured && (
         <Reveal>
-          <FeatureFrame item={featured} onOpen={() => openAt(featured)} />
+          <FeatureFrame item={featured} label={chapterLabel} onOpen={() => openAt(featured)} />
         </Reveal>
       )}
 
@@ -56,16 +65,14 @@ export function CapsuleChapter({ section }: { section: CapsuleSection }) {
         </Reveal>
       )}
 
-      {/* GRID / GALLERY / the photo half of FEATURE. */}
+      {/* GRID / GALLERY / the photo half of FEATURE — cells cascade in. */}
       {section.layout !== "film" && photos.length > 0 && (
-        <Reveal className="mt-4">
-          <PhotoGrid photos={photos} onOpen={openAt} />
-        </Reveal>
+        <PhotoGrid photos={photos} label={chapterLabel} onOpen={openAt} className="mt-4" />
       )}
 
       {/* FILM — interleave each clip with a slice of stills (crescendo). */}
       {section.layout === "film" && (
-        <FilmReel films={films} photos={photos} onOpen={openAt} />
+        <FilmReel films={films} photos={photos} label={chapterLabel} onOpen={openAt} />
       )}
 
       <Lightbox
@@ -78,7 +85,7 @@ export function CapsuleChapter({ section }: { section: CapsuleSection }) {
   );
 }
 
-function FeatureFrame({ item, onOpen }: { item: MediaItem; onOpen: () => void }) {
+function FeatureFrame({ item, label, onOpen }: { item: MediaItem; label: string; onOpen: () => void }) {
   // Landscape features run full-bleed; portrait features sit in a centred,
   // properly-proportioned frame so a single/pair subject is never cropped to a
   // thin head-and-shoulders band.
@@ -89,15 +96,15 @@ function FeatureFrame({ item, onOpen }: { item: MediaItem; onOpen: () => void })
       aria-label={item.caption || "View photograph"}
       className={
         portrait
-          ? "relative mx-auto block aspect-[4/5] max-h-[82svh] w-full max-w-[640px] overflow-hidden bg-cream-deep"
+          ? "relative mx-auto block aspect-[4/5] max-h-[84svh] w-full max-w-[780px] overflow-hidden bg-cream-deep"
           : "relative block h-[64svh] max-h-[760px] w-full overflow-hidden bg-cream-deep sm:h-[78svh]"
       }
     >
       <Image
         src={item.src}
-        alt={item.caption ?? ""}
+        alt={altFor(item, label)}
         fill
-        sizes={portrait ? "(max-width: 700px) 100vw, 640px" : "100vw"}
+        sizes={portrait ? "(max-width: 800px) 100vw, 780px" : "100vw"}
         placeholder={item.blurDataURL ? "blur" : "empty"}
         blurDataURL={item.blurDataURL}
         className="object-cover"
@@ -117,23 +124,44 @@ function FeatureFrame({ item, onOpen }: { item: MediaItem; onOpen: () => void })
 
 function PhotoGrid({
   photos,
+  label,
   onOpen,
+  className,
 }: {
   photos: MediaItem[];
+  label: string;
   onOpen: (item: MediaItem) => void;
+  className?: string;
 }) {
+  const reduce = useReducedMotion();
+  const parent = {
+    hidden: {},
+    show: { transition: { staggerChildren: reduce ? 0 : 0.07, delayChildren: reduce ? 0 : 0.04 } },
+  };
+  const child = reduce
+    ? { hidden: { opacity: 1 }, show: { opacity: 1 } }
+    : { hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.85, ease } } };
+
   return (
-    <div className="capsule-grid" data-count={photos.length}>
+    <motion.div
+      className={`capsule-grid${className ? ` ${className}` : ""}`}
+      data-count={photos.length}
+      variants={parent}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, margin: "0px 0px -10% 0px" }}
+    >
       {photos.map((p, i) => (
-        <button
+        <motion.button
           key={p.id}
+          variants={child}
           className={`cell${p.width && p.height && p.width > p.height * 1.2 ? " wide" : ""}`}
           onClick={() => onOpen(p)}
           aria-label={`View photograph ${i + 1} of ${photos.length}`}
         >
           <Image
             src={p.src}
-            alt={p.caption ?? ""}
+            alt={altFor(p, label)}
             fill
             sizes="(max-width: 760px) 50vw, 33vw"
             placeholder={p.blurDataURL ? "blur" : "empty"}
@@ -141,9 +169,9 @@ function PhotoGrid({
             className="object-cover"
             style={p.focusY ? { objectPosition: `center ${p.focusY}` } : undefined}
           />
-        </button>
+        </motion.button>
       ))}
-    </div>
+    </motion.div>
   );
 }
 
@@ -152,10 +180,12 @@ function PhotoGrid({
 function FilmReel({
   films,
   photos,
+  label,
   onOpen,
 }: {
   films: MediaItem[];
   photos: MediaItem[];
+  label: string;
   onOpen: (item: MediaItem) => void;
 }) {
   const groups = Math.max(films.length, 1);
@@ -171,18 +201,14 @@ function FilmReel({
               <Film film={film} className="max-w-chapter" />
             </Reveal>
             {slice.length > 0 && (
-              <Reveal>
-                <PhotoGrid photos={slice} onOpen={onOpen} />
-              </Reveal>
+              <PhotoGrid photos={slice} label={label} onOpen={onOpen} />
             )}
           </div>
         );
       })}
       {/* any stills beyond the last film group */}
       {photos.length > per * groups && (
-        <Reveal>
-          <PhotoGrid photos={photos.slice(per * groups)} onOpen={onOpen} />
-        </Reveal>
+        <PhotoGrid photos={photos.slice(per * groups)} label={label} onOpen={onOpen} />
       )}
     </div>
   );

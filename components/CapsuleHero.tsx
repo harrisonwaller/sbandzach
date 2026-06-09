@@ -27,17 +27,25 @@ export function CapsuleHero() {
       className="relative flex min-h-[100svh] flex-col items-center justify-between overflow-hidden px-6 pt-[13vh] pb-[15vh] text-center"
     >
       {img && (
-        <Image
-          src={img.src}
-          alt="Sara Beth and Zachary"
-          fill
-          priority
-          sizes="100vw"
-          placeholder={img.blurDataURL ? "blur" : "empty"}
-          blurDataURL={img.blurDataURL}
-          className="object-cover"
-          style={{ objectPosition: `center ${img.focusY ?? "32%"}` }}
-        />
+        <motion.div
+          aria-hidden
+          className="absolute inset-0"
+          initial={{ scale: 1 }}
+          animate={{ scale: reduce ? 1 : 1.06 }}
+          transition={{ duration: reduce ? 0 : 18, ease: "easeOut" }}
+        >
+          <Image
+            src={img.src}
+            alt="Sara Beth and Zachary"
+            fill
+            priority
+            sizes="100vw"
+            placeholder={img.blurDataURL ? "blur" : "empty"}
+            blurDataURL={img.blurDataURL}
+            className="object-cover"
+            style={{ objectPosition: `center ${img.focusY ?? "32%"}` }}
+          />
+        </motion.div>
       )}
       {/* veil for legibility — darker at top and bottom, lighter in the middle */}
       <div

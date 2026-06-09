@@ -2,6 +2,25 @@
 
 Append-only. Newest at top.
 
+## Cycle 14 — 2026-06-09 — Subagent swarm review + premium-scroll enhancements
+Ran 5 specialist subagents (2 visual, motion, performance, UX). Implemented the
+high-value, no-content-needed wins:
+- **Motion/scroll feel:** gold scroll-progress hairline (ScrollProgress.tsx);
+  staggered grid-cell reveals (cascade in); hero slow Ken-Burns zoom; finale
+  'breath' (slow bloom + delayed caption). All gate on prefers-reduced-motion.
+- **Visual:** bumped portrait feature frames 640→780px (agents flagged them as
+  'timid' with dead margins) — more presence, still no crop.
+- **Engineering/keepsake:** videos preload='none' (kills 6 metadata fetches +
+  unintended full-clip downloads on scroll); film-3 11→8.8MB; real alt text
+  derived from chapter+names (a11y + 10-yr archive); <noscript> resilience so the
+  album is readable if JS ever fails; removed stray 'FeaturedImage 2.tsx'.
+**Verified:** tsc + prod build clean; 0 console errors; progress bar renders;
+bigger features render; reduced-motion respected.
+**Backlog (needs owner content/decision):** first-dance song w/ mute toggle;
+'how they met' + opening/closing lines; chapter-nav rail; day timeline; vault
+'discovered' polish; per-photo share cards; scroll-linked continuous tone wash.
+
+
 ## Cycle 13 — 2026-06-09 — More media + ceremony fix (owner)
 - Getting ready: added the bridesmaid-robes detail (IMG_0626, HEIC rotated upright).
 - Ceremony: removed the mislabeled 'kiss-alt' — it was a guest family (woman in

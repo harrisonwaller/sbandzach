@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Italiana, Cormorant_Garamond } from "next/font/google";
 import { site } from "@/content/site";
 import { VaultProvider } from "@/components/VaultProvider";
+import { ScrollProgress } from "@/components/ScrollProgress";
 import "./globals.css";
 
 const display = Italiana({
@@ -62,10 +63,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${serif.variable}`}>
       <body>
+        {/* Resilience: if JS never runs (old browser years from now, CDN hiccup),
+            the scroll-reveal's inline opacity:0 would hide the whole album — keep
+            every section readable without JS. */}
+        <noscript>
+          <style>{`[style*="opacity:0"],[style*="opacity: 0"]{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
         {/* Server-rendered loader — part of the first paint, fades via CSS. */}
         <div className="loader" aria-hidden>
           <div className="loader-mark">{site.mark}</div>
         </div>
+        <ScrollProgress />
         <VaultProvider>{children}</VaultProvider>
       </body>
     </html>

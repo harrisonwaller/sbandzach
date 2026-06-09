@@ -52,7 +52,7 @@ export function Film({ film, className }: { film: MediaItem; className?: string 
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="none"
         controls={!!reduce}
         aria-label={film.caption ?? "Wedding clip"}
         className="h-full w-full object-cover"
