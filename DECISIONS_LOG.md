@@ -2,6 +2,33 @@
 
 Append-only. Newest at top.
 
+## Cycle 22 — 2026-06-09 — Getting-ready film + A–Z premium polish pass (owner)
+New: **getting-ready VIDEO** (IMG_9577.mov → muted/faststart) — bride + girls in matching
+blue pj's on the lakehouse steps, morning-of. Placed as the film in the 'Getting ready'
+chapter (caption 'the morning of').
+Then a full A–Z review (subagent code audit + visual capture) and implemented the top
+high-value, no-owner-content wins:
+- **Finale letterbox FIX** (was the worst eyesore): portrait fireworks pillarboxed with dead
+  navy bars on desktop → now a blurred, dimmed ambient fill bleeds to the edges with the
+  sharp 2:3-ratio frame centred over it (object-cover in a ratio-matched box = full + crisp)
+  + a soft drop-shadow. (Center-blur during testing was a stale dev image cache — cleared.)
+- **Chapter-nav rail** (components/ChapterNav.tsx): fixed right-edge hairline ticks, one per
+  chapter, active synced via IntersectionObserver, click-to-jump, active drawn out in gold
+  with its name. Real navigation (survives reduced motion); reads on light AND dark tones;
+  lg+ only.
+- **Lightbox polish**: drag/swipe-to-navigate, focus restore to the opening thumbnail on
+  close, more legible counter (cream/35→/55), thicker arrows (stroke 1→1.5).
+- **Hero cue**: the infinitely blinking 'their day, kept' (read like a CTA) → one quiet
+  settle + a hairline that draws down once.
+- **Footer**: was just a monogram — now spells out 'Sara Beth & Zachary' in the display
+  face + closing line + full date ('June Sixth · Two Thousand Twenty-Six') + location. A
+  proper book-closing colophon.
+**Verified:** tsc clean; 0 console errors; finale crisp+filled; nav rail on light+dark;
+footer colophon; ready video in place.
+**Backlog (needs owner content):** first-dance song w/ off-by-default mute toggle; 'how
+they met' intro line between hero and Ch I; a one-line dedication; caption pass on the
+~39 uncaptioned frames. Also a maintenance note: ~12 dead legacy components can be removed.
+
 ## Cycle 21 — 2026-06-09 — Send-off film + cake/detail frames + full grid audit (owner)
 New content:
 - **Send-off VIDEO** (IMG_6292.mov → muted/faststart mp4) = the petal grand exit (short

@@ -3,6 +3,7 @@
   "the-kiss.jpg": { "id": "hero-kiss", "featured": true, "focusY": "34%", "caption": "" },
 
   "processional.mp4": { "id": "ceremony-processional", "caption": "the rehearsal" },
+  "ready-film.mp4": { "id": "ceremony-ready-film", "caption": "the morning of" },
   "groom-girls.jpg": { "caption": "", "focusY": "40%" },
   "aisle.jpg": { "caption": "down the aisle", "focusY": "42%" },
   "kiss-alt.jpg": { "caption": "", "focusY": "40%" },

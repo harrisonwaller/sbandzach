@@ -592,6 +592,18 @@
     "focusY": "36%"
   },
   {
+    "id": "ceremony-ready-film",
+    "type": "video",
+    "src": "/media/wedding/ceremony/ready-film.mp4",
+    "chapter": "ceremony",
+    "visibility": "public",
+    "thumbnail": "/media/wedding/ceremony/ready-film.jpg",
+    "width": 720,
+    "height": 1132,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAIAAACgHXkXAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+0lEQVR4nAHwAQ/+AP/327Kec9q2denChfbNjezChtKoc5h7R8e5lNDFrADo6czGt4LtzX+XdkeVZDqPYjWzjFloVSKfl3eblYcA5OXKxb2G7NSEemU2QSwESjMOkn5KhWQszbaOlZaIAODizNTTo9S9g1xIKR0XAC4nAnRVNT4rE6GfjaeqowDu+fHY3sOSgms9Jh5kSTczLiiPhpV0e4mDg3bBxLwA7vbwvb22WFdnTVRkeks0fHaAQEpfdou2eHJqrbKdAPT//4aMjicAAF1fbcOqnYZ2bzARAHB7kXmKiayypADk8vtISVM3M0ckJzzs/f+Kj51pYm2t7P9/lKCLk5EArb7KNzc9YH2qXF92xcHNcnGDSU5ioMj9fHJ1bWJfAIyUnndsbXiHr5Ss35WOm3FaVlldc4WbyGl2hzg6PACWlJSTg4ppiLtogK0oEhI5JSlddqNTd6puiaY8QUYAcYCDTU1JOiQkZ0pKRh4WAwAAKhshSDZBcnOATF5pAHyLkV9oZjUfFUEwJE8sLy8vPCAAADUTCGVdaWmAmgBre4BZZmY9NC4gEghubXiRo7smGBAXAABqd4dtf5AAaHZ1V2ZlXV5foqCrYWtxW2hoS01MmZ6lbHqFSlJaADg+QicuMU1YYpyvwjpCTyQpM09cY5uvvjY9SCQpNhE33DJrbIkhAAAAAElFTkSuQmCC",
+    "caption": "the morning of"
+  },
+  {
     "id": "ceremony-ready-mirror",
     "type": "photo",
     "src": "/media/wedding/ceremony/ready-mirror.jpg",

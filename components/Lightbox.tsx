@@ -44,9 +44,12 @@ export function Lightbox({
     // lock scroll while open
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    // remember what was focused so keyboard users return to the thumbnail on close
+    const opener = document.activeElement as HTMLElement | null;
     return () => {
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = prev;
+      opener?.focus?.();
     };
   }, [open, go, onClose]);
 
@@ -82,11 +85,18 @@ export function Lightbox({
 
           <motion.figure
             key={current.id}
-            className="relative flex max-h-[88svh] max-w-[92vw] flex-col items-center"
+            className="relative flex max-h-[88svh] max-w-[92vw] cursor-grab flex-col items-center active:cursor-grabbing"
             initial={{ opacity: 0, scale: 0.985 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease }}
             onClick={(e) => e.stopPropagation()}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.18}
+            onDragEnd={(_e, info) => {
+              if (info.offset.x < -70) go(1);
+              else if (info.offset.x > 70) go(-1);
+            }}
           >
             <div
               className="relative"
@@ -115,7 +125,7 @@ export function Lightbox({
               </figcaption>
             )}
             <div
-              className="mt-1 font-display text-[0.7rem] uppercase text-cream/35"
+              className="mt-1 font-display text-[0.72rem] uppercase text-cream/55"
               style={{ letterSpacing: "0.4em", textIndent: "0.4em" }}
             >
               {index! + 1} / {items.length}
@@ -146,7 +156,7 @@ function LightboxArrow({
         <path
           d={dir === "left" ? "M15 5l-7 7 7 7" : "M9 5l7 7-7 7"}
           stroke="currentColor"
-          strokeWidth="1"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />

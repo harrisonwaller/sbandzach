@@ -20,28 +20,41 @@ export function Finale() {
       aria-label="Fireworks over the lake"
       className="relative flex min-h-[86svh] flex-col items-center justify-end overflow-hidden bg-[#0a0712] px-6 pb-[14vh] text-center"
     >
-      {/* one slow exhale as the book shuts on the sky lighting up */}
+      {/* Ambient fill: a blurred, dimmed copy of the frame bleeds to the edges so
+          the portrait shot never shows dead letterbox bars on wide screens. */}
+      <div aria-hidden className="absolute inset-0">
+        <Image
+          src={img.src}
+          alt=""
+          fill
+          sizes="100vw"
+          className="scale-110 object-cover blur-2xl"
+          style={{ objectPosition: `center ${img.focusY ?? "50%"}` }}
+        />
+        <div className="absolute inset-0 bg-[#0a0712]/55" />
+      </div>
+      {/* one slow exhale as the book shuts on the sky lighting up — the sharp,
+          whole frame centred over the fill. The frame matches the photo's 2:3
+          ratio, so object-cover fills it with no crop and stays crisp. */}
       <motion.div
-        aria-hidden
-        className="absolute inset-0"
-        initial={{ scale: reduce ? 1 : 1.05, opacity: reduce ? 1 : 0.6 }}
+        className="absolute inset-0 flex items-center justify-center"
+        initial={{ scale: reduce ? 1 : 1.04, opacity: reduce ? 1 : 0.9 }}
         whileInView={{ scale: 1, opacity: 1 }}
         viewport={{ once: true, margin: "0px 0px -15% 0px" }}
         transition={{ duration: reduce ? 0 : 6, ease: "easeOut" }}
       >
-        <Image
-          src={img.src}
-          alt="Fireworks over the lake — Sara Beth & Zachary"
-          fill
-          sizes="100vw"
-          placeholder={img.blurDataURL ? "blur" : "empty"}
-          blurDataURL={img.blurDataURL}
-          // Cover-fill on phones (the portrait frame fills tall screens); on wider
-          // screens contain it so the whole shot — fireworks AND the couple on the
-          // dock — is visible instead of a cropped band of dark sky.
-          className="object-cover md:object-contain"
-          style={{ objectPosition: `center ${img.focusY ?? "50%"}` }}
-        />
+        <div className="relative aspect-[2/3] h-[88svh] max-h-[1000px] max-w-[94vw] overflow-hidden shadow-[0_30px_90px_rgba(0,0,0,0.55)]">
+          <Image
+            src={img.src}
+            alt="Fireworks over the lake — Sara Beth & Zachary"
+            fill
+            placeholder={img.blurDataURL ? "blur" : "empty"}
+            blurDataURL={img.blurDataURL}
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 1000px"
+            style={{ objectPosition: `center ${img.focusY ?? "50%"}` }}
+          />
+        </div>
       </motion.div>
       {/* fade the bottom into the ink footer (kept subtle so it never crops the shot) */}
       <div

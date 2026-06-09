@@ -82,6 +82,7 @@ export const capsule: CapsuleSection[] = [
     tone: "ivory",
     layout: "feature",
     featuredId: "ceremony-ready-mom",
+    filmIds: ["ceremony-ready-film"],
     itemIds: [
       "ceremony-ready-dress",
       "ceremony-ready-01",

@@ -93,13 +93,22 @@ export function CapsuleHero() {
 
       <motion.div
         aria-hidden
-        className="absolute bottom-9 left-1/2 font-serif text-[0.75rem] lowercase italic text-cream/70"
+        className="absolute bottom-9 left-1/2 flex flex-col items-center gap-2 font-serif text-[0.75rem] lowercase italic text-cream/65"
         style={{ letterSpacing: "0.3em", x: "-50%" }}
         initial={{ opacity: 0 }}
-        animate={reduce ? { opacity: 0.6 } : { opacity: [0, 0.6, 0], y: [-3, 2, -3] }}
-        transition={reduce ? { duration: 0 } : { delay: 1.4, duration: 3, repeat: Infinity, ease: "easeInOut" }}
+        animate={{ opacity: reduce ? 0.6 : 0.65 }}
+        transition={{ delay: reduce ? 0 : 1.6, duration: reduce ? 0 : 1.4, ease }}
       >
         their day, kept
+        {!reduce && (
+          <motion.span
+            aria-hidden
+            className="block h-7 w-px origin-top bg-cream/40"
+            initial={{ scaleY: 0 }}
+            animate={{ scaleY: 1 }}
+            transition={{ delay: 2.1, duration: 1, ease }}
+          />
+        )}
       </motion.div>
     </section>
   );

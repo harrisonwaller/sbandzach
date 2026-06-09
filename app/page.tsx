@@ -2,6 +2,7 @@ import { vaultMedia } from "@/content/media";
 import { capsule } from "@/content/capsule";
 
 import { TopBar } from "@/components/TopBar";
+import { ChapterNav } from "@/components/ChapterNav";
 import { CapsuleHero } from "@/components/CapsuleHero";
 import { CapsuleChapter } from "@/components/CapsuleChapter";
 import { Vault } from "@/components/Vault";
@@ -20,6 +21,7 @@ export default function Page() {
   return (
     <>
       <TopBar />
+      <ChapterNav />
       <main>
         <CapsuleHero />
         {capsule.map((section) => (
