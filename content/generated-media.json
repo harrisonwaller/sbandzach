@@ -244,6 +244,18 @@
     "focusY": "38%"
   },
   {
+    "id": "afterparty-send-off",
+    "type": "photo",
+    "src": "/media/wedding/afterparty/send-off.jpg",
+    "chapter": "afterparty",
+    "visibility": "public",
+    "width": 1290,
+    "height": 1902,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAIAAABP3xIpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB20lEQVR4nGNgYWFhxgAsSIABizQzCMGVQlUwMjLCVTAwMAgKCkiJi6pLSzIwMDJA5NjYWOHWsTCzqMtJsjIzh7o7iouJMFirK0sICbCysbGxskJU8PLyVoR621sY93bWy8lIMyhKihkrS/Fysnqa6/paGzEwMEiIiy6ZP+PR3Qt+Pm4MDAwMPFzcEkL8HvqKMwoi9/QWyYnyuTjZ/P//+f27x06OViAVsuIiokICbKzMacGu3y7tLAlx9PVw2LB67tWLR1csniEkyMMgwMvDw83NxMToaGP86faxRZ2l6d7W+UkRySlx1lZmMtJiDJwcHNzc3AyMjNHBrv9fXTq2fbmRrrKlkbqIiAgPL7eCrBiDoJA4OzuzkACXj7PFqVVTdk6utTJUc7UzkpEWl5eVEBURZJCQ1uTl41aTF9NVkwl1NGrxM/G2148KctHXVlFWkhYXE2aQklKSkxTRUZG0MlR1dzGriHCuSPBPiPRxszdxtjVSlJdkEBfi1VSSsDVUc7ExCPW1b84M68iNLUwISApziwl0NNBSYJCRENRXkzbWkne01Inxt61JCWwriG/MDMuL8Q71tvZ2NASpUJQWM9FWjPK2zIv2qEwOaMmNacwMz4v2jPCx8XY0BAABWGlE1v/qewAAAABJRU5ErkJggg==",
+    "caption": "the send-off",
+    "focusY": "40%"
+  },
+  {
     "id": "ceremony-aerial",
     "type": "photo",
     "src": "/media/wedding/ceremony/aerial.jpg",
@@ -1272,6 +1284,18 @@
     "focusY": "40%"
   },
   {
+    "id": "reception-dance-bw",
+    "type": "photo",
+    "src": "/media/wedding/reception/dance-bw.jpg",
+    "chapter": "reception",
+    "visibility": "public",
+    "width": 1467,
+    "height": 2200,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAIAAABP3xIpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB/0lEQVR4nC3OzQvxcADA8Z+UksukHRQnrwe15SWWl6WVEQq5kKR2IS812XabAxfloInLykUpTuvhsJqDRJSLi3ZQ/gb/AD09ej7/wPcLVFU9HA6SJAmCwDAMRVGlUimXy5EkieM4hmFAVdXz+bzf76fTKcdxtVotn88nEolIJIJhWCAQALfb7X6/H49HQRBYli2XyyRJxmKxYDDo9/u9Xi84Ho+qqiqKMpvN2u12NpvFcTwYDKIoiiCIz+cDsixfr9fVajUej2maTqVSBEGQJJnJZNLpNI7jYLfbLZfL+XzO83ylUsnn861Wi6IogiBQFIVhGKxWq/V6LcvyYrFAEMRsNvd6vVgsZrVaHQ6H0Wj8X3k+n5fLpd1uAwDi8XixWIQgyGQyGQwGMBqNwuHwnx9FUSAI0uv1KIpGf5xOJ6BpulqtdrvdzWbz+Xyq1apGo4FhGEGQcrncaDRAp9MpFAput1uSpO/3K0mS0+nU6/UWi8Xj8djtdhAKhQiCSKVSsiy/3+/D4UBRlMVi0f1otdp/H6fTieO4zWbzer222+1gMIAgCACg0+k0Gg14PB79ft9ms9E0rSiKKIqCICQSiXA4TBBENBoFPM97PB4Yht1u93K5FEVxOBw2m816vd7pdBiGAclk0uVyGY1GDMNEUZxMJjzPcxzHMAzLsgzD/AVZr9SbTJi9KwAAAABJRU5ErkJggg==",
+    "caption": "",
+    "focusY": "30%"
+  },
+  {
     "id": "reception-dancefloor",
     "type": "photo",
     "src": "/media/wedding/reception/dancefloor.jpg",
@@ -1378,6 +1402,18 @@
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAIAAACtAwlQAAAACXBIWXMAAAsTAAALEwEAmpwYAAACW0lEQVR4nAFQAq/9AIuNgIuNgIyNfYyMfn9/c4GCd4uNgIyNgY6Sg5KQgZCPfouMfwCOkIOOkoOPkIGNjYF/gHWJi3+TlIaQlIWQlIWQkoSQkIGPj4AAj5CHjpCDkZOFjI2Bf39zkpSHmZuNlZeMkZOIkJOHk5OHk5OGAJCTjJGRiZOUh42NgoiIf5ydkJ6flZuclJuck5aZjpubkaGgkwCUmZSNkoqUlIqWl4qZm5Cbn5ebn5meoJqho5uqq6Gtr6O0tKoAv8bCuLqxvr+wvsKywMO7vcDAvb7BwsXGxcfHyMfC0tPH2djLALS2u87MzsvQtra5rcDCvezv7uDi6Onq8O3u7dvi09TKt87HuQC5vsSViYl4YFKJc3KAeXimnIuNf4GLhIu4rrLd2K38/73z9sUAcHJxKScvZFFLkXx2m46CrKKSbGZWRT86bWZmm35ylIxxpKOXAC0qIwAAADYqKT4xMaieoMi9t7asmcC0mJiMfYN2bUxAMHVvYwAiHA8HAwFBNjg2MjZ0dIPl4O/NwcK/r6i8qJ2TinhoYkxaUkQAEQoAFA4DFxgVgYGB6+bmw8DNxcjh3NfnvayirZ6Xn5iPoZOCABYMABoSAxkTBjAvK62tr7GusM7FvcrK2NDL0rakm7Shlq+djwAXDAAeFgIeFwYSDAJMS0rTybjf0bjNwrbFxNK7r6+2nIiynI0AGhEAJRkGHBQDIBgJIh8ZjouE3M62vrSlm5untLTAtKKXr5yNABsSABgPABMLAB4TBQIAAEJBQGJdV0dFRoGEkKipsa2jmKybjPtEMxB0GdwcAAAAAElFTkSuQmCC",
     "caption": "",
     "focusY": "48%"
+  },
+  {
+    "id": "reception-mother-son",
+    "type": "photo",
+    "src": "/media/wedding/reception/mother-son.jpg",
+    "chapter": "reception",
+    "visibility": "public",
+    "width": 1467,
+    "height": 2200,
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAIAAABP3xIpAAAACXBIWXMAAAsTAAALEwEAmpwYAAACK0lEQVR4nAEgAt/9AL3FzM3Z3dDZ3cbP1LrCx6ivr6Okn4mLhW1xaVteU0NCNgDDy8/Cy8+8xcqsub2krbKgo6CbnJZ6fXdmaWBZWEtOTT0Atr6/sry/qK+vqpWKeHJmhIuDg4iFcHJsZGRZW1tOS0pAAKWtqqOtrpmcm//25qWWgmtyZ4eNiHl7dnR2bWhpX2hrWQCcp6GXo5uOlI6TkZZlZ2xkaWV/hXaSnIOGj3ZWXEtublgApZuLqambW2FsSlBiTFJgODxJgoV0nJZ9o5+XRTgwMCglAMOVhMqvpldfbl1hb1peaz9GUlVVXU5GRzYyMDczMA8QDwCDfoaGbGdtcoFZXmtUVmU0OUQfISoJCwsDBAQqLCwXFxcAs7W/VlFfTU5YcnJ3TVRiPEBLICIoEBAPDQ8NIyQcEBINAK+1uypGbyM3V05UYFldak1SXxsdIU1PRmxtYUhJPxQUEABwgmU4S1ElPGgzQFZQUl01OkYvMzlJSUaEgXx6eHFyb2QAP1QYanldN0pwLj5cPkFMJSctFRggXFpVtbGpraeenJeLAJaclMTFyEFTbiQ4WTY8SCkqKhQWGikoKDo5MyQkIUhFPgC9u76TmJ4KHDweLklFSVIXFxoSEhMDAwUAAAAcHBqGg3gA1dTKkJKWAQIRAgMTFRghEhIUEhMTAAABEhISlpKJp6CUAE5QTqOkoXh3eEFAPyUmJgwMDQ4PDgEBATExMKCdlpqVjvaay9/tJXy6AAAAAElFTkSuQmCC",
+    "caption": "with his mom",
+    "focusY": "34%"
   },
   {
     "id": "reception-portrait-friends",

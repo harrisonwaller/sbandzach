@@ -138,10 +138,12 @@ export const capsule: CapsuleSection[] = [
     filmIds: ["reception-film", "party-film", "afterparty-film-3"],
     itemIds: [
       "reception-cake-cut",
-      "reception-dancing",
       "reception-firstdance-crowd",
-      "reception-bw-lift",
+      "reception-dance-bw",
+      "reception-dancing",
+      "reception-mother-son",
       "reception-bride-cheers",
+      "reception-bw-lift",
       "reception-guests-table",
       "reception-band",
     ],
@@ -168,6 +170,7 @@ export const capsule: CapsuleSection[] = [
       "afterparty-party-04",
       "afterparty-hats",
       "afterparty-fireworks-cheer",
+      "afterparty-send-off",
     ],
   },
 ];

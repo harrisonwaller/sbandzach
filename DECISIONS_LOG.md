@@ -2,6 +2,17 @@
 
 Append-only. Newest at top.
 
+## Cycle 17 — 2026-06-09 — Three pro frames, attire-sorted (owner)
+Owner sent 3 pro photos "for the reception." Sorted by attire (owner's own rule):
+- **Reception grid +2:** the B&W couple looking back on the checkerboard floor
+  (dance-bw) and the mother-son dance (mother-son, 'with his mom'). Grid now 9, with
+  the two B&W frames (dance-bw + bw-lift) spaced apart so they don't clump.
+- **After-party +1 (NOT reception):** the petal send-off (send-off, 'the send-off') —
+  bride in her short dress + groom in the white dinner jacket = the grand exit, so it
+  closes the after-party grid and leads into the fireworks finale, not mid-reception.
+**Verified:** tsc clean; new ids present; 0 console errors; all three upright with good
+crops; reception grid + party send-off render correctly.
+
 ## Cycle 16 — 2026-06-09 — After-party / reception re-sort + B&W kiss (owner)
 Owner caught reception-attire footage sitting in the after-party and a redundant kiss:
 - **Added** the B&W 'BIRTHDAY GROOM' sparkler-cake kiss to the after-party grid
